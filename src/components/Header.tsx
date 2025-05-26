@@ -1,9 +1,26 @@
 
-import { Phone, Mail, MapPin, Youtube, Instagram, Facebook } from "lucide-react";
+import { Phone, Mail, MapPin, Youtube, Instagram, Facebook, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const productCategories = [
+    "Doors",
+    "Plywood", 
+    "Glass Railing",
+    "UPVC Doors & Windows",
+    "Wallpaper",
+    "Mortise Locks And Door Appliance",
+    "Kitchen Appliances",
+    "Laminates & Decorative Panels"
+  ];
+
   return (
     <header className="bg-white">
       {/* Top bar */}
@@ -44,9 +61,21 @@ const Header = () => {
 
           <nav className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-yellow-600 font-medium hover:text-yellow-700">Home</Link>
-            <div className="relative group">
-              <a href="#products" className="text-gray-700 hover:text-yellow-600 cursor-pointer">All Products</a>
-            </div>
+            
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-gray-700 hover:text-yellow-600 cursor-pointer flex items-center gap-1">
+                All Products
+                <ChevronDown size={16} />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-64 bg-white border border-gray-200 shadow-lg">
+                {productCategories.map((category, index) => (
+                  <DropdownMenuItem key={index} className="text-gray-700 hover:text-yellow-600 hover:bg-gray-50 cursor-pointer">
+                    {category}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
             <Link to="/contact" className="text-gray-700 hover:text-yellow-600">Contact</Link>
           </nav>
 
