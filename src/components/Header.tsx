@@ -1,6 +1,7 @@
 
 import { Phone, Mail, MapPin, Youtube, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -30,7 +31,7 @@ const Header = () => {
       {/* Main header */}
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3">
             <div className="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center">
               <div className="text-white font-bold text-xl">K</div>
             </div>
@@ -39,14 +40,14 @@ const Header = () => {
               <p className="text-sm text-gray-600">Since 1993</p>
               <p className="text-xs text-gray-500">Crafting Spaces with Quality & Style</p>
             </div>
-          </div>
+          </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-yellow-600 font-medium hover:text-yellow-700">Home</a>
+            <Link to="/" className="text-yellow-600 font-medium hover:text-yellow-700">Home</Link>
             <div className="relative group">
               <a href="#products" className="text-gray-700 hover:text-yellow-600 cursor-pointer">All Products</a>
             </div>
-            <a href="#contact" className="text-gray-700 hover:text-yellow-600">Contact</a>
+            <Link to="/contact" className="text-gray-700 hover:text-yellow-600">Contact</Link>
           </nav>
 
           <Button className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-full">

@@ -1,6 +1,7 @@
 
 import { MapPin, Youtube, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo and Info */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
+            <Link to="/" className="flex items-center space-x-3 mb-4">
               <div className="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center">
                 <div className="text-white font-bold text-xl">K</div>
               </div>
@@ -18,7 +19,7 @@ const Footer = () => {
                 <p className="text-sm text-gray-600">Since 1993</p>
                 <p className="text-xs text-gray-500">Crafting Spaces with Quality & Style</p>
               </div>
-            </div>
+            </Link>
           </div>
 
           {/* Get in Touch */}
@@ -35,9 +36,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-gray-800 mb-4">Quick Links</h4>
             <div className="space-y-2">
-              <a href="#home" className="block text-sm text-gray-600 hover:text-yellow-600">Home</a>
+              <Link to="/" className="block text-sm text-gray-600 hover:text-yellow-600">Home</Link>
               <a href="#gallery" className="block text-sm text-gray-600 hover:text-yellow-600">Gallery</a>
-              <a href="#contact" className="block text-sm text-gray-600 hover:text-yellow-600">Contact</a>
+              <Link to="/contact" className="block text-sm text-gray-600 hover:text-yellow-600">Contact</Link>
             </div>
             <Button className="mt-4 bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-full text-sm">
               GET A QUOTE
