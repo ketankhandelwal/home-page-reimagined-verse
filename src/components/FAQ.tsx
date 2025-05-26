@@ -1,10 +1,12 @@
 
-import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const FAQ = () => {
-  const [openFAQ, setOpenFAQ] = useState(0);
-
   const faqs = [
     {
       question: "What types of doors do you offer?",
@@ -33,7 +35,7 @@ const FAQ = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-yellow-600 font-medium mb-2">EVERYTHING YOU NEED TO KNOW BEFORE YOU BUY</p>
+            <p className="text-yellow-600 font-medium mb-2">FREQUENTLY ASKED QUESTIONS</p>
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Common Questions About Our Products & Services</h2>
             <p className="text-gray-600">
               Have questions about our products, services, or store? We've put together some of the most common inquiries from our customers to help you shop confidently at 
@@ -41,27 +43,19 @@ const FAQ = () => {
             </p>
           </div>
 
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            {faqs.map((faq, index) => (
-              <div key={index} className="border-b border-gray-200 last:border-b-0">
-                <button
-                  className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
-                  onClick={() => setOpenFAQ(openFAQ === index ? -1 : index)}
-                >
-                  <span className="font-medium text-gray-800">{faq.question}</span>
-                  {openFAQ === index ? (
-                    <ChevronUp className="w-5 h-5 text-yellow-600" />
-                  ) : (
-                    <ChevronDown className="w-5 h-5 text-gray-400" />
-                  )}
-                </button>
-                {openFAQ === index && (
-                  <div className="px-6 pb-4">
-                    <p className="text-gray-600">{faq.answer}</p>
-                  </div>
-                )}
-              </div>
-            ))}
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200 last:border-b-0">
+                  <AccordionTrigger className="text-left font-medium text-gray-800 hover:text-yellow-600 transition-colors py-4">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-600 pb-4 leading-relaxed">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
 
           <div className="mt-8 text-center">
