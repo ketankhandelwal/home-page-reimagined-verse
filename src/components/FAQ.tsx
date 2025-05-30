@@ -39,7 +39,7 @@ const FAQ = () => {
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Common Questions About Our Products & Services</h2>
             <p className="text-gray-600">
               Have questions about our products, services, or store? We've put together some of the most common inquiries from our customers to help you shop confidently at 
-              Kesarwani Hardware. If you don't see your question here, feel free to contact us directly — we're always happy to help!
+              KESARWANI SANITARY WARE. If you don't see your question here, feel free to contact us directly — we're always happy to help!
             </p>
           </div>
 

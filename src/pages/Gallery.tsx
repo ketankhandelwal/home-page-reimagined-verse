@@ -103,7 +103,7 @@ const Gallery = () => {
             <p className="text-yellow-600 font-medium mb-2 uppercase tracking-wide">FROM FOUNDATIONS TO FINISHING TOUCHES</p>
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Explore Our Product Categories</h2>
             <p className="text-gray-600 max-w-4xl mx-auto">
-              At Kesarwani Hardware, we offer a wide range of quality products to meet all your 
+              At KESARWANI SANITARY WARE, we offer a wide range of quality products to meet all your 
               construction, interior, and kitchen needs. Whether you're building from scratch or upgrading 
               your space, you'll find the right materials and solutions in every category we offer.
             </p>

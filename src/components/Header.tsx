@@ -35,7 +35,7 @@ const Header = () => {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone size={16} />
-              <span>7080757272</span>
+              <span>80901 40600</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail size={16} />
@@ -59,9 +59,9 @@ const Header = () => {
               <div className="text-white font-bold text-xl">K</div>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-800">kesarwani Hardware</h1>
+              <h1 className="text-xl font-bold text-gray-800">KESARWANI SANITARY WARE</h1>
               <p className="text-sm text-gray-600">Since 1993</p>
-              <p className="text-xs text-gray-500">Crafting Spaces with Quality & Style</p>
+              <p className="text-xs text-gray-500">Where Quality Meets Design</p>
             </div>
           </Link>
 

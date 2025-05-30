@@ -38,7 +38,7 @@ const EMISection = () => {
           <p className="text-yellow-200 font-medium mb-2">BUY NOW. PAY LATER. UPGRADE WITHOUT WORRY</p>
           <h2 className="text-4xl font-bold mb-6">Easy EMI Options Available</h2>
           <p className="text-lg mb-8 leading-relaxed">
-            We understand quality upgrades can be an investment. That's why Kesarwani Hardware offers convenient 
+            We understand quality upgrades can be an investment. That's why KESARWANI SANITARY WARE offers convenient 
             EMI payment plans on selected products and appliances. Enjoy flexibility, ease, and affordability — so you 
             don't have to wait to build your dream space.
           </p>

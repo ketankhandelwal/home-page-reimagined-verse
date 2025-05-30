@@ -15,9 +15,9 @@ const Footer = () => {
                 <div className="text-white font-bold text-xl">K</div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-800">kesarwani Hardware</h3>
+                <h3 className="text-xl font-bold text-gray-800">KESARWANI SANITARY WARE</h3>
                 <p className="text-sm text-gray-600">Since 1993</p>
-                <p className="text-xs text-gray-500">Crafting Spaces with Quality & Style</p>
+                <p className="text-xs text-gray-500">Where Quality Meets Design</p>
               </div>
             </Link>
           </div>
@@ -27,7 +27,7 @@ const Footer = () => {
             <h4 className="font-semibold text-gray-800 mb-4">Get in touch</h4>
             <div className="space-y-2 text-sm text-gray-600">
               <p>Near Hanuman Mandir, Babaganj Pratapgarh, Bela Pratapgarh, Uttar Pradesh 230001</p>
-              <p>+91 7080757272</p>
+              <p>+91 80901 40600</p>
               <p>kesarwanihardware05@gmail.com</p>
             </div>
           </div>

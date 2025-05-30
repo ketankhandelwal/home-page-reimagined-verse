@@ -13,7 +13,7 @@ const ContactSection = () => {
           {/* Contact Info */}
           <div className="bg-yellow-600 text-white p-8 rounded-2xl animate-fade-in">
             <p className="text-yellow-200 font-medium mb-2">GET IN TOUCH</p>
-            <h2 className="text-3xl font-bold mb-8">Contact Kesarwani Hardware</h2>
+            <h2 className="text-3xl font-bold mb-8">Contact KESARWANI SANITARY WARE</h2>
             
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
@@ -45,7 +45,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Phone Number</h3>
-                  <p className="text-yellow-100">+91 7080757272</p>
+                  <p className="text-yellow-100">+91 80901 40600</p>
                 </div>
               </div>
             </div>
