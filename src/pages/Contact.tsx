@@ -6,10 +6,12 @@ import Footer from "@/components/Footer";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white flex flex-col">
       <Header />
-      <ContactSection />
-      <FAQ />
+      <div className="flex-grow">
+        <ContactSection />
+        <FAQ />
+      </div>
       <Footer />
     </div>
   );

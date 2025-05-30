@@ -7,11 +7,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 
 const ContactSection = () => {
   return (
-    <section className="py-16 bg-white">
+    <section id="contact-section" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Info */}
-          <div className="bg-yellow-600 text-white p-8 rounded-2xl">
+          <div className="bg-yellow-600 text-white p-8 rounded-2xl animate-fade-in">
             <p className="text-yellow-200 font-medium mb-2">GET IN TOUCH</p>
             <h2 className="text-3xl font-bold mb-8">Contact Kesarwani Hardware</h2>
             
@@ -52,7 +52,7 @@ const ContactSection = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gray-50 p-8 rounded-2xl">
+          <div className="bg-gray-50 p-8 rounded-2xl animate-fade-in" style={{animationDelay: '0.3s'}}>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Input placeholder="First Name" className="bg-white" />
@@ -85,7 +85,7 @@ const ContactSection = () => {
                 className="bg-white min-h-[120px]" 
               />
 
-              <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3 text-lg rounded-full">
+              <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3 text-lg rounded-full transform hover:scale-105 transition-all duration-300">
                 Send
               </Button>
             </form>

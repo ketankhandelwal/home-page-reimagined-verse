@@ -4,11 +4,17 @@ import Footer from "@/components/Footer";
 
 const Gallery = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white flex flex-col">
       <Header />
       
       {/* Hero Section */}
       <div className="relative h-96 bg-gradient-to-r from-yellow-600 to-yellow-700">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`,
+          }}
+        />
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
           <div className="text-white text-center animate-fade-in">
@@ -19,7 +25,7 @@ const Gallery = () => {
       </div>
 
       {/* Gallery of Inspirations */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-16 flex-grow">
         <div className="text-center mb-12 animate-fade-in">
           <p className="text-yellow-600 font-medium mb-2 uppercase tracking-wide">REAL PRODUCTS. REAL PROJECTS. REAL TRANSFORMATIONS.</p>
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Gallery of Inspirations</h2>
@@ -30,16 +36,16 @@ const Gallery = () => {
           <h3 className="text-3xl font-bold text-gray-800 mb-8">Doors Collection</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="aspect-[4/3] bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center">
+              <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h4 className="text-xl font-bold">Laminat Doors</h4>
+                  <h4 className="text-xl font-bold">Laminated Doors</h4>
                 </div>
               </div>
             </div>
             
             <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl" style={{animationDelay: '0.1s'}}>
-              <div className="aspect-[4/3] bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+              <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                 <div className="absolute bottom-4 left-4 text-white">
                   <h4 className="text-xl font-bold">Flush Doors</h4>
@@ -48,7 +54,7 @@ const Gallery = () => {
             </div>
             
             <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl" style={{animationDelay: '0.2s'}}>
-              <div className="aspect-[4/3] bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center">
+              <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1502005229762-cf1b2da2db18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                 <div className="absolute bottom-4 left-4 text-white">
                   <h4 className="text-xl font-bold">Panel Doors</h4>
@@ -63,7 +69,7 @@ const Gallery = () => {
           <h3 className="text-3xl font-bold text-gray-800 mb-8">Plywood Showcase</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="aspect-[4/3] bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center">
+              <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                 <div className="absolute bottom-4 left-4 text-white">
                   <h4 className="text-xl font-bold">Marine Plywood</h4>
@@ -72,7 +78,7 @@ const Gallery = () => {
             </div>
             
             <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl" style={{animationDelay: '0.1s'}}>
-              <div className="aspect-[4/3] bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+              <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1504296924849-b065c827e6b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                 <div className="absolute bottom-4 left-4 text-white">
                   <h4 className="text-xl font-bold">Commercial Plywood</h4>
@@ -81,7 +87,7 @@ const Gallery = () => {
             </div>
             
             <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl" style={{animationDelay: '0.2s'}}>
-              <div className="aspect-[4/3] bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center">
+              <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                 <div className="absolute bottom-4 left-4 text-white">
                   <h4 className="text-xl font-bold">Fire Retardant Plywood</h4>
@@ -105,7 +111,7 @@ const Gallery = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="aspect-[4/3] bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+              <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1517022812141-23620dba5c23?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
                   <h3 className="text-2xl font-bold mb-2">Kids' Bedroom Decor</h3>
@@ -115,7 +121,7 @@ const Gallery = () => {
             </div>
 
             <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl" style={{animationDelay: '0.1s'}}>
-              <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+              <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
                   <h3 className="text-2xl font-bold mb-2">Home Interior Hardware</h3>
@@ -125,7 +131,7 @@ const Gallery = () => {
             </div>
 
             <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl" style={{animationDelay: '0.2s'}}>
-              <div className="aspect-[4/3] bg-gradient-to-br from-indigo-100 to-indigo-200 flex items-center justify-center">
+              <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
                   <h3 className="text-2xl font-bold mb-2">Office Solutions</h3>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 pt-12 pb-6">
+    <footer className="bg-gray-100 pt-12 pb-0 mt-auto">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo and Info */}
@@ -37,7 +37,7 @@ const Footer = () => {
             <h4 className="font-semibold text-gray-800 mb-4">Quick Links</h4>
             <div className="space-y-2">
               <Link to="/" className="block text-sm text-gray-600 hover:text-yellow-600">Home</Link>
-              <a href="#gallery" className="block text-sm text-gray-600 hover:text-yellow-600">Gallery</a>
+              <Link to="/gallery" className="block text-sm text-gray-600 hover:text-yellow-600">Gallery</Link>
               <Link to="/contact" className="block text-sm text-gray-600 hover:text-yellow-600">Contact</Link>
             </div>
             <Button className="mt-4 bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-full text-sm">
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-yellow-600 pt-6 bg-yellow-600 -mx-4 px-4">
+        <div className="border-t border-yellow-600 pt-6 pb-6 bg-yellow-600 -mx-4 px-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-white">
             <div className="flex items-center space-x-4 mb-4 md:mb-0">
               <MapPin size={20} className="hover:text-yellow-200 cursor-pointer" />
