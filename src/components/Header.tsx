@@ -7,19 +7,25 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   const productCategories = [
-    "Doors",
-    "Plywood", 
-    "Glass Railing",
-    "UPVC Doors & Windows",
-    "Wallpaper",
-    "Mortise Locks And Door Appliance",
-    "Kitchen Appliances",
-    "Laminates & Decorative Panels"
+    { name: "Doors", path: "/doors" },
+    { name: "Plywood", path: "/plywood" }, 
+    { name: "Glass Railing", path: "/glass-railing" },
+    { name: "UPVC Doors & Windows", path: "/upvc-doors-windows" },
+    { name: "Wallpaper", path: "/wallpaper" },
+    { name: "Mortise Locks And Door Appliance", path: "/mortise-locks" },
+    { name: "Kitchen Appliances", path: "/kitchen-appliances" },
+    { name: "Laminates & Decorative Panels", path: "/laminates" }
   ];
+
+  const handleCategoryClick = (path: string) => {
+    navigate(path);
+  };
 
   return (
     <header className="bg-white">
@@ -69,8 +75,12 @@ const Header = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-64 bg-white border border-gray-200 shadow-lg">
                 {productCategories.map((category, index) => (
-                  <DropdownMenuItem key={index} className="text-gray-700 hover:text-yellow-600 hover:bg-gray-50 cursor-pointer">
-                    {category}
+                  <DropdownMenuItem 
+                    key={index} 
+                    className="text-gray-700 hover:text-yellow-600 hover:bg-gray-50 cursor-pointer"
+                    onClick={() => handleCategoryClick(category.path)}
+                  >
+                    {category.name}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
