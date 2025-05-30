@@ -1,71 +1,102 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useState, useEffect } from "react";
 
 const Gallery = () => {
+  const heroImages = [
+    'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+    'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+    'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+    'https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % heroImages.length
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
+
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-gray-50 flex flex-col">
       <Header />
       
-      {/* Hero Section */}
-      <div className="relative h-96 bg-gradient-to-r from-yellow-600 to-yellow-700">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`,
-          }}
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      {/* Enhanced Hero Section */}
+      <div className="relative h-[500px] overflow-hidden">
+        {heroImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{ backgroundImage: `url('${image}')` }}
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
+        
+        {/* Decorative elements */}
+        <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-yellow-400/30 to-orange-500/30 rounded-full blur-2xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-40 h-40 bg-gradient-to-tl from-blue-400/30 to-purple-500/30 rounded-full blur-2xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        
         <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
           <div className="text-white text-center animate-fade-in">
-            <h1 className="text-5xl font-bold mb-4">Our Work & Showroom Gallery</h1>
-            <p className="text-xl">REAL PRODUCTS. REAL PROJECTS. REAL TRANSFORMATIONS.</p>
+            <div className="inline-block px-6 py-2 bg-white/10 backdrop-blur-md rounded-full mb-6 border border-white/20">
+              <span className="text-yellow-300 font-semibold text-sm uppercase tracking-wider">REAL PRODUCTS. REAL PROJECTS. REAL TRANSFORMATIONS.</span>
+            </div>
+            <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-200 to-orange-200 bg-clip-text text-transparent leading-tight">
+              Our Work & Showroom Gallery
+            </h1>
+            <div className="mt-8 w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto rounded-full"></div>
           </div>
         </div>
       </div>
 
-      {/* Gallery of Inspirations */}
-      <div className="container mx-auto px-4 py-16 flex-grow">
-        <div className="text-center mb-12 animate-fade-in">
-          <p className="text-yellow-600 font-medium mb-2 uppercase tracking-wide">REAL PRODUCTS. REAL PROJECTS. REAL TRANSFORMATIONS.</p>
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Gallery of Inspirations</h2>
+      {/* Enhanced Gallery Content */}
+      <div className="container mx-auto px-4 py-20 flex-grow relative">
+        {/* Background decorations */}
+        <div className="absolute top-10 right-10 w-72 h-72 bg-gradient-to-br from-yellow-200/20 to-orange-200/20 rounded-full blur-3xl animate-blob"></div>
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-gradient-to-tl from-blue-200/20 to-purple-200/20 rounded-full blur-3xl animate-blob" style={{animationDelay: '2s'}}></div>
+        
+        <div className="text-center mb-16 animate-fade-in relative z-10">
+          <div className="inline-block px-6 py-3 bg-gradient-to-r from-yellow-100 to-orange-100 rounded-full mb-6">
+            <p className="text-yellow-700 font-semibold text-sm uppercase tracking-wider">REAL PRODUCTS. REAL PROJECTS. REAL TRANSFORMATIONS.</p>
+          </div>
+          <h2 className="text-5xl font-bold bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-4">Gallery of Inspirations</h2>
         </div>
 
         {/* Doors Collection */}
-        <div className="mb-16 animate-fade-in" style={{animationDelay: '0.2s'}}>
-          <h3 className="text-3xl font-bold text-gray-800 mb-8">Doors Collection</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h4 className="text-xl font-bold">Laminated Doors</h4>
+        <div className="mb-20 animate-fade-in relative z-10" style={{animationDelay: '0.2s'}}>
+          <h3 className="text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-12 text-center">Doors Collection</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Laminated Doors' },
+              { image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Flush Doors' },
+              { image: 'https://images.unsplash.com/photo-1502005229762-cf1b2da2db18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Panel Doors' }
+            ].map((item, index) => (
+              <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:-translate-y-4 bg-white" style={{animationDelay: `${index * 0.1}s`}}>
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}} />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/80 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/20 to-orange-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute bottom-6 left-6 text-white transform group-hover:translate-y-0 translate-y-2 transition-transform duration-500">
+                    <h4 className="text-2xl font-bold mb-2">{item.title}</h4>
+                    <div className="w-16 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                  </div>
                 </div>
+                {/* Shimmer effect */}
+                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
               </div>
-            </div>
-            
-            <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl" style={{animationDelay: '0.1s'}}>
-              <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h4 className="text-xl font-bold">Flush Doors</h4>
-                </div>
-              </div>
-            </div>
-            
-            <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl" style={{animationDelay: '0.2s'}}>
-              <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1502005229762-cf1b2da2db18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h4 className="text-xl font-bold">Panel Doors</h4>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
         {/* Plywood Showcase */}
-        <div className="mb-16 animate-fade-in" style={{animationDelay: '0.4s'}}>
+        <div className="mb-20 animate-fade-in" style={{animationDelay: '0.4s'}}>
           <h3 className="text-3xl font-bold text-gray-800 mb-8">Plywood Showcase</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
@@ -142,34 +173,15 @@ const Gallery = () => {
           </div>
         </div>
 
-        {/* Brand Partners */}
-        <div className="text-center animate-fade-in" style={{animationDelay: '0.8s'}}>
-          <h3 className="text-2xl font-bold text-gray-800 mb-8">Our Trusted Brand Partners</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <div className="bg-gray-100 rounded-lg p-4 w-24 h-16 flex items-center justify-center transform transition-all duration-300 hover:scale-110 hover:opacity-100">
-              <span className="text-xs font-semibold text-gray-600">EBCO</span>
-            </div>
-            <div className="bg-gray-100 rounded-lg p-4 w-24 h-16 flex items-center justify-center transform transition-all duration-300 hover:scale-110 hover:opacity-100">
-              <span className="text-xs font-semibold text-gray-600">KALPATARU</span>
-            </div>
-            <div className="bg-gray-100 rounded-lg p-4 w-24 h-16 flex items-center justify-center transform transition-all duration-300 hover:scale-110 hover:opacity-100">
-              <span className="text-xs font-semibold text-gray-600">Greenlam</span>
-            </div>
-            <div className="bg-gray-100 rounded-lg p-4 w-24 h-16 flex items-center justify-center transform transition-all duration-300 hover:scale-110 hover:opacity-100">
-              <span className="text-xs font-semibold text-gray-600">SHAHEEN</span>
-            </div>
-            <div className="bg-gray-100 rounded-lg p-4 w-24 h-16 flex items-center justify-center transform transition-all duration-300 hover:scale-110 hover:opacity-100">
-              <span className="text-xs font-semibold text-gray-600">Greenply</span>
-            </div>
-            <div className="bg-gray-100 rounded-lg p-4 w-24 h-16 flex items-center justify-center transform transition-all duration-300 hover:scale-110 hover:opacity-100">
-              <span className="text-xs font-semibold text-gray-600">GREENPANEL</span>
-            </div>
-            <div className="bg-gray-100 rounded-lg p-4 w-24 h-16 flex items-center justify-center transform transition-all duration-300 hover:scale-110 hover:opacity-100">
-              <span className="text-xs font-semibold text-gray-600">Splice</span>
-            </div>
-            <div className="bg-gray-100 rounded-lg p-4 w-24 h-16 flex items-center justify-center transform transition-all duration-300 hover:scale-110 hover:opacity-100">
-              <span className="text-xs font-semibold text-gray-600">Boss uPVC</span>
-            </div>
+        {/* Enhanced Brand Partners */}
+        <div className="text-center animate-fade-in relative z-10" style={{animationDelay: '0.8s'}}>
+          <h3 className="text-3xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-12">Our Trusted Brand Partners</h3>
+          <div className="flex flex-wrap justify-center items-center gap-8">
+            {['EBCO', 'KALPATARU', 'Greenlam', 'SHAHEEN', 'Greenply', 'GREENPANEL', 'Splice', 'Boss uPVC'].map((brand, index) => (
+              <div key={index} className="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 w-32 h-20 flex items-center justify-center transform transition-all duration-500 hover:scale-110 hover:shadow-lg hover:-translate-y-2 border border-gray-100/50" style={{animationDelay: `${index * 0.1}s`}}>
+                <span className="text-sm font-bold text-gray-700 group-hover:text-yellow-600 transition-colors duration-300">{brand}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
