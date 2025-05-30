@@ -10,6 +10,7 @@ import Doors from "./pages/Doors";
 import GlassRailing from "./pages/GlassRailing";
 import Plywood from "./pages/Plywood";
 import UPVCDoorsWindows from "./pages/UPVCDoorsWindows";
+import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/glass-railing" element={<GlassRailing />} />
           <Route path="/plywood" element={<Plywood />} />
           <Route path="/upvc-doors-windows" element={<UPVCDoorsWindows />} />
+          <Route path="/gallery" element={<Gallery />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

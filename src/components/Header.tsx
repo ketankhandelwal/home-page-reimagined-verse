@@ -86,6 +86,7 @@ const Header = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
+            <Link to="/gallery" className="text-gray-700 hover:text-yellow-600">Gallery</Link>
             <Link to="/contact" className="text-gray-700 hover:text-yellow-600">Contact</Link>
           </nav>
 
