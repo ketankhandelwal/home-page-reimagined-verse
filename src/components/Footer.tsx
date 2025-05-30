@@ -26,7 +26,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-gray-800 mb-4">Get in touch</h4>
             <div className="space-y-2 text-sm text-gray-600">
-              <p>Near Hanuman Mandir, Babaganj Pratapgarh, Bela Pratapgarh, Uttar Pradesh 230001</p>
+              <p>Infront of Hanuman Mandir, Babaganj Pratapgarh, Bela Pratapgarh, Uttar Pradesh 230001</p>
               <p>+91 80901 40600</p>
               <p>kesarwanisanitaryhardware@gmail.com</p>
             </div>

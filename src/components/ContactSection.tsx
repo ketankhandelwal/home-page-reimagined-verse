@@ -52,7 +52,7 @@ const ContactSection = () => {
                     <div>
                       <h4 className="font-bold text-lg mb-2 text-white">Visit Our Showroom</h4>
                       <p className="text-yellow-50 leading-relaxed">
-                        Near Hanuman Mandir, Babaganj Pratapgarh<br />
+                        Infront of Hanuman Mandir, Babaganj Pratapgarh<br />
                         Bela Pratapgarh, Uttar Pradesh 230001
                       </p>
                     </div>

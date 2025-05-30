@@ -26,7 +26,7 @@ const FAQ = () => {
     },
     {
       question: "How do I get directions to your store?",
-      answer: "Our store is located near Hanuman Mandir, Babaganj Pratapgarh, Bela Pratapgarh, Uttar Pradesh 230001. You can contact us for detailed directions."
+      answer: "Our store is located infront of Hanuman Mandir, Babaganj Pratapgarh, Bela Pratapgarh, Uttar Pradesh 230001. You can contact us for detailed directions."
     }
   ];
 
