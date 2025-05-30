@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="space-y-2 text-sm text-gray-600">
               <p>Near Hanuman Mandir, Babaganj Pratapgarh, Bela Pratapgarh, Uttar Pradesh 230001</p>
               <p>+91 80901 40600</p>
-              <p>kesarwanihardware05@gmail.com</p>
+              <p>kesarwanisanitaryhardware@gmail.com</p>
             </div>
           </div>
 
