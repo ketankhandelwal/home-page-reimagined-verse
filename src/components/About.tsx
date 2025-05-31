@@ -22,7 +22,7 @@ const About = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-white via-gray-50 to-slate-100 relative overflow-hidden">
+    <section id="about" className="py-20 bg-gradient-to-br from-white via-gray-50 to-slate-100 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-yellow-200/30 to-orange-300/30 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-tl from-blue-200/30 to-purple-300/30 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
@@ -40,7 +40,7 @@ const About = () => {
             <div className="relative overflow-hidden rounded-2xl shadow-2xl transform group-hover:scale-105 transition-all duration-700">
               <img 
                 src="https://images.unsplash.com/photo-1628745277862-bc0b2d68c50c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="KESARWANI SANITARY WARE Store"
+                alt="KESARWANI SANITARY WARE STORE"
                 className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

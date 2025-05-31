@@ -1,118 +1,280 @@
-import { Phone, Mail, MapPin, Youtube, Instagram, Facebook, ChevronDown, MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Link, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { Menu, X, Phone, MapPin, Clock, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  const navigate = useNavigate();
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const productCategories = [
     { name: "Tiles", path: "/tiles" },
-    { name: "Sanitary", path: "/sanitary" }, 
+    { name: "Sanitary", path: "/sanitary" },
     { name: "Bathroom", path: "/bathroom" },
     { name: "Faucets", path: "/faucets" },
     { name: "Showers", path: "/showers" },
-    { name: "Pvc doors", path: "/pvc-doors" },
-    {name: "Kitchen Slabs", path: "/kitchen-slabs" },
+    { name: "PVC Doors", path: "/pvc-doors" },
+    { name: "Kitchen Slabs", path: "/kitchen-slabs" },
+  ];
+
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "Products", href: "#", hasDropdown: true },
+    { name: "About", href: "#about", isScroll: true },
+    { name: "Benefits", href: "#benefits", isScroll: true },
+    { name: "EMI", href: "#emi", isScroll: true },
+    { name: "Brands", href: "#brands", isScroll: true },
+    { name: "Gallery", href: "/gallery" },
+    { name: "FAQ", href: "#faq", isScroll: true },
+    { name: "Contact", href: "/contact" },
   ];
 
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact-section');
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+      const elementPosition = contactSection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   };
 
-  const handleCategoryClick = (path: string) => {
-    navigate(path);
+  const handleAnchorClick = (href: string) => {
+    if (href.startsWith('#')) {
+      const element = document.getElementById(href.substring(1));
+      if (element) {
+        const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    }
   };
 
   return (
-    <header className="bg-white">
-      {/* Top bar */}
-      <div className="bg-yellow-600 text-white py-2 px-4">
-        <div className="container mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2">
-              <Phone size={16} />
-              <span>80901 40600</span>
+    <motion.header
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-white/90 backdrop-blur-lg shadow-lg"
+          : "bg-gradient-to-b from-gray-900/90 to-transparent"
+      }`}
+    >
+      {/* Top Bar */}
+      <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-2">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between text-sm">
+            <div className="flex items-center space-x-6">
+              <a href="tel:+919876543210" className="flex items-center hover:text-yellow-400 transition-colors">
+                <Phone className="w-4 h-4 mr-2" />
+                +91 98765 43210
+              </a>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-yellow-400 transition-colors">
+                <MapPin className="w-4 h-4 mr-2" />
+                Pratapgarh, UP
+              </a>
             </div>
-            <div className="flex items-center space-x-2">
-              <Mail size={16} />
-              <span>kesarwanisanitaryhardware@gmail.com</span>
+            <div className="flex items-center">
+              <Clock className="w-4 h-4 mr-2" />
+              Mon-Sat: 9:00 AM - 8:00 PM
             </div>
-          </div>
-          <div className="flex items-center space-x-4">
-            <MapPin size={16} />
-            <a href="https://wa.me/918090140600" target="_blank" rel="noopener noreferrer">
-              <MessageCircle size={16} className="hover:text-yellow-200 cursor-pointer" />
-            </a>
-            <a href="https://www.youtube.com/@kesarwanisanitaryhardware" target="_blank" rel="noopener noreferrer">
-  <Youtube size={16} className="hover:text-yellow-200 cursor-pointer" />
-</a>
-
-<a href="https://www.instagram.com/kesarwanihardware/" target="_blank" rel="noopener noreferrer">
-  <Instagram size={16} className="hover:text-yellow-200 cursor-pointer" />
-</a>
-
-<a href="https://www.facebook.com/kesarwanihardware" target="_blank" rel="noopener noreferrer">
-  <Facebook size={16} className="hover:text-yellow-200 cursor-pointer" />
-</a>
           </div>
         </div>
       </div>
 
-      {/* Main header */}
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center">
-              <div className="text-white font-bold text-xl">K</div>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-gray-800">KESARWANI SANITARY WARE</h1>
-              <p className="text-sm text-gray-600">Since 2000</p>
-              <p className="text-xs text-gray-500">Where Quality Meets Design</p>
-            </div>
-          </Link>
+      {/* Main Navigation */}
+      <nav className="container mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex items-center"
+          >
+            <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">
+              KESARWANI SANITARY WARE
+            </Link>
+          </motion.div>
 
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-yellow-600 font-medium hover:text-yellow-700">Home</Link>
-            
-            <DropdownMenu>
-              <DropdownMenuTrigger className="text-gray-700 hover:text-yellow-600 cursor-pointer flex items-center gap-1">
-                All Products
-                <ChevronDown size={16} />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-64 bg-white border border-gray-200 shadow-lg">
-                {productCategories.map((category, index) => (
-                  <DropdownMenuItem 
-                    key={index} 
-                    className="text-gray-700 hover:text-yellow-600 hover:bg-gray-50 cursor-pointer"
-                    onClick={() => handleCategoryClick(category.path)}
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.map((item, index) => (
+              <div key={item.name} className="relative group">
+                {item.hasDropdown ? (
+                  <button
+                    onClick={() => setActiveDropdown(activeDropdown === item.name ? null : item.name)}
+                    className={`flex items-center space-x-1 text-sm font-medium transition-colors ${
+                      isScrolled ? "text-gray-800 hover:text-yellow-500" : "text-white hover:text-yellow-400"
+                    }`}
                   >
-                    {category.name}
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+                    <span>{item.name}</span>
+                    <ChevronDown className="w-4 h-4" />
+                  </button>
+                ) : item.isScroll ? (
+                  <button
+                    onClick={() => handleAnchorClick(item.href)}
+                    className={`text-sm font-medium transition-colors ${
+                      isScrolled ? "text-gray-800 hover:text-yellow-500" : "text-white hover:text-yellow-400"
+                    }`}
+                  >
+                    {item.name}
+                  </button>
+                ) : (
+                  <Link
+                    to={item.href}
+                    className={`text-sm font-medium transition-colors ${
+                      isScrolled ? "text-gray-800 hover:text-yellow-500" : "text-white hover:text-yellow-400"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                )}
 
-            <Link to="/gallery" className="text-gray-700 hover:text-yellow-600">Gallery</Link>
-            <Link to="/contact" className="text-gray-700 hover:text-yellow-600">Contact</Link>
-          </nav>
+                {/* Dropdown Menu */}
+                {item.hasDropdown && activeDropdown === item.name && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50"
+                  >
+                    {productCategories.map((category) => (
+                      <Link
+                        key={category.name}
+                        to={category.path}
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors"
+                        onClick={() => setActiveDropdown(null)}
+                      >
+                        {category.name}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </div>
+            ))}
+            <motion.button
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              onClick={scrollToContact}
+              className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
+            >
+              Get Quote
+            </motion.button>
+          </div>
 
-          <Button className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-full"
-          onClick={scrollToContact}>
-            GET A FREE QUOTE
-          </Button>
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-gray-800"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
         </div>
-      </div>
-    </header>
+      </nav>
+
+      {/* Mobile Menu */}
+      <motion.div
+        initial={{ opacity: 0, height: 0 }}
+        animate={{
+          opacity: isMobileMenuOpen ? 1 : 0,
+          height: isMobileMenuOpen ? "auto" : 0,
+        }}
+        transition={{ duration: 0.3 }}
+        className="md:hidden bg-white shadow-lg overflow-hidden"
+      >
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex flex-col space-y-4">
+            {navItems.map((item) => (
+              <div key={item.name}>
+                {item.hasDropdown ? (
+                  <div>
+                    <button
+                      onClick={() => setActiveDropdown(activeDropdown === item.name ? null : item.name)}
+                      className="flex items-center justify-between w-full text-gray-800 hover:text-yellow-500 transition-colors"
+                    >
+                      <span>{item.name}</span>
+                      <ChevronDown className="w-4 h-4" />
+                    </button>
+                    {activeDropdown === item.name && (
+                      <div className="pl-4 mt-2 space-y-2">
+                        {productCategories.map((category) => (
+                          <Link
+                            key={category.name}
+                            to={category.path}
+                            className="block text-gray-600 hover:text-yellow-500 transition-colors"
+                            onClick={() => {
+                              setActiveDropdown(null);
+                              setIsMobileMenuOpen(false);
+                            }}
+                          >
+                            {category.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : item.isScroll ? (
+                  <button
+                    onClick={() => {
+                      handleAnchorClick(item.href);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className="block text-gray-800 hover:text-yellow-500 transition-colors text-left"
+                  >
+                    {item.name}
+                  </button>
+                ) : (
+                  <Link
+                    to={item.href}
+                    className="block text-gray-800 hover:text-yellow-500 transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )}
+              </div>
+            ))}
+            <button
+              onClick={() => {
+                scrollToContact();
+                setIsMobileMenuOpen(false);
+              }}
+              className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all duration-300"
+            >
+              Get Quote
+            </button>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Partition Line */}
+      <div className="h-px bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent"></div>
+    </motion.header>
   );
 };
 
