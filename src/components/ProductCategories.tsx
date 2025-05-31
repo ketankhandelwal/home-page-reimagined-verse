@@ -1,28 +1,27 @@
-
 const ProductCategories = () => {
   const categories = [
     {
-      title: "Doors",
+      title: "Tiles",
       image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
     },
     {
-      title: "Plywood",
+      title: "Sanitary",
       image: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
     },
     {
-      title: "Glass Railing",
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      title: "Bathroom",
+      image: "/src/files/images/bathroom/bathroom_1.jpg"
     },
     {
-      title: "Hardware",
+      title: "Faucets & Showers",
       image: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
     },
     {
-      title: "Kitchen Solutions",
+      title: "Kitchen Slabs",
       image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
     },
     {
-      title: "Interior Design",
+      title: "PVC Doors",
       image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
     }
   ];

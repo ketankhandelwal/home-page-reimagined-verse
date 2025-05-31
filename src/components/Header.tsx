@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Youtube, Instagram, Facebook, ChevronDown } from "lucide-react";
+import { Phone, Mail, MapPin, Youtube, Instagram, Facebook, ChevronDown, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -12,15 +12,21 @@ const Header = () => {
   const navigate = useNavigate();
 
   const productCategories = [
-    { name: "Doors", path: "/doors" },
-    { name: "Plywood", path: "/plywood" }, 
-    { name: "Glass Railing", path: "/glass-railing" },
-    { name: "UPVC Doors & Windows", path: "/upvc-doors-windows" },
-    { name: "Wallpaper", path: "/wallpaper" },
-    { name: "Mortise Locks And Door Appliance", path: "/mortise-locks" },
-    { name: "Kitchen Appliances", path: "/kitchen-appliances" },
-    { name: "Laminates & Decorative Panels", path: "/laminates" }
+    { name: "Tiles", path: "/tiles" },
+    { name: "Sanitary", path: "/sanitary" }, 
+    { name: "Bathroom", path: "/bathroom" },
+    { name: "Faucets", path: "/faucets" },
+    { name: "Showers", path: "/showers" },
+    { name: "Pvc doors", path: "/pvc-doors" },
+    {name: "Kitchen Slabs", path: "/kitchen-slabs" },
   ];
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact-section');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const handleCategoryClick = (path: string) => {
     navigate(path);
@@ -43,9 +49,20 @@ const Header = () => {
           </div>
           <div className="flex items-center space-x-4">
             <MapPin size={16} />
-            <Youtube size={16} className="hover:text-yellow-200 cursor-pointer" />
-            <Instagram size={16} className="hover:text-yellow-200 cursor-pointer" />
-            <Facebook size={16} className="hover:text-yellow-200 cursor-pointer" />
+            <a href="https://wa.me/918090140600" target="_blank" rel="noopener noreferrer">
+              <MessageCircle size={16} className="hover:text-yellow-200 cursor-pointer" />
+            </a>
+            <a href="https://www.youtube.com/@kesarwanisanitaryhardware" target="_blank" rel="noopener noreferrer">
+  <Youtube size={16} className="hover:text-yellow-200 cursor-pointer" />
+</a>
+
+<a href="https://www.instagram.com/kesarwanihardware/" target="_blank" rel="noopener noreferrer">
+  <Instagram size={16} className="hover:text-yellow-200 cursor-pointer" />
+</a>
+
+<a href="https://www.facebook.com/kesarwanihardware" target="_blank" rel="noopener noreferrer">
+  <Facebook size={16} className="hover:text-yellow-200 cursor-pointer" />
+</a>
           </div>
         </div>
       </div>
@@ -59,7 +76,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-800">KESARWANI SANITARY WARE</h1>
-              <p className="text-sm text-gray-600">Since 1993</p>
+              <p className="text-sm text-gray-600">Since 2000</p>
               <p className="text-xs text-gray-500">Where Quality Meets Design</p>
             </div>
           </Link>
@@ -89,7 +106,8 @@ const Header = () => {
             <Link to="/contact" className="text-gray-700 hover:text-yellow-600">Contact</Link>
           </nav>
 
-          <Button className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-full">
+          <Button className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-full"
+          onClick={scrollToContact}>
             GET A FREE QUOTE
           </Button>
         </div>

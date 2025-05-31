@@ -31,7 +31,7 @@ const Benefits = () => {
     {
       icon: <CheckCircle className="w-8 h-8" />,
       title: "Complete Solutions",
-      description: "One-stop shop for doors, plywood, glass railing, and interior solutions"
+      description: "One-stop shop for tiles, sanitary, Bathroom, and interior solutions"
     }
   ];
 

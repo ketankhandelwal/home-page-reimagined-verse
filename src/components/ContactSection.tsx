@@ -165,12 +165,12 @@ const ContactSection = () => {
                         <SelectValue placeholder="Select Product Category" />
                       </SelectTrigger>
                       <SelectContent className="bg-white border-2 border-gray-200 rounded-xl shadow-xl">
-                        <SelectItem value="doors" className="py-3 px-4 hover:bg-yellow-50 rounded-lg">🚪 Doors & Windows</SelectItem>
-                        <SelectItem value="plywood" className="py-3 px-4 hover:bg-yellow-50 rounded-lg">🪵 Plywood & Laminates</SelectItem>
-                        <SelectItem value="hardware" className="py-3 px-4 hover:bg-yellow-50 rounded-lg">🔧 Hardware & Fittings</SelectItem>
-                        <SelectItem value="kitchen" className="py-3 px-4 hover:bg-yellow-50 rounded-lg">🍳 Kitchen Solutions</SelectItem>
-                        <SelectItem value="glass" className="py-3 px-4 hover:bg-yellow-50 rounded-lg">🪟 Glass Railing</SelectItem>
-                        <SelectItem value="interior" className="py-3 px-4 hover:bg-yellow-50 rounded-lg">🏠 Interior Design</SelectItem>
+                        <SelectItem value="tiles" className="py-3 px-4 hover:bg-yellow-50 rounded-lg">🚪 Tiles & Marbels</SelectItem>
+                        <SelectItem value="sanitary" className="py-3 px-4 hover:bg-yellow-50 rounded-lg">🪵 Sanitary</SelectItem>
+                        <SelectItem value="hardware" className="py-3 px-4 hover:bg-yellow-50 rounded-lg">🔧 Faucets & Showers</SelectItem>
+                        <SelectItem value="kitchen" className="py-3 px-4 hover:bg-yellow-50 rounded-lg">🍳 PVC Doors</SelectItem>
+                        <SelectItem value="bathroom" className="py-3 px-4 hover:bg-yellow-50 rounded-lg">🪟 Bathroom Accessroies </SelectItem>
+                        <SelectItem value="interior" className="py-3 px-4 hover:bg-yellow-50 rounded-lg">🏠 Kitchen Slabs</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>

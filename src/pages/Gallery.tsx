@@ -69,14 +69,14 @@ const Gallery = () => {
           <h2 className="text-5xl font-bold bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-4">Gallery of Inspirations</h2>
         </div>
 
-        {/* Doors Collection */}
+        {/* Tiles Collection */}
         <div className="mb-20 animate-fade-in relative z-10" style={{animationDelay: '0.2s'}}>
-          <h3 className="text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-12 text-center">Doors Collection</h3>
+          <h3 className="text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-12 text-center">Tiles Collection</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Laminated Doors' },
-              { image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Flush Doors' },
-              { image: 'https://images.unsplash.com/photo-1502005229762-cf1b2da2db18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Panel Doors' }
+              { image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Laminated Tiles' },
+              { image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Flush Tiles' },
+              { image: 'https://images.unsplash.com/photo-1502005229762-cf1b2da2db18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Panel Tiles' }
             ].map((item, index) => (
               <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:-translate-y-4 bg-white" style={{animationDelay: `${index * 0.1}s`}}>
                 <div className="aspect-[4/3] relative overflow-hidden">
@@ -95,15 +95,15 @@ const Gallery = () => {
           </div>
         </div>
 
-        {/* Plywood Showcase */}
+        {/* Sanitary Showcase */}
         <div className="mb-20 animate-fade-in" style={{animationDelay: '0.4s'}}>
-          <h3 className="text-3xl font-bold text-gray-800 mb-8">Plywood Showcase</h3>
+          <h3 className="text-3xl font-bold text-gray-800 mb-8">Sanitary Showcase</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
               <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h4 className="text-xl font-bold">Marine Plywood</h4>
+                  <h4 className="text-xl font-bold">Marine Sanitary</h4>
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@ const Gallery = () => {
               <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1504296924849-b065c827e6b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h4 className="text-xl font-bold">Commercial Plywood</h4>
+                  <h4 className="text-xl font-bold">Commercial Sanitary</h4>
                 </div>
               </div>
             </div>
@@ -121,10 +121,90 @@ const Gallery = () => {
               <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h4 className="text-xl font-bold">Fire Retardant Plywood</h4>
+                  <h4 className="text-xl font-bold">Fire Retardant Sanitary</h4>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+
+        {/* Kitchen Solutions Section */}
+        <div className="mb-20 animate-fade-in relative z-10" style={{animationDelay: '0.2s'}}>
+          <h3 className="text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-12 text-center">Tiles Collection</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Laminated Tiles' },
+              { image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Flush Tiles' },
+              { image: 'https://images.unsplash.com/photo-1502005229762-cf1b2da2db18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Panel Tiles' }
+            ].map((item, index) => (
+              <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:-translate-y-4 bg-white" style={{animationDelay: `${index * 0.1}s`}}>
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}} />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/80 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/20 to-orange-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute bottom-6 left-6 text-white transform group-hover:translate-y-0 translate-y-2 transition-transform duration-500">
+                    <h4 className="text-2xl font-bold mb-2">{item.title}</h4>
+                    <div className="w-16 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                  </div>
+                </div>
+                {/* Shimmer effect */}
+                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Sanitary Showcase Section */}
+        <div className="mb-20 animate-fade-in relative z-10" style={{animationDelay: '0.2s'}}>
+          <h3 className="text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-12 text-center">Tiles Collection</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Laminated Tiles' },
+              { image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Flush Tiles' },
+              { image: 'https://images.unsplash.com/photo-1502005229762-cf1b2da2db18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Panel Tiles' }
+            ].map((item, index) => (
+              <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:-translate-y-4 bg-white" style={{animationDelay: `${index * 0.1}s`}}>
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}} />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/80 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/20 to-orange-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute bottom-6 left-6 text-white transform group-hover:translate-y-0 translate-y-2 transition-transform duration-500">
+                    <h4 className="text-2xl font-bold mb-2">{item.title}</h4>
+                    <div className="w-16 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                  </div>
+                </div>
+                {/* Shimmer effect */}
+                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Kitchen Solutions Section */}
+
+        <div className="mb-20 animate-fade-in relative z-10" style={{animationDelay: '0.2s'}}>
+          <h3 className="text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-12 text-center">Tiles Collection</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Laminated Tiles' },
+              { image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Flush Tiles' },
+              { image: 'https://images.unsplash.com/photo-1502005229762-cf1b2da2db18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', title: 'Panel Tiles' }
+            ].map((item, index) => (
+              <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:-translate-y-4 bg-white" style={{animationDelay: `${index * 0.1}s`}}>
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}} />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/80 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/20 to-orange-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute bottom-6 left-6 text-white transform group-hover:translate-y-0 translate-y-2 transition-transform duration-500">
+                    <h4 className="text-2xl font-bold mb-2">{item.title}</h4>
+                    <div className="w-16 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                  </div>
+                </div>
+                {/* Shimmer effect */}
+                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -155,7 +235,7 @@ const Gallery = () => {
               <div className="aspect-[4/3] bg-cover bg-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')`}}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
-                  <h3 className="text-2xl font-bold mb-2">Home Interior Hardware</h3>
+                  <h3 className="text-2xl font-bold mb-2">Home PVC Doors</h3>
                   <p className="text-sm text-center opacity-90">Quality hardware for modern interior solutions</p>
                 </div>
               </div>

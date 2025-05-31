@@ -16,7 +16,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-800">KESARWANI SANITARY WARE</h3>
-                <p className="text-sm text-gray-600">Since 1993</p>
+                <p className="text-sm text-gray-600">Since 2000</p>
                 <p className="text-xs text-gray-500">Where Quality Meets Design</p>
               </div>
             </Link>

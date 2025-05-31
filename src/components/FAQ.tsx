@@ -9,8 +9,8 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "What types of doors do you offer?",
-      answer: "We offer a wide range of doors including wooden, laminate-finished, and UPVC doors. Whether you're looking for style, durability, or weather resistance, we've got options to fit every requirement."
+      question: "What types of tiles do you offer?",
+      answer: "We offer a wide variety of tiles including ceramic, porcelain, vitrified, mosaic, and natural stone tiles. Our collection features options for walls, floors, kitchens, bathrooms, and outdoor spaces, catering to both style and functionality."
     },
     {
       question: "Do you provide kitchen appliances from top brands?",

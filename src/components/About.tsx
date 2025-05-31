@@ -31,7 +31,7 @@ const About = () => {
             </h2>
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
               At KESARWANI SANITARY WARE, we believe in offering more than just products — we provide quality, style, and service you can rely on. 
-              Located in Pratapgarh, Uttar Pradesh, our store is your go-to destination for doors, plywood, glass railings, UPVC solutions, 
+              Located in Pratapgarh, Uttar Pradesh, our store is your go-to destination for tiles, sanitary, Bathrooms, UPVC solutions, 
               wallpapers, laminates, kitchen appliances, and more. With a commitment to excellence and a wide range of top-quality 
               materials, we help homeowners, builders, and interior designers bring their visions to life.
             </p>

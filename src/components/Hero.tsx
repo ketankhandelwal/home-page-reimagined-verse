@@ -48,7 +48,7 @@ const Hero = () => {
             Welcome to KESARWANI SANITARY WARE
           </h1>
           <p className="text-xl mb-8 text-yellow-200 animate-fade-in" style={{animationDelay: '0.3s'}}>
-          Pratapgarh’s Go-To Place for Trendy Doors, Durable Hardware, Elegant Interiors & Smart Kitchen Solutions
+          Pratapgarh’s Go-To Place for Trendy Tiles, Durable Faucets, Elegant Bathroom Accessories & Smart Kitchen Slabs
           </p>
           <Button 
             onClick={scrollToContact}
