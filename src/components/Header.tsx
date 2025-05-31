@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, MapPin, Clock, ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,12 +30,12 @@ const Header = () => {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "Products", href: "#", hasDropdown: true },
-    { name: "About", href: "#about", isScroll: true },
-    { name: "Benefits", href: "#benefits", isScroll: true },
-    { name: "EMI", href: "#emi", isScroll: true },
-    { name: "Brands", href: "#brands", isScroll: true },
+    { name: "About", href: "#about", isScroll: true, hideOnRoutes: ["/gallery", "/tiles", "/bathroom", "/contact"] },
+    { name: "Benefits", href: "#benefits", isScroll: true, hideOnRoutes: ["/gallery", "/tiles", "/bathroom", "/contact"] },
+    { name: "EMI", href: "#emi", isScroll: true, hideOnRoutes: ["/gallery", "/tiles", "/bathroom", "/contact"] },
+    { name: "Brands", href: "#brands", isScroll: true, hideOnRoutes: ["/gallery", "/tiles", "/bathroom", "/contact"] },
     { name: "Gallery", href: "/gallery" },
-    { name: "FAQ", href: "#faq", isScroll: true },
+    { name: "FAQ", href: "#faq", isScroll: true, hideOnRoutes: ["/gallery", "/tiles", "/bathroom", "/contact"] },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -118,60 +119,66 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item, index) => (
-              <div key={item.name} className="relative group">
-                {item.hasDropdown ? (
-                  <button
-                    onClick={() => setActiveDropdown(activeDropdown === item.name ? null : item.name)}
-                    className={`flex items-center space-x-1 text-sm font-medium transition-colors ${
-                      isScrolled ? "text-gray-800 hover:text-yellow-500" : "text-white hover:text-yellow-400"
-                    }`}
-                  >
-                    <span>{item.name}</span>
-                    <ChevronDown className="w-4 h-4" />
-                  </button>
-                ) : item.isScroll ? (
-                  <button
-                    onClick={() => handleAnchorClick(item.href)}
-                    className={`text-sm font-medium transition-colors ${
-                      isScrolled ? "text-gray-800 hover:text-yellow-500" : "text-white hover:text-yellow-400"
-                    }`}
-                  >
-                    {item.name}
-                  </button>
-                ) : (
-                  <Link
-                    to={item.href}
-                    className={`text-sm font-medium transition-colors ${
-                      isScrolled ? "text-gray-800 hover:text-yellow-500" : "text-white hover:text-yellow-400"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                )}
+            {navItems.map((item, index) => {
+              if (item.hideOnRoutes?.includes(location.pathname)) {
+                return null;
+              }
+              
+              return (
+                <div key={item.name} className="relative group">
+                  {item.hasDropdown ? (
+                    <button
+                      onClick={() => setActiveDropdown(activeDropdown === item.name ? null : item.name)}
+                      className={`flex items-center space-x-1 text-sm font-medium transition-colors ${
+                        isScrolled ? "text-gray-800 hover:text-yellow-500" : "text-white hover:text-yellow-400"
+                      }`}
+                    >
+                      <span>{item.name}</span>
+                      <ChevronDown className="w-4 h-4" />
+                    </button>
+                  ) : item.isScroll ? (
+                    <button
+                      onClick={() => handleAnchorClick(item.href)}
+                      className={`text-sm font-medium transition-colors ${
+                        isScrolled ? "text-gray-800 hover:text-yellow-500" : "text-white hover:text-yellow-400"
+                      }`}
+                    >
+                      {item.name}
+                    </button>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      className={`text-sm font-medium transition-colors ${
+                        isScrolled ? "text-gray-800 hover:text-yellow-500" : "text-white hover:text-yellow-400"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
 
-                {/* Dropdown Menu */}
-                {item.hasDropdown && activeDropdown === item.name && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50"
-                  >
-                    {productCategories.map((category) => (
-                      <Link
-                        key={category.name}
-                        to={category.path}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors"
-                        onClick={() => setActiveDropdown(null)}
-                      >
-                        {category.name}
-                      </Link>
-                    ))}
-                  </motion.div>
-                )}
-              </div>
-            ))}
+                  {/* Dropdown Menu */}
+                  {item.hasDropdown && activeDropdown === item.name && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50"
+                    >
+                      {productCategories.map((category) => (
+                        <Link
+                          key={category.name}
+                          to={category.path}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors"
+                          onClick={() => setActiveDropdown(null)}
+                        >
+                          {category.name}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </div>
+              );
+            })}
             <motion.button
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -209,56 +216,62 @@ const Header = () => {
       >
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col space-y-4">
-            {navItems.map((item) => (
-              <div key={item.name}>
-                {item.hasDropdown ? (
-                  <div>
+            {navItems.map((item) => {
+              if (item.hideOnRoutes?.includes(location.pathname)) {
+                return null;
+              }
+
+              return (
+                <div key={item.name}>
+                  {item.hasDropdown ? (
+                    <div>
+                      <button
+                        onClick={() => setActiveDropdown(activeDropdown === item.name ? null : item.name)}
+                        className="flex items-center justify-between w-full text-gray-800 hover:text-yellow-500 transition-colors"
+                      >
+                        <span>{item.name}</span>
+                        <ChevronDown className="w-4 h-4" />
+                      </button>
+                      {activeDropdown === item.name && (
+                        <div className="pl-4 mt-2 space-y-2">
+                          {productCategories.map((category) => (
+                            <Link
+                              key={category.name}
+                              to={category.path}
+                              className="block text-gray-600 hover:text-yellow-500 transition-colors"
+                              onClick={() => {
+                                setActiveDropdown(null);
+                                setIsMobileMenuOpen(false);
+                              }}
+                            >
+                              {category.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : item.isScroll ? (
                     <button
-                      onClick={() => setActiveDropdown(activeDropdown === item.name ? null : item.name)}
-                      className="flex items-center justify-between w-full text-gray-800 hover:text-yellow-500 transition-colors"
+                      onClick={() => {
+                        handleAnchorClick(item.href);
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="block text-gray-800 hover:text-yellow-500 transition-colors text-left"
                     >
-                      <span>{item.name}</span>
-                      <ChevronDown className="w-4 h-4" />
+                      {item.name}
                     </button>
-                    {activeDropdown === item.name && (
-                      <div className="pl-4 mt-2 space-y-2">
-                        {productCategories.map((category) => (
-                          <Link
-                            key={category.name}
-                            to={category.path}
-                            className="block text-gray-600 hover:text-yellow-500 transition-colors"
-                            onClick={() => {
-                              setActiveDropdown(null);
-                              setIsMobileMenuOpen(false);
-                            }}
-                          >
-                            {category.name}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ) : item.isScroll ? (
-                  <button
-                    onClick={() => {
-                      handleAnchorClick(item.href);
-                      setIsMobileMenuOpen(false);
-                    }}
-                    className="block text-gray-800 hover:text-yellow-500 transition-colors text-left"
-                  >
-                    {item.name}
-                  </button>
-                ) : (
-                  <Link
-                    to={item.href}
-                    className="block text-gray-800 hover:text-yellow-500 transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                )}
-              </div>
-            ))}
+                  ) : (
+                    <Link
+                      to={item.href}
+                      className="block text-gray-800 hover:text-yellow-500 transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </div>
+              );
+            })}
             <button
               onClick={() => {
                 scrollToContact();

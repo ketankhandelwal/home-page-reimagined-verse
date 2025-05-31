@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const ProductCategories = () => {
   const categories = [
     {
@@ -33,19 +35,23 @@ const ProductCategories = () => {
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-blue-200/20 to-purple-200/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
+      <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
           <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-100 to-orange-100 rounded-full mb-4">
-            <p className="text-yellow-700 font-semibold text-sm uppercase tracking-wider">FROM FOUNDATIONS TO FINISHING TOUCHES</p>
+            <p className="text-yellow-700 font-semibold text-sm uppercase tracking-wider">EXPLORE OUR COLLECTION</p>
           </div>
-          <h2 className="text-5xl font-bold bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-6 leading-tight">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">
             Explore Our Product Categories
           </h2>
-          <p className="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
-            At KESARWANI SANITARY WARE, we offer a wide range of quality products to meet all your 
-            construction, interior, and kitchen needs. Whether you're building from scratch or upgrading 
-            your space, you'll find the right materials and solutions in every category we offer.
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Discover our extensive range of premium products designed to transform your space into something extraordinary.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category, index) => (
