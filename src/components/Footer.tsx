@@ -15,18 +15,10 @@ const Footer = () => {
       { name: "PVC Doors", path: "/pvc-doors" }
     ],
     company: [
-      { name: "About Us", path: "/about" },
+  
       { name: "Contact", path: "/contact" },
       { name: "Gallery", path: "/gallery" },
-      { name: "Blog", path: "/blog" },
-      { name: "Careers", path: "/careers" }
-    ],
-    support: [
-      { name: "Help Center", path: "/help" },
-      { name: "Terms of Service", path: "/terms" },
-      { name: "Privacy Policy", path: "/privacy" },
-      { name: "Shipping Policy", path: "/shipping" },
-      { name: "Return Policy", path: "/returns" }
+      {name : "Products", path: "/tiles"}
     ]
   };
 
@@ -122,7 +114,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-yellow-400 mt-1" />
                 <p className="text-gray-400">
-                  123 Main Street, Pratapgarh,<br />
+                  Infront of Hanuman Mandir, Babaganj Pratapgarh,<br />
                   Uttar Pradesh, India
                 </p>
               </div>
@@ -134,15 +126,15 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-yellow-400" />
-                <a href="mailto:info@kesarwani.com" className="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
-                  info@kesarwani.com
+                <a href="mailto:kesarwanisanitaryhardware@gmail.com" className="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
+                  kesarwanisanitaryhardware@gmail.com
                 </a>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-yellow-400 mt-1" />
                 <p className="text-gray-400">
-                  Mon - Sat: 9:00 AM - 8:00 PM<br />
-                  Sunday: Closed
+                  Mon - Sun: 10:00 AM - 8:00 PM<br />
+
                 </p>
               </div>
             </div>

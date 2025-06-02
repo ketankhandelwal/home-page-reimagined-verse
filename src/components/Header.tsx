@@ -89,14 +89,14 @@ const Header = () => {
                 <Phone className="w-4 h-4 mr-2" />
                 +91 98765 43210
               </a>
-              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-yellow-400 transition-colors">
+              <a href="https://maps.app.goo.gl/nnJVqa5H3yDYagQZA" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-yellow-400 transition-colors">
                 <MapPin className="w-4 h-4 mr-2" />
                 Pratapgarh, UP
               </a>
             </div>
             <div className="flex items-center">
               <Clock className="w-4 h-4 mr-2" />
-              Mon-Sat: 9:00 AM - 8:00 PM
+              Mon-Sun: 10:00 AM - 8:00 PM
             </div>
           </div>
         </div>
@@ -183,10 +183,10 @@ const Header = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
-              onClick={scrollToContact}
+              onClick={() => window.open('https://www.google.com/search?q=kesarwani+sanitary+ware&oq=kesarwani+sanitary+ware&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhAMggIAhBFGCcYOzIGCAMQRRg7MggIBBAAGBYYHjIGCAUQRRg9MgYIBhBFGD0yBggHEEUYPNIBCDcwMjBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&lqi=ChdrZXNhcndhbmkgc2FuaXRhcnkgd2FyZVoZIhdrZXNhcndhbmkgc2FuaXRhcnkgd2FyZZIBCnRpbGVfc3RvcmWqAV0QASobIhdrZXNhcndhbmkgc2FuaXRhcnkgd2FyZSgAMh8QASIb405OaXgt6gSyw7upYVF5Twyk4NZrIM66IbExMhsQAiIXa2VzYXJ3YW5pIHNhbml0YXJ5IHdhcmU#lkt=LocalPoiReviews&rlimm=13528234078566491894', '_blank')}
               className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
-              Get Quote
+              Rate Us On Google
             </motion.button>
           </div>
 
@@ -273,13 +273,10 @@ const Header = () => {
               );
             })}
             <button
-              onClick={() => {
-                scrollToContact();
-                setIsMobileMenuOpen(false);
-              }}
+              onClick={() => window.open('https://www.google.com/search?q=kesarwani+sanitary+ware&oq=kesarwani+sanitary+ware&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhAMggIAhBFGCcYOzIGCAMQRRg7MggIBBAAGBYYHjIGCAUQRRg9MgYIBhBFGD0yBggHEEUYPNIBCDcwMjBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&lqi=ChdrZXNhcndhbmkgc2FuaXRhcnkgd2FyZVoZIhdrZXNhcndhbmkgc2FuaXRhcnkgd2FyZZIBCnRpbGVfc3RvcmWqAV0QASobIhdrZXNhcndhbmkgc2FuaXRhcnkgd2FyZSgAMh8QASIb405OaXgt6gSyw7upYVF5Twyk4NZrIM66IbExMhsQAiIXa2VzYXJ3YW5pIHNhbml0YXJ5IHdhcmU#lkt=LocalPoiReviews&rlimm=13528234078566491894', '_blank')}
               className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all duration-300"
             >
-              Get Quote
+              Rate Us On Google
             </button>
           </div>
         </div>

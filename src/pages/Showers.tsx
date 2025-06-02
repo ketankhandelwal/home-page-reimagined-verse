@@ -2,11 +2,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useState, useEffect } from "react";
 
-const Tiles = () => {
+const Showers = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const heroImages = [
-    'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    'https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+    'src/files/images/showers/Screenshot 2025-06-02 at 13.19.25.png',
+    'src/files/images/showers/Screenshot 2025-06-02 at 13.21.44.png',
     'https://images.unsplash.com/photo-1502005229762-cf1b2da2db18?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
     'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'
   ];
@@ -27,87 +27,44 @@ const Tiles = () => {
     // First set of tiles
     [
       {
-        title: "Ceramic Tiles",
-        image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Rain Panels",
+        image: "src/files/images/showers/rainpanel/Screenshot 2025-06-02 at 13.12.17.png",
         description: "High-quality Ceramic Tiles with elegant finish"
       },
       {
-        title: "Porcelain Tiles",
-        image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Rain Heads",
+        image: "src/files/images/showers/rainhead/Screenshot 2025-06-02 at 13.13.06.png",
         description: "Fire resistant and water proof Porcelain Tiles"
       },
       {
-        title: "Vitrified Tiles",
-        image: "https://images.unsplash.com/photo-1502005229762-cf1b2da2db18?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Shower Heads",
+        image: "src/files/images/showers/showerheads/Screenshot 2025-06-02 at 13.13.25.png",
         description: "Traditional Vitrified Tiles with modern finish"
       },
       {
-        title: "Marble Tiles",
-        image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Hand Showers",
+        image: "src/files/images/showers/handshowers/Screenshot 2025-06-02 at 13.13.56.png",
         description: "Water resistant Marble Tiles for bathrooms"
       },
       {
-        title: "Digital Tiles",
-        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Body Sprays",
+        image: "src/files/images/showers/bodyspray/Screenshot 2025-06-02 at 13.14.53.png",
         description: "Modern digital printed tiles with unique patterns"
       },
       {
-        title: "3D Tiles",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Steam Showers",
+        image: "src/files/images/showers/steamShower/Screenshot 2025-06-02 at 13.15.29.png",
         description: "Dimensional tiles for modern interiors"
       },
       {
-        title: "Pool Tiles",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Multi Function Shower",
+        image: "src/files/images/showers/multiPurpose/Screenshot 2025-06-02 at 13.23.33.png",
         description: "Specialized tiles for swimming pools"
       },
       {
-        title: "Anti-Slip Tiles",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "HydroLite Showers",
+        image: "src/files/images/showers/hydroliteShower/Screenshot 2025-06-02 at 13.20.34.png",
         description: "Safety-focused tiles for wet areas"
-      }
-    ],
-    // Second set of tiles
-    [
-      {
-        title: "Metallic Tiles",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Luxurious metallic finish tiles"
-      },
-      {
-        title: "Glass Tiles",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Elegant glass tiles for modern spaces"
-      },
-      {
-        title: "Wood Look Tiles",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Wooden appearance with tile durability"
-      },
-      {
-        title: "Stone Look Tiles",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Natural stone appearance with modern benefits"
-      },
-      {
-        title: "Mosaic Tiles",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Artistic mosaic patterns for unique designs"
-      },
-      {
-        title: "Granite Tiles",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Durable and elegant granite tiles for floors"
-      },
-      {
-        title: "Wall Tiles",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Stylish wall tiles for interior decoration"
-      },
-      {
-        title: "Outdoor Tiles",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Weather-resistant tiles for outdoor spaces"
       }
     ]
   ];
@@ -152,6 +109,38 @@ const Tiles = () => {
             <p className="text-2xl text-gray-200 font-light">Premium quality tiles for your home and office</p>
             <div className="mt-8 w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto rounded-full"></div>
           </div>
+        </div>
+      </div>
+
+      {/* Download Catalog and Category Links */}
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+          <div className="flex flex-wrap gap-4 justify-center">
+            <a href="/bathroom" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Bathroom
+            </a>
+            <a href="/sanitary" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Sanitary
+            </a>
+            <a href="/tiles" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Tiles
+            </a>
+            <a href="/showers" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Showers
+            </a>
+            <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              UPVC Doors & Windows
+            </a>
+          </div>
+          <button 
+            onClick={() => window.open('https://search.app/S3QcVLFeN8UsvbMY7', '_blank')}
+            className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download Showers Catalog
+          </button>
         </div>
       </div>
 
@@ -231,4 +220,4 @@ const Tiles = () => {
   );
 };
 
-export default Tiles;
+export default Showers;

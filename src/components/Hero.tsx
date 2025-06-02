@@ -85,12 +85,7 @@ const Hero = () => {
                 <ChevronRight className="ml-2 w-5 h-5" />
               </Button>
               
-              <Button 
-                variant="outline"
-                className="border-2 border-white/20 hover:border-white/40 text-white px-8 py-6 text-lg rounded-full backdrop-blur-sm hover:bg-white/10 transition-all duration-300"
-              >
-                Explore Collections
-              </Button>
+           
             </div>
           </motion.div>
           
@@ -103,8 +98,8 @@ const Hero = () => {
           >
             {[
               { number: "500+", label: "Products Available" },
-              { number: "15+", label: "Years Experience" },
-              { number: "1000+", label: "Happy Customers" }
+              { number: "25+", label: "Years Experience" },
+              { number: "10k+", label: "Happy Customers" }
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-4xl font-bold text-yellow-400 mb-2">{stat.number}</div>

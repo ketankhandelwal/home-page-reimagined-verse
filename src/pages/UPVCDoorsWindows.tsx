@@ -9,87 +9,44 @@ const UPVCDoorsWindows = () => {
     // First set of UPVC items
     [
       {
-        title: "Casement Windows",
-        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "2 Glazed Internal Wooden PVC Door",
+        image: "src/files/images/doors/two_glazed/image.png",
         description: "Classic casement windows with modern UPVC frames"
       },
       {
-        title: "Sliding Windows",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "3 Panelled Grained Wooden Internal PVC Door",
+        image: "src/files/images/doors/three_panel/image.png",
         description: "Smooth sliding windows for contemporary homes"
       },
       {
-        title: "Tilt & Turn Windows",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Anthracite Gray Rustic Internal PVC Door",
+        image: "src/files/images/doors/rustic/image.png",
         description: "Versatile tilt and turn windows for modern living"
       },
       {
-        title: "French Windows",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Bamboo Colored 4 Panel Internal PVC Door",
+        image: "src/files/images/doors/bamboo/image.png",
         description: "Elegant French windows with UPVC frames"
       },
       {
-        title: "Bay Windows",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Birch White Colored Glazed Internal PVC Door",
+        image: "src/files/images/doors/whiteGlazed/image.png",
         description: "Spacious bay windows for panoramic views"
       },
       {
-        title: "Skylight Windows",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Classic Wooden Internal PVC Door",
+        image: "src/files/images/doors/classicWoodenDoor/image.png",
         description: "Natural light enhancing skylight windows"
       },
       {
-        title: "Fixed Windows",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Ecru Colored Lightly Grained PVC Panel Door",
+        image: "src/files/images/doors/ercu/image.png",
         description: "Energy-efficient fixed windows for modern homes"
       },
       {
-        title: "Corner Windows",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Gold Half Glazed 2 Panel Internal PVC Door",
+        image: "src/files/images/doors/gold_half/image.png",
         description: "Unique corner windows for architectural appeal"
-      }
-    ],
-    // Second set of UPVC items
-    [
-      {
-        title: "Sliding Doors",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Smooth sliding doors for seamless transitions"
-      },
-      {
-        title: "French Doors",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Classic French doors with modern UPVC frames"
-      },
-      {
-        title: "Bi-fold Doors",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Space-saving bi-fold doors for modern homes"
-      },
-      {
-        title: "Patio Doors",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Elegant patio doors for indoor-outdoor living"
-      },
-      {
-        title: "Entrance Doors",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Secure and stylish entrance doors"
-      },
-      {
-        title: "Balcony Doors",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Weather-resistant balcony doors"
-      },
-      {
-        title: "Garden Doors",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "Durable garden doors for outdoor access"
-      },
-      {
-        title: "Security Doors",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        description: "High-security doors with UPVC frames"
       }
     ]
   ];
@@ -118,6 +75,38 @@ const UPVCDoorsWindows = () => {
             </h1>
             <p className="text-2xl text-gray-200 font-light">Premium quality UPVC solutions for your home</p>
           </div>
+        </div>
+      </div>
+
+      {/* Download Catalog and Category Links */}
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+          <div className="flex flex-wrap gap-4 justify-center">
+            <a href="/bathroom" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Bathroom
+            </a>
+            <a href="/sanitary" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Sanitary
+            </a>
+            <a href="/tiles" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Tiles
+            </a>
+            <a href="/showers" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Showers
+            </a>
+            <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              UPVC Doors & Windows
+            </a>
+          </div>
+          <button 
+            onClick={() => window.open('https://search.app/S3QcVLFeN8UsvbMY7', '_blank')}
+            className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download UPVC Doors & Windows Catalog
+          </button>
         </div>
       </div>
 

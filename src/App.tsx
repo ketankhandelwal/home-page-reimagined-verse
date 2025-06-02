@@ -12,6 +12,9 @@ import Sanitary from "./pages/Sanitary";
 import UPVCDoorsWindows from "./pages/UPVCDoorsWindows";
 import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
+import Showers from "./pages/Showers";
+import Faucets from "./pages/Faucets";
+import KitchenSlabs from "./pages/KitchenSlabs";
 
 const queryClient = new QueryClient();
 
@@ -29,10 +32,10 @@ const App = () => (
           <Route path="/sanitary" element={<Sanitary />} />
           <Route path="/upvc-doors-windows" element={<UPVCDoorsWindows />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/kitchen-slabs" element={<UPVCDoorsWindows />} />
+          <Route path="/kitchen-slabs" element={<KitchenSlabs />} />
           <Route path="/pvc-doors" element={<UPVCDoorsWindows />} />
-          <Route path="/faucets" element={<UPVCDoorsWindows />} />
-          <Route path="/showers" element={<UPVCDoorsWindows />} />
+          <Route path="/faucets" element={<Faucets />} />
+          <Route path="/showers" element={<Showers />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -10,42 +10,42 @@ const Sanitary = () => {
     [
       {
         title: "Wall Mounted Basin",
-        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/wall_mounted_basin/wall_mounted_basin.jpg",
         description: "Modern wall mounted basin with elegant design"
       },
       {
         title: "Counter Top Basin",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/counter_top_washbasin/image.png",
         description: "Stylish counter top basin for modern bathrooms"
       },
       {
         title: "Pedestal Basin",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/pedestal_basin/image.png",
         description: "Classic pedestal basin with timeless appeal"
       },
       {
         title: "Wall Hung WC",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/wc_hung/wall_hung_2.jpg",
         description: "Space-saving wall hung toilet with modern features"
       },
       {
         title: "Floor Mounted WC",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/floor_mounted_wc/image.png",
         description: "Traditional floor mounted toilet with comfort features"
       },
       {
         title: "Bidet",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/bidet/image.png",
         description: "Modern bidet with advanced hygiene features"
       },
       {
         title: "Urinal",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/urinal/image.png",
         description: "Water-efficient urinal for commercial spaces"
       },
       {
         title: "Shower Tray",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/shower_tray/image.png",
         description: "Durable shower tray with anti-slip surface"
       }
     ],
@@ -53,42 +53,42 @@ const Sanitary = () => {
     [
       {
         title: "Shower Panel",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/shower_panel/Screenshot 2025-06-02 at 12.54.34.png",
         description: "Luxury shower panel with multiple functions"
       },
       {
         title: "Shower Enclosure",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/shower_enclosure/image.png",
         description: "Modern shower enclosure with sleek design"
       },
       {
         title: "Bath Tub",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/bathtub/image.png",
         description: "Comfortable bath tub with ergonomic design"
       },
       {
         title: "Jacuzzi",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/jacuzi/image.png",
         description: "Luxury jacuzzi with hydrotherapy features"
       },
       {
         title: "Water Closet",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/water_closet/image.png",
         description: "Complete water closet solution for modern bathrooms"
       },
       {
         title: "Accessories",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/accessories/image.png",
         description: "Essential bathroom accessories and fittings"
       },
       {
         title: "Mirror Cabinet",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/mirror_cabinet/image.png",
         description: "Smart mirror cabinet with storage space"
       },
       {
         title: "Towel Rack",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/sanitary/towel_rack/image.png",
         description: "Stylish towel rack with modern design"
       }
     ]
@@ -118,6 +118,38 @@ const Sanitary = () => {
             </h1>
             <p className="text-2xl text-gray-200 font-light">Premium quality sanitary ware for your bathroom</p>
           </div>
+        </div>
+      </div>
+
+      {/* Download Catalog and Category Links */}
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+          <div className="flex flex-wrap gap-4 justify-center">
+            <a href="/bathroom" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Bathroom
+            </a>
+            <a href="/sanitary" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Sanitary
+            </a>
+            <a href="/tiles" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Tiles
+            </a>
+            <a href="/showers" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Showers
+            </a>
+            <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              UPVC Doors & Windows
+            </a>
+          </div>
+          <button 
+            onClick={() => window.open('/catalogs/sanitary-catalog.pdf', '_blank')}
+            className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download Sanitary Catalog
+          </button>
         </div>
       </div>
 
