@@ -93,7 +93,11 @@ const About = () => {
               <Button className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-8 py-6 text-lg rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                 Learn More About Us
               </Button>
-              <Button variant="outline" className="border-2 border-gray-200 hover:border-gray-300 text-gray-700 px-8 py-6 text-lg rounded-full backdrop-blur-sm hover:bg-gray-50 transition-all duration-300">
+              <Button 
+                onClick={() => window.open('https://maps.app.goo.gl/nnJVqa5H3yDYagQZA', '_blank')}
+                variant="outline" 
+                className="border-2 border-gray-200 hover:border-gray-300 text-gray-700 px-8 py-6 text-lg rounded-full backdrop-blur-sm hover:bg-gray-50 transition-all duration-300"
+              >
                 Visit Our Store
               </Button>
             </div>

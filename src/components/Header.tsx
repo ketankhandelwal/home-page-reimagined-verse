@@ -27,15 +27,18 @@ const Header = () => {
     { name: "Kitchen Slabs", path: "/kitchen-slabs" },
   ];
 
+  // Create array of all product category routes
+  const productCategoryRoutes = productCategories.map(category => category.path);
+
   const navItems = [
     { name: "Home", href: "/" },
     { name: "Products", href: "#", hasDropdown: true },
-    { name: "About", href: "#about", isScroll: true, hideOnRoutes: ["/gallery", "/tiles", "/bathroom", "/contact"] },
-    { name: "Benefits", href: "#benefits", isScroll: true, hideOnRoutes: ["/gallery", "/tiles", "/bathroom", "/contact"] },
-    { name: "EMI", href: "#emi", isScroll: true, hideOnRoutes: ["/gallery", "/tiles", "/bathroom", "/contact"] },
-    { name: "Brands", href: "#brands", isScroll: true, hideOnRoutes: ["/gallery", "/tiles", "/bathroom", "/contact"] },
-    { name: "Gallery", href: "/gallery" },
-    { name: "FAQ", href: "#faq", isScroll: true, hideOnRoutes: ["/gallery", "/tiles", "/bathroom", "/contact"] },
+    { name: "About", href: "#about", isScroll: true, hideOnRoutes: ["/gallery", "/contact", ...productCategoryRoutes] },
+    { name: "Benefits", href: "#benefits", isScroll: true, hideOnRoutes: ["/gallery", "/contact", ...productCategoryRoutes] },
+    { name: "EMI", href: "#emi", isScroll: true, hideOnRoutes: ["/gallery", "/contact", ...productCategoryRoutes] },
+    { name: "Brands", href: "#brands", isScroll: true, hideOnRoutes: ["/gallery", "/contact", ...productCategoryRoutes] },
+    // { name: "Gallery", href: "/gallery" },
+    { name: "FAQ", href: "#faq", isScroll: true, hideOnRoutes: ["/gallery", "/contact", ...productCategoryRoutes] },
     { name: "Contact", href: "/contact" },
   ];
 
