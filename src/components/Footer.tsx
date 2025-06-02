@@ -5,6 +5,13 @@ import { Facebook, Instagram, Phone, Mail, MapPin, Clock, ArrowRight } from "luc
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   const footerLinks = {
     products: [
       { name: "Tiles", path: "/tiles" },
@@ -83,7 +90,11 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.products.map((link, index) => (
                 <li key={index}>
-                  <Link to={link.path} className="text-gray-400 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
+                  <Link 
+                    to={link.path} 
+                    onClick={scrollToTop}
+                    className="text-gray-400 hover:text-yellow-400 transition-colors duration-300 flex items-center group"
+                  >
                     <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
                     {link.name}
                   </Link>
@@ -98,7 +109,11 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
-                  <Link to={link.path} className="text-gray-400 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
+                  <Link 
+                    to={link.path} 
+                    onClick={scrollToTop}
+                    className="text-gray-400 hover:text-yellow-400 transition-colors duration-300 flex items-center group"
+                  >
                     <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
                     {link.name}
                   </Link>

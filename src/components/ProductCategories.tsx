@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const ProductCategories = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   const categories = [
     {
       title: "Tiles",
@@ -65,6 +72,7 @@ const ProductCategories = () => {
             <Link 
               to={category.route}
               key={index}
+              onClick={scrollToTop}
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-4 hover:scale-105 animate-fade-in bg-white"
               style={{animationDelay: `${index * 0.1}s`}}
             >
