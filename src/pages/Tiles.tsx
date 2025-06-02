@@ -5,10 +5,10 @@ import { useState, useEffect } from "react";
 const Tiles = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const heroImages = [
-    'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    'https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    'https://images.unsplash.com/photo-1502005229762-cf1b2da2db18?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'
+    'src/files/images/tiles/3d_tiles/3d_tiles.jpg',
+    'src/files/images/tiles/digital_tiles/digital_tiles.jpg',
+    'src/files/images/tiles/glass_tile/image.png',
+    'src/files/images/tiles/marble_tiles/image.png',
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

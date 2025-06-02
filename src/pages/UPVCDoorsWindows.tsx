@@ -9,44 +9,44 @@ const UPVCDoorsWindows = () => {
     // First set of UPVC items
     [
       {
-        title: "2 Glazed Internal Wooden PVC Door",
-        image: "src/files/images/doors/two_glazed/image.png",
-        description: "Classic casement windows with modern UPVC frames"
+        "title": "2 Glazed Internal Wooden PVC Door",
+        "image": "src/files/images/doors/two_glazed/image.png",
+        "description": "Elegant two-panel glazed door with wooden finish for enhanced natural light"
       },
       {
-        title: "3 Panelled Grained Wooden Internal PVC Door",
-        image: "src/files/images/doors/three_panel/image.png",
-        description: "Smooth sliding windows for contemporary homes"
+        "title": "3 Panelled Grained Wooden Internal PVC Door",
+        "image": "src/files/images/doors/three_panel/image.png",
+        "description": "Traditional three-panel door with realistic wood grain texture and durability"
       },
       {
-        title: "Anthracite Gray Rustic Internal PVC Door",
-        image: "src/files/images/doors/rustic/image.png",
-        description: "Versatile tilt and turn windows for modern living"
+        "title": "Anthracite Gray Rustic Internal PVC Door",
+        "image": "src/files/images/doors/rustic/image.png",
+        "description": "Modern anthracite gray door with rustic finish for contemporary interiors"
       },
       {
-        title: "Bamboo Colored 4 Panel Internal PVC Door",
-        image: "src/files/images/doors/bamboo/image.png",
-        description: "Elegant French windows with UPVC frames"
+        "title": "Bamboo Colored 4 Panel Internal PVC Door",
+        "image": "src/files/images/doors/bamboo/image.png",
+        "description": "Natural bamboo-colored four-panel door combining style with eco-friendly aesthetics"
       },
       {
-        title: "Birch White Colored Glazed Internal PVC Door",
-        image: "src/files/images/doors/whiteGlazed/image.png",
-        description: "Spacious bay windows for panoramic views"
+        "title": "Birch White Colored Glazed Internal PVC Door",
+        "image": "src/files/images/doors/whiteGlazed/image.png",
+        "description": "Bright birch white glazed door perfect for creating airy, spacious interiors"
       },
       {
-        title: "Classic Wooden Internal PVC Door",
-        image: "src/files/images/doors/classicWoodenDoor/image.png",
-        description: "Natural light enhancing skylight windows"
+        "title": "Classic Wooden Internal PVC Door",
+        "image": "src/files/images/doors/classicWoodenDoor/image.png",
+        "description": "Timeless classic wooden-style door with traditional design and modern PVC benefits"
       },
       {
-        title: "Ecru Colored Lightly Grained PVC Panel Door",
-        image: "src/files/images/doors/ercu/image.png",
-        description: "Energy-efficient fixed windows for modern homes"
+        "title": "Ecru Colored Lightly Grained PVC Panel Door",
+        "image": "src/files/images/doors/ercu/image.png",
+        "description": "Sophisticated ecru-colored door with subtle grain pattern for elegant interiors"
       },
       {
-        title: "Gold Half Glazed 2 Panel Internal PVC Door",
-        image: "src/files/images/doors/gold_half/image.png",
-        description: "Unique corner windows for architectural appeal"
+        "title": "Gold Half Glazed 2 Panel Internal PVC Door",
+        "image": "src/files/images/doors/gold_half/image.png",
+        "description": "Luxurious gold-toned half-glazed door with two panels for premium interior design"
       }
     ]
   ];

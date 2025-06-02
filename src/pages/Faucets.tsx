@@ -7,8 +7,7 @@ const Faucets = () => {
   const heroImages = [
     'src/files/images/showers/Screenshot 2025-06-02 at 13.19.25.png',
     'src/files/images/showers/Screenshot 2025-06-02 at 13.21.44.png',
-    'https://images.unsplash.com/photo-1502005229762-cf1b2da2db18?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'
+    
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -29,86 +28,86 @@ const Faucets = () => {
       {
         title: "Florentine Prime",
         image: "src/files/images/faucets/florentinePrime/Screenshot 2025-06-02 at 13.39.24.png",
-        description: "High-quality Ceramic Tiles with elegant finish"
+        description: "Premium brass faucet with elegant chrome finish and ceramic disc valves"
       },
       {
         title: "Laguna",
         image: "src/files/images/faucets/laguna/image.png",
-        description: "Fire resistant and water proof Porcelain Tiles"
+        description: "Contemporary single-handle faucet with water-saving aerator technology"
       },
       {
         title: "Continental Prime",
         image: "src/files/images/faucets/continentalPrime/image.png",
-        description: "Traditional Vitrified Tiles with modern finish"
+        description: "Traditional dual-handle faucet with antique brass finish and ceramic handles"
       },
       {
         title: "Blush Sensor Faucets",
         image: "src/files/images/faucets/blushSensor/image.png",
-        description: "Water resistant Marble Tiles for bathrooms"
+        description: "Touchless sensor faucet with automatic shut-off and adjustable flow control"
       },
       {
         title: "Queen's Prime",
         image: "src/files/images/faucets/queensPrime/image.png",
-        description: "Modern digital printed tiles with unique patterns"
+        description: "Luxury designer faucet with pull-out spray and 360-degree swivel spout"
       },
       {
         title: "Arc",
         image: "src/files/images/faucets/arc/image.png",
-        description: "Dimensional tiles for modern interiors"
+        description: "Modern arc-shaped faucet with minimalist design and easy-clean nozzle"
       },
       {
         title: "Kubix Prime",
         image: "src/files/images/faucets/kubix/image.png",
-        description: "Specialized tiles for swimming pools"
+        description: "Square-profile faucet with geometric design and pressure-balancing valve"
       },
       {
         title: "Opal Prime",
         image: "src/files/images/faucets/opal/image.png",
-        description: "Safety-focused tiles for wet areas"
+        description: "High-arc kitchen faucet with dual-function spray head and ceramic cartridge"
       }
     ],
     [
       {
         title: "Ornamix Prime",
         image: "src/files/images/faucets/ornamix/image.png",
-        description: "High-quality Ceramic Tiles with elegant finish"
+        description: "Decorative mixer faucet with ornate detailing and solid brass construction"
       },
       {
         title: "Alive",
         image: "src/files/images/faucets/alive/image.png",
-        description: "Fire resistant and water proof Porcelain Tiles"
+        description: "Eco-friendly faucet with water-saving features and LED temperature display"
       },
       {
         title: "Queen's",
         image: "src/files/images/faucets/queens/image.png",
-        description: "Traditional Vitrified Tiles with modern finish"
+        description: "Classic basin faucet with elegant curves and long-lasting chrome plating"
       },
       {
         title: "Lyric",
         image: "src/files/images/faucets/lyric/image.png",
-        description: "Water resistant Marble Tiles for bathrooms"
+        description: "Musical-inspired faucet design with smooth operation and anti-drip technology"
       },
       {
         title: "Aria",
         image: "src/files/images/faucets/aria/image.png",
-        description: "Modern digital printed tiles with unique patterns"
+        description: "Sleek bathroom faucet with waterfall spout and single-lever control"
       },
       {
         title: "Fusion",
         image: "src/files/images/faucets/fusion/image.png",
-        description: "Dimensional tiles for modern interiors"
+        description: "Hybrid design faucet combining modern and traditional styling elements"
       },
       {
         title: "Pressmatic Taps",
         image: "src/files/images/faucets/pressMatic/image.png",
-        description: "Specialized tiles for swimming pools"
+        description: "Self-closing push-button faucet ideal for commercial and public spaces"
       },
       {
         title: "Medi Series",
         image: "src/files/images/faucets/medi/image.png",
-        description: "Safety-focused tiles for wet areas"
+        description: "Medical-grade faucet with antimicrobial coating and hands-free operation"
       }
-    ],
+    ]
     // Additional sets can be added here
     
   ];
@@ -148,9 +147,9 @@ const Faucets = () => {
               <span className="text-yellow-300 font-semibold text-sm uppercase tracking-wider">Premium Quality</span>
             </div>
             <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-200 to-orange-200 bg-clip-text text-transparent leading-tight">
-              Tiles
+              Faucets & Taps
             </h1>
-            <p className="text-2xl text-gray-200 font-light">Premium quality tiles for your home and office</p>
+            <p className="text-2xl text-gray-200 font-light">Premium quality faucets for your Home & Bathrooms</p>
             <div className="mt-8 w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto rounded-full"></div>
           </div>
         </div>
@@ -202,10 +201,10 @@ const Faucets = () => {
         
         <div className="text-center mb-16 animate-fade-in relative z-10">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-4">
-            Our Tiles Collection
+            Our Faucets Collection
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Explore our premium range of tiles designed to enhance your space with style and functionality
+            Explore our premium range of faucets designed to enhance your space with style and functionality
           </p>
         </div>
         

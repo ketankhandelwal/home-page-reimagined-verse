@@ -1,30 +1,37 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const ProductCategories = () => {
   const categories = [
     {
       title: "Tiles",
-      image: "src/files/images/tiles/stone_look_tile/image.png"
+      image: "src/files/images/tiles/stone_look_tile/image.png",
+      route: "/tiles"
     },
     {
       title: "Sanitary",
-      image: "src/files/images/sanitary/counter_top_washbasin/image.png"
+      image: "src/files/images/sanitary/counter_top_washbasin/image.png",
+      route: "/sanitary"
     },
     {
       title: "Faucets",
-      image: "src/files/images/faucets/pressMatic/image.png"
+      image: "src/files/images/faucets/pressMatic/image.png",
+      route: "/faucets"
     },
     {
       title: "Showers",
-      image: "src/files/images/showers/rainhead/rainhead.png"
+      image: "src/files/images/showers/rainhead/rainhead.png",
+      route: "/showers"
     },
     {
       title: "Kitchen Slabs",
-      image: "src/files/images/kitchen/concrete/image.png"
+      image: "src/files/images/kitchen/concrete/image.png",
+      route: "/kitchen-slabs"
     },
     {
       title: "PVC Doors",
-      image: "src/files/images/doors/two_glazed/image.png"
+      image: "src/files/images/doors/two_glazed/image.png",
+      route: "/upvc-doors-windows"
     }
   ];
 
@@ -55,7 +62,8 @@ const ProductCategories = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category, index) => (
-            <div 
+            <Link 
+              to={category.route}
               key={index}
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-4 hover:scale-105 animate-fade-in bg-white"
               style={{animationDelay: `${index * 0.1}s`}}
@@ -83,7 +91,7 @@ const ProductCategories = () => {
               
               {/* Shimmer effect */}
               <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

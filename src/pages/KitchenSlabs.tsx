@@ -27,44 +27,44 @@ const KitchenSlabs = () => {
     // First set of tiles
     [
       {
-        title: "Polished Granite",
-        image: "src/files/images/kitchen/polished_granite/image copy.png",
-        description: "High-quality Ceramic Tiles with elegant finish"
+        "title": "Polished Granite",
+        "image": "src/files/images/kitchen/polished_granite/image copy.png",
+        "description": "Luxurious polished granite countertops with natural patterns and high-gloss finish"
       },
       {
-        title: "Laminate Kitchen Countertops",
-        image: "src/files/images/kitchen/laminated_kitchen/image.png",
-        description: "Fire resistant and water proof Porcelain Tiles"
+        "title": "Laminate Kitchen Countertops",
+        "image": "src/files/images/kitchen/laminated_kitchen/image.png",
+        "description": "Affordable and durable laminate countertops with various design options"
       },
       {
-        title: "Wooden Countertops",
-        image: "src/files/images/kitchen/wooden/image.png",
-        description: "Traditional Vitrified Tiles with modern finish"
+        "title": "Wooden Countertops",
+        "image": "src/files/images/kitchen/wooden/image.png",
+        "description": "Warm and natural wood countertops perfect for traditional and modern kitchens"
       },
       {
-        title: "Marble Countertops",
-        image: "src/files/images/kitchen/marble/image.png",
-        description: "Water resistant Marble Tiles for bathrooms"
+        "title": "Marble Countertops",
+        "image": "src/files/images/kitchen/marble/image.png",
+        "description": "Elegant marble countertops with unique veining and timeless appeal"
       },
       {
-        title: "Honed Granite",
-        image: "src/files/images/kitchen/honed/image.png",
-        description: "Modern digital printed tiles with unique patterns"
+        "title": "Honed Granite",
+        "image": "src/files/images/kitchen/honed/image.png",
+        "description": "Sophisticated honed granite with matte finish and scratch-resistant surface"
       },
       {
-        title: "Stainless Steel Kitchen Countertops",
-        image: "src/files/images/kitchen/stainless/image.png",
-        description: "Dimensional tiles for modern interiors"
+        "title": "Stainless Steel Kitchen Countertops",
+        "image": "src/files/images/kitchen/stainless/image.png",
+        "description": "Professional-grade stainless steel countertops, hygienic and heat-resistant"
       },
       {
-        title: "Glass Countertops",
-        image: "src/files/images/kitchen/glass/image.png",
-        description: "Specialized tiles for swimming pools"
+        "title": "Glass Countertops",
+        "image": "src/files/images/kitchen/glass/image.png",
+        "description": "Modern tempered glass countertops with sleek appearance and easy maintenance"
       },
       {
-        title: "Concrete Kitchen Countertops",
-        image: "src/files/images/kitchen/concrete/image.png",
-        description: "Safety-focused tiles for wet areas"
+        "title": "Concrete Kitchen Countertops",
+        "image": "src/files/images/kitchen/concrete/image.png",
+        "description": "Contemporary concrete countertops with customizable colors and textures"
       }
     ]
   ];
@@ -104,9 +104,9 @@ const KitchenSlabs = () => {
               <span className="text-yellow-300 font-semibold text-sm uppercase tracking-wider">Premium Quality</span>
             </div>
             <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-200 to-orange-200 bg-clip-text text-transparent leading-tight">
-              Tiles
+              Kitech Countertops
             </h1>
-            <p className="text-2xl text-gray-200 font-light">Premium quality tiles for your home and office</p>
+            <p className="text-2xl text-gray-200 font-light">Explore our premium range of countertops designed to transform your kitchen with durability, style and functionality</p>
             <div className="mt-8 w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto rounded-full"></div>
           </div>
         </div>
@@ -158,10 +158,10 @@ const KitchenSlabs = () => {
         
         <div className="text-center mb-16 animate-fade-in relative z-10">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-4">
-            Our Tiles Collection
+            Our Kitchen Countertop Collection
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Explore our premium range of tiles designed to enhance your space with style and functionality
+          Explore our premium range of countertops designed to transform your kitchen with durability, style and functionality
           </p>
         </div>
         
