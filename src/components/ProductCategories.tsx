@@ -4,27 +4,27 @@ const ProductCategories = () => {
   const categories = [
     {
       title: "Tiles",
-      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "src/files/images/tiles/stone_look_tile/image.png"
     },
     {
       title: "Sanitary",
-      image: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "src/files/images/sanitary/counter_top_washbasin/image.png"
     },
     {
-      title: "Bathroom",
-      image: "/src/files/images/bathroom/bathroom_1.jpg"
+      title: "Faucets",
+      image: "src/files/images/faucets/pressMatic/image.png"
     },
     {
-      title: "Faucets & Showers",
-      image: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      title: "Showers",
+      image: "src/files/images/showers/rainhead/rainhead.png"
     },
     {
       title: "Kitchen Slabs",
-      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "src/files/images/kitchen/concrete/image.png"
     },
     {
       title: "PVC Doors",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "src/files/images/doors/two_glazed/image.png"
     }
   ];
 

@@ -175,9 +175,16 @@ const Faucets = () => {
             <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               UPVC Doors & Windows
             </a>
+           
+            <a href="/kitchen-slabs" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Kitchen Slabs
+            </a>
+            <a href="/faucets" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Faucets
+            </a>
           </div>
           <button 
-            onClick={() => window.open('https://search.app/S3QcVLFeN8UsvbMY7', '_blank')}
+            onClick={() => window.open('https://search.app/ERg2m1eUBRok29rJ9', '_blank')}
             className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

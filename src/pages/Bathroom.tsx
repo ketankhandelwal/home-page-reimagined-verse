@@ -140,6 +140,13 @@ const Bathroom = () => {
             <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               UPVC Doors & Windows
             </a>
+           
+            <a href="/kitchen-slabs" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Kitchen Slabs
+            </a>
+            <a href="/faucets" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Faucets
+            </a>
           </div>
           <button 
             onClick={() => window.open('/catalogs/bathroom-catalog.pdf', '_blank')}

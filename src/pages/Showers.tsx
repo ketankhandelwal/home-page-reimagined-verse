@@ -29,42 +29,42 @@ const Showers = () => {
       {
         title: "Rain Panels",
         image: "src/files/images/showers/rainpanel/Screenshot 2025-06-02 at 13.12.17.png",
-        description: "High-quality Ceramic Tiles with elegant finish"
+        description: "Luxurious rain panels for ultimate shower experience with wide coverage"
       },
       {
         title: "Rain Heads",
         image: "src/files/images/showers/rainhead/Screenshot 2025-06-02 at 13.13.06.png",
-        description: "Fire resistant and water proof Porcelain Tiles"
+        description: "Premium rain shower heads delivering gentle rainfall sensation"
       },
       {
         title: "Shower Heads",
         image: "src/files/images/showers/showerheads/Screenshot 2025-06-02 at 13.13.25.png",
-        description: "Traditional Vitrified Tiles with modern finish"
+        description: "High-quality shower heads with adjustable spray patterns and water flow"
       },
       {
         title: "Hand Showers",
         image: "src/files/images/showers/handshowers/Screenshot 2025-06-02 at 13.13.56.png",
-        description: "Water resistant Marble Tiles for bathrooms"
+        description: "Ergonomic handheld showers with flexible hose for maximum convenience"
       },
       {
         title: "Body Sprays",
         image: "src/files/images/showers/bodyspray/Screenshot 2025-06-02 at 13.14.53.png",
-        description: "Modern digital printed tiles with unique patterns"
+        description: "Therapeutic body spray jets for a complete spa-like shower experience"
       },
       {
         title: "Steam Showers",
         image: "src/files/images/showers/steamShower/Screenshot 2025-06-02 at 13.15.29.png",
-        description: "Dimensional tiles for modern interiors"
+        description: "Complete steam shower systems for relaxation and wellness therapy"
       },
       {
         title: "Multi Function Shower",
         image: "src/files/images/showers/multiPurpose/Screenshot 2025-06-02 at 13.23.33.png",
-        description: "Specialized tiles for swimming pools"
+        description: "Versatile multi-function shower systems with various spray options"
       },
       {
         title: "HydroLite Showers",
         image: "src/files/images/showers/hydroliteShower/Screenshot 2025-06-02 at 13.20.34.png",
-        description: "Safety-focused tiles for wet areas"
+        description: "Advanced HydroLite technology for efficient water usage and performance"
       }
     ]
   ];
@@ -104,9 +104,9 @@ const Showers = () => {
               <span className="text-yellow-300 font-semibold text-sm uppercase tracking-wider">Premium Quality</span>
             </div>
             <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-200 to-orange-200 bg-clip-text text-transparent leading-tight">
-              Tiles
+              Showers
             </h1>
-            <p className="text-2xl text-gray-200 font-light">Premium quality tiles for your home and office</p>
+            <p className="text-2xl text-gray-200 font-light">Transform your bathroom with luxury shower systems</p>
             <div className="mt-8 w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto rounded-full"></div>
           </div>
         </div>
@@ -131,9 +131,16 @@ const Showers = () => {
             <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               UPVC Doors & Windows
             </a>
+
+            <a href="/kitchen-slabs" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Kitchen Slabs
+            </a>
+            <a href="/faucets" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Faucets
+            </a>
           </div>
           <button 
-            onClick={() => window.open('https://search.app/S3QcVLFeN8UsvbMY7', '_blank')}
+            onClick={() => window.open('https://search.app/SYL15kUmSGRRJEcD6', '_blank')}
             className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -151,7 +158,7 @@ const Showers = () => {
         
         <div className="text-center mb-16 animate-fade-in relative z-10">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-4">
-            Our Tiles Collection
+            Our Showers Collection
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Explore our premium range of tiles designed to enhance your space with style and functionality

@@ -97,8 +97,15 @@ const UPVCDoorsWindows = () => {
             <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               UPVC Doors & Windows
             </a>
+
+            <a href="/kitchen-slabs" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Kitchen Slabs
+            </a>
+            <a href="/faucets" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Faucets
+            </a>
           </div>
-          <button 
+          {/* <button 
             onClick={() => window.open('https://search.app/S3QcVLFeN8UsvbMY7', '_blank')}
             className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
           >
@@ -106,7 +113,7 @@ const UPVCDoorsWindows = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
             Download UPVC Doors & Windows Catalog
-          </button>
+          </button> */}
         </div>
       </div>
 
