@@ -28,20 +28,23 @@ const About = () => {
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-tl from-blue-200/30 to-purple-300/30 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="relative group"
+            className="relative group lg:sticky lg:top-20"
           >
             <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
             <div className="relative overflow-hidden rounded-2xl shadow-2xl transform group-hover:scale-105 transition-all duration-700">
-              <img 
-                src="https://images.unsplash.com/photo-1628745277862-bc0b2d68c50c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="KESARWANI SANITARY WARE STORE"
-                className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
+              <video 
+                src="src/files/videos/IMG_6952.MP4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
@@ -62,7 +65,7 @@ const About = () => {
                 Your Trusted Partner in Home Improvement
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                With over 15 years of experience, KESARWANI SANITARY WARE has been serving the community 
+                With over 25 years of experience, KESARWANI SANITARY WARE has been serving the community 
                 with premium quality products and exceptional service. We take pride in being Pratapgarh's 
                 go-to destination for all your home improvement needs.
               </p>

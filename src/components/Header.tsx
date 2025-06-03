@@ -20,11 +20,12 @@ const Header = () => {
   const productCategories = [
     { name: "Tiles", path: "/tiles" },
     { name: "Sanitary", path: "/sanitary" },
-    { name: "Bathroom", path: "/bathroom" },
+    { name: "Bathroom Accessories", path: "/bathroom" },
     { name: "Faucets", path: "/faucets" },
     { name: "Showers", path: "/showers" },
     { name: "PVC Doors", path: "/pvc-doors" },
     { name: "Kitchen Slabs", path: "/kitchen-slabs" },
+
   ];
 
   // Create array of all product category routes

@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 
 const Tiles = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [selectedTile, setSelectedTile] = useState<{ images: string[], title: string } | null>(null);
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const heroImages = [
     'src/files/images/tiles/3d_tiles/3d_tiles.jpg',
     'src/files/images/tiles/digital_tiles/digital_tiles.jpg',
@@ -23,47 +25,141 @@ const Tiles = () => {
     return () => clearInterval(interval);
   }, [heroImages.length]);
 
+  const handlePrevSlide = () => {
+    if (selectedTile) {
+      setCurrentSlideIndex((prev) => 
+        prev === 0 ? selectedTile.images.length - 1 : prev - 1
+      );
+    }
+  };
+
+  const handleNextSlide = () => {
+    if (selectedTile) {
+      setCurrentSlideIndex((prev) => 
+        prev === selectedTile.images.length - 1 ? 0 : prev + 1
+      );
+    }
+  };
+
+  const handleKeyDown = (e: KeyboardEvent) => {
+    if (selectedTile) {
+      if (e.key === 'ArrowLeft') {
+        handlePrevSlide();
+      } else if (e.key === 'ArrowRight') {
+        handleNextSlide();
+      } else if (e.key === 'Escape') {
+        setSelectedTile(null);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedTile]);
+
   const tileSets = [
     // First set of tiles
     [
       {
         title: "Ceramic Tiles",
         image: "src/files/images/tiles/ceramic_tiles/ceramic_tile_1.jpg",
+        images: [
+          "src/files/images/tiles/ceramic_tiles/ceramic_tile_1.jpg",
+          "src/files/images/tiles/ceramic_tiles/cera_1.png",
+          "src/files/images/tiles/ceramic_tiles/cera_2.png",
+          "src/files/images/tiles/ceramic_tiles/cera_3.png",
+          "src/files/images/tiles/ceramic_tiles/cera_4.png"
+        ],
         description: "High-quality Ceramic Tiles with elegant finish"
       },
       {
         title: "Porcelain Tiles",
         image: "src/files/images/tiles/porcelain_tile/porcelain_tile.jpeg",
+        images: [
+          "src/files/images/tiles/porcelain_tile/porcelain_tile.jpeg",
+          "src/files/images/tiles/porcelain_tile/porce_1.png",
+          "src/files/images/tiles/porcelain_tile/porce_2.png",
+          "src/files/images/tiles/porcelain_tile/porce_3.png",
+          "src/files/images/tiles/porcelain_tile/porce_4.png",
+          "src/files/images/tiles/porcelain_tile/porce_5.png",
+          "src/files/images/tiles/porcelain_tile/porce_6.png"
+
+        ],
         description: "Fire resistant and water proof Porcelain Tiles"
       },
       {
         title: "Vitrified Tiles",
         image: "src/files/images/tiles/vitrified_tile/vitrified_tiles.jpg",
+        images: [
+          "src/files/images/tiles/vitrified_tile/vitrified_tiles.jpg",
+          "src/files/images/tiles/vitrified_tile/vetri_1.png",
+          "src/files/images/tiles/vitrified_tile/vetri_2.png",
+          "src/files/images/tiles/vitrified_tile/vetri_3.png",
+          "src/files/images/tiles/vitrified_tile/vetri_4.png",
+          "src/files/images/tiles/vitrified_tile/vetri_5.png"
+        ],
         description: "Traditional Vitrified Tiles with modern finish"
       },
       {
         title: "Marble Tiles",
         image: "src/files/images/tiles/marble_tiles/image.png",
+        images: [
+          "src/files/images/tiles/marble_tiles/image.png",
+          "src/files/images/tiles/marble_tiles/image copy.png",
+          "src/files/images/tiles/marble_tiles/image copy 2.png",
+          "src/files/images/tiles/marble_tiles/image copy 3.png",
+          "src/files/images/tiles/marble_tiles/image copy 4.png",
+          "src/files/images/tiles/marble_tiles/image copy 5.png"
+
+        ],
         description: "Water resistant Marble Tiles for bathrooms"
       },
       {
         title: "Digital Tiles",
         image: "src/files/images/tiles/digital_tiles/digital_tiles.jpg",
+        images: [
+          "src/files/images/tiles/digital_tiles/digital_tiles.jpg",
+          "src/files/images/tiles/digital_tiles/image copy 2.png",
+          "src/files/images/tiles/digital_tiles/image copy.png",
+          "src/files/images/tiles/digital_tiles/image.png"
+        ],
         description: "Modern digital printed tiles with unique patterns"
       },
       {
         title: "3D Tiles",
         image: "src/files/images/tiles/3d_tiles/3d_tiles.jpg",
+        images: [
+          "src/files/images/tiles/3d_tiles/3d_tiles.jpg",
+          "src/files/images/tiles/3d_tiles/image copy 2.png",
+          "src/files/images/tiles/3d_tiles/image copy 3.png",
+          "src/files/images/tiles/3d_tiles/image.png"
+        ],
         description: "Dimensional tiles for modern interiors"
       },
       {
         title: "Pool Tiles",
         image: "src/files/images/tiles/pool_tiles/pool_tiles.jpg",
+        images: [
+          "src/files/images/tiles/pool_tiles/pool_tiles.jpg",
+          "src/files/images/tiles/pool_tiles/image copy 2.png",
+          "src/files/images/tiles/pool_tiles/image copy 3.png",
+          "src/files/images/tiles/pool_tiles/image copy.png",
+          "src/files/images/tiles/pool_tiles/image.png"
+        ],
         description: "Specialized tiles for swimming pools"
       },
       {
         title: "Anti-Slip Tiles",
         image: "src/files/images/tiles/anti_slip_tiles/anti_slip_tiles.webp",
+        images: [
+          "src/files/images/tiles/anti_slip_tiles/anti_slip_tiles.webp",
+          "src/files/images/tiles/anti_slip_tiles/anti_slip_tile_2.jpg",
+          "src/files/images/tiles/anti_slip_tiles/image copy 2.png",
+          "src/files/images/tiles/anti_slip_tiles/image copy 3.png",
+          "src/files/images/tiles/anti_slip_tiles/image copy.png",
+          "src/files/images/tiles/anti_slip_tiles/image.png"
+        ],
         description: "Safety-focused tiles for wet areas"
       }
     ],
@@ -72,53 +168,91 @@ const Tiles = () => {
       {
         title: "Metallic Tiles",
         image: "src/files/images/tiles/metallic_tiles/image.png",
+        images: [
+          "src/files/images/tiles/metallic_tiles/image.png",
+          "src/files/images/tiles/metallic_tiles/image copy 2.png",
+          "src/files/images/tiles/metallic_tiles/image copy 3.png",
+          "src/files/images/tiles/metallic_tiles/image copy.png"
+        ],
         description: "Luxurious metallic finish tiles"
       },
       {
         title: "Glass Tiles",
         image: "src/files/images/tiles/glass_tile/image.png",
+        images: [
+          "src/files/images/tiles/glass_tile/image.png",
+          "src/files/images/tiles/glass_tile/image copy.png"
+        ],
         description: "Elegant glass tiles for modern spaces"
       },
       {
         title: "Wood Look Tiles",
         image: "src/files/images/tiles/wood_look_tile/image.png",
+        images: [
+          "src/files/images/tiles/wood_look_tile/image.png",
+          "src/files/images/tiles/wood_look_tile/wood_tile_2.jpg",
+          "src/files/images/tiles/wood_look_tile/wood_tile_3.jpg",
+          "src/files/images/tiles/wood_look_tile/wood_tile_4.jpg"
+        ],
         description: "Wooden appearance with tile durability"
       },
       {
         title: "Stone Look Tiles",
         image: "src/files/images/tiles/stone_look_tile/image.png",
+        images: [
+          "src/files/images/tiles/stone_look_tile/image.png",
+          "src/files/images/tiles/stone_look_tile/stone_tile_2.jpg",
+          "src/files/images/tiles/stone_look_tile/stone_tile_3.jpg",
+          "src/files/images/tiles/stone_look_tile/stone_tile_4.jpg"
+        ],
         description: "Natural stone appearance with modern benefits"
       },
       {
         title: "Mosaic Tiles",
         image: "src/files/images/tiles/mosaic_tile/image.png",
+        images: [
+          "src/files/images/tiles/mosaic_tile/image.png",
+          "src/files/images/tiles/mosaic_tile/mosaic_tile_2.jpg",
+          "src/files/images/tiles/mosaic_tile/mosaic_tile_3.jpg",
+          "src/files/images/tiles/mosaic_tile/mosaic_tile_4.jpg"
+        ],
         description: "Artistic mosaic patterns for unique designs"
       },
       {
         title: "Granite Tiles",
         image: "src/files/images/tiles/granite_tile/image.png",
+        images: [
+          "src/files/images/tiles/granite_tile/image.png",
+          "src/files/images/tiles/granite_tile/granite_tile_2.jpg",
+          "src/files/images/tiles/granite_tile/granite_tile_3.jpg",
+          "src/files/images/tiles/granite_tile/granite_tile_4.jpg"
+        ],
         description: "Durable and elegant granite tiles for floors"
       },
       {
         title: "Wall Tiles",
         image: "src/files/images/tiles/wall_tile/image.png",
+        images: [
+          "src/files/images/tiles/wall_tile/image.png",
+          "src/files/images/tiles/wall_tile/wall_tile_2.jpg",
+          "src/files/images/tiles/wall_tile/wall_tile_3.jpg",
+          "src/files/images/tiles/wall_tile/wall_tile_4.jpg"
+        ],
         description: "Stylish wall tiles for interior decoration"
       },
       {
         title: "Outdoor Tiles",
         image: "src/files/images/tiles/outdoor_tiles/image.png",
+        images: [
+          "src/files/images/tiles/outdoor_tiles/image.png",
+          "src/files/images/tiles/outdoor_tiles/outdoor_tile_2.jpg",
+          "src/files/images/tiles/outdoor_tiles/outdoor_tile_3.jpg",
+          "src/files/images/tiles/outdoor_tiles/outdoor_tile_4.jpg"
+        ],
         description: "Weather-resistant tiles for outdoor spaces"
       }
     ]
   ];
-
-  const handlePrevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? tileSets.length - 1 : prev - 1));
-  };
-
-  const handleNextSlide = () => {
-    setCurrentSlide((prev) => (prev === tileSets.length - 1 ? 0 : prev + 1));
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-gray-50 flex flex-col">
@@ -212,8 +346,15 @@ const Tiles = () => {
           {tileSets[currentSlide].map((tile, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 animate-fade-in border border-gray-100/50" 
+              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 animate-fade-in border border-gray-100/50 cursor-pointer" 
               style={{animationDelay: `${index * 0.1}s`}}
+              onClick={() => {
+                setCurrentSlideIndex(0);
+                setSelectedTile({ 
+                  images: tile.images, 
+                  title: tile.title 
+                });
+              }}
             >
               <div className="relative overflow-hidden">
                 <div className="h-48 bg-cover bg-center transition-all duration-700 group-hover:scale-110" style={{backgroundImage: `url('${tile.image}')`}}>
@@ -233,11 +374,68 @@ const Tiles = () => {
         </div>
       </div>
 
+      {/* Image Modal */}
+      {selectedTile && (
+        <div 
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedTile(null)}
+        >
+          <div className="relative max-w-6xl w-full">
+            <button 
+              className="absolute -top-12 right-0 text-white hover:text-yellow-400 transition-colors duration-300"
+              onClick={() => setSelectedTile(null)}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            
+            <div className="relative">
+              <img 
+                src={selectedTile.images[currentSlideIndex]} 
+                alt={selectedTile.title} 
+                className="w-full h-auto rounded-lg shadow-2xl"
+              />
+              
+              {/* Navigation Arrows */}
+              <button 
+                className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-yellow-400 transition-colors duration-300"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handlePrevSlide();
+                }}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              
+              <button 
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-yellow-400 transition-colors duration-300"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleNextSlide();
+                }}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+
+              {/* Image Counter */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full">
+                {currentSlideIndex + 1} / {selectedTile.images.length}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Slider Icon Section */}
       <div className="container mx-auto px-4 py-16 relative">
         <div className="flex justify-center items-center space-x-8">
           <div 
-            onClick={handlePrevSlide}
+            onClick={() => setCurrentSlide((prev) => (prev === 0 ? tileSets.length - 1 : prev - 1))}
             className={`w-16 h-16 ${currentSlide === 0 ? 'bg-gradient-to-r from-yellow-400 to-orange-400' : 'bg-white'} rounded-full shadow-lg flex items-center justify-center transform hover:scale-110 transition-transform duration-300 cursor-pointer`}
           >
             <svg xmlns="http://www.w3.org/2000/svg" className={`h-8 w-8 ${currentSlide === 0 ? 'text-white' : 'text-gray-600'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -255,7 +453,7 @@ const Tiles = () => {
             ))}
           </div>
           <div 
-            onClick={handleNextSlide}
+            onClick={() => setCurrentSlide((prev) => (prev === tileSets.length - 1 ? 0 : prev + 1))}
             className={`w-16 h-16 ${currentSlide === tileSets.length - 1 ? 'bg-gradient-to-r from-yellow-400 to-orange-400' : 'bg-white'} rounded-full shadow-lg flex items-center justify-center transform hover:scale-110 transition-transform duration-300 cursor-pointer`}
           >
             <svg xmlns="http://www.w3.org/2000/svg" className={`h-8 w-8 ${currentSlide === tileSets.length - 1 ? 'text-white' : 'text-gray-600'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">

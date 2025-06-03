@@ -1,12 +1,17 @@
-
 const BrandPartners = () => {
   const brands = [
-    { name: "Dutton", logo: "https://via.placeholder.com/150x80/f5f5f5/666?text=DUTTON" },
-    { name: "Excel", logo: "https://via.placeholder.com/150x80/f5f5f5/666?text=EXCEL" },
-    { name: "Greenply", logo: "https://via.placeholder.com/150x80/f5f5f5/666?text=GREENPLY" },
-    { name: "Century", logo: "https://via.placeholder.com/150x80/f5f5f5/666?text=CENTURY" },
-    { name: "Oliviya", logo: "https://via.placeholder.com/150x80/f5f5f5/666?text=OLIVIYA" },
-    { name: "Shiv Shakti", logo: "https://via.placeholder.com/150x80/f5f5f5/666?text=SHIV+SHAKTI" }
+    { name: "Astral Pipes", logo: "src/files/images/brands/astral.png" },
+    { name: "RAK Ceramic", logo: "src/files/images/brands/rak.png" },
+    { name: "Rudraksha", logo: "src/files/images/brands/rudra.png" },
+    { name: "Varmora", logo: "src/files/images/brands/varmora.png" },
+    { name: "Prayag", logo: "src/files/images/brands/prayg.png" },
+    { name: "Cera Ceramics", logo: "src/files/images/brands/cera.png" },
+    { name: "Supreme", logo: "src/files/images/brands/sup.png" },
+    { name: "Plasto", logo: "src/files/images/brands/plasto.png" },
+    { name: "Max", logo: "src/files/images/brands/max.png" },
+    { name: "Eauset", logo: "src/files/images/brands/eauset.png" },
+    { name: "Xen", logo: "src/files/images/brands/Xen.png" },
+    { name: "Gravity", logo: "src/files/images/brands/gravity.png" },
   ];
 
   return (
@@ -29,20 +34,20 @@ const BrandPartners = () => {
           {brands.map((brand, index) => (
             <div 
               key={index} 
-              className="group relative flex items-center justify-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 animate-fade-in border border-gray-100/50"
+              className="group relative flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border border-gray-100"
               style={{animationDelay: `${index * 0.1}s`}}
             >
               {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/10 to-orange-400/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/10 to-orange-400/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
               <img 
                 src={brand.logo} 
                 alt={brand.name}
-                className="max-h-16 w-auto opacity-70 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-110 relative z-10"
+                className="max-h-16 w-auto group-hover:scale-105 transition-transform duration-300 relative z-10"
               />
               
               {/* Shimmer effect */}
-              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent rounded-2xl"></div>
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent rounded-2xl"></div>
             </div>
           ))}
         </div>

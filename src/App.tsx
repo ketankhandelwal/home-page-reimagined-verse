@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Contact from "./pages/Contact";
 import Tiles from "./pages/Tiles";
-import Bathroom from "./pages/Bathroom";
+
 import Sanitary from "./pages/Sanitary";
 import UPVCDoorsWindows from "./pages/UPVCDoorsWindows";
 import Gallery from "./pages/Gallery";
@@ -15,6 +15,7 @@ import NotFound from "./pages/NotFound";
 import Showers from "./pages/Showers";
 import Faucets from "./pages/Faucets";
 import KitchenSlabs from "./pages/KitchenSlabs";
+import BathroomAccessories from "./pages/Bathroom";
 
 const queryClient = new QueryClient();
 
@@ -28,7 +29,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/tiles" element={<Tiles />} />
-          <Route path="/bathroom" element={<Bathroom />} />
+          <Route path="/bathroom" element={<BathroomAccessories />} />
           <Route path="/sanitary" element={<Sanitary />} />
           <Route path="/upvc-doors-windows" element={<UPVCDoorsWindows />} />
           <Route path="/gallery" element={<Gallery />} />
