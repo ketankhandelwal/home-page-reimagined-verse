@@ -1,9 +1,44 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Sanitary = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [selectedItem, setSelectedItem] = useState<{ images: string[], title: string } | null>(null);
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+
+  const handleModalPrevSlide = () => {
+    if (selectedItem) {
+      setCurrentSlideIndex((prev) => 
+        prev === 0 ? selectedItem.images.length - 1 : prev - 1
+      );
+    }
+  };
+
+  const handleModalNextSlide = () => {
+    if (selectedItem) {
+      setCurrentSlideIndex((prev) => 
+        prev === selectedItem.images.length - 1 ? 0 : prev + 1
+      );
+    }
+  };
+
+  const handleKeyDown = (e: KeyboardEvent) => {
+    if (selectedItem) {
+      if (e.key === 'ArrowLeft') {
+        handleModalPrevSlide();
+      } else if (e.key === 'ArrowRight') {
+        handleModalNextSlide();
+      } else if (e.key === 'Escape') {
+        setSelectedItem(null);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedItem]);
 
   const sanitarySets = [
     // First set of sanitary items
@@ -11,41 +46,89 @@ const Sanitary = () => {
       {
         title: "Wall Mounted Basin",
         image: "src/files/images/sanitary/wall_mounted_basin/wall_mounted_basin.jpg",
+        images: [
+          "src/files/images/sanitary/wall_mounted_basin/wall_mounted_basin.jpg",
+          "src/files/images/sanitary/wall_mounted_basin/image copy.png",
+          "src/files/images/sanitary/wall_mounted_basin/image copy 2.png",
+          "src/files/images/sanitary/wall_mounted_basin/image copy 3.png"
+        ],
         description: "Modern wall mounted basin with elegant design"
       },
       {
         title: "Counter Top Basin",
         image: "src/files/images/sanitary/counter_top_washbasin/image.png",
+        images: [
+          "src/files/images/sanitary/counter_top_washbasin/image.png",
+          "src/files/images/sanitary/counter_top_washbasin/image copy.png",
+          "src/files/images/sanitary/counter_top_washbasin/image copy 2.png",
+          "src/files/images/sanitary/counter_top_washbasin/image copy 3.png"
+        ],
         description: "Stylish counter top basin for modern bathrooms"
       },
       {
         title: "Pedestal Basin",
         image: "src/files/images/sanitary/pedestal_basin/image.png",
+        images: [
+          "src/files/images/sanitary/pedestal_basin/image.png",
+          "src/files/images/sanitary/pedestal_basin/image copy.png",
+          "src/files/images/sanitary/pedestal_basin/image copy 2.png",
+          "src/files/images/sanitary/pedestal_basin/image copy 3.png"
+        ],
         description: "Classic pedestal basin with timeless appeal"
       },
       {
         title: "Wall Hung WC",
         image: "src/files/images/sanitary/wc_hung/wall_hung_2.jpg",
+        images: [
+          "src/files/images/sanitary/wc_hung/wall_hung_2.jpg",
+          "src/files/images/sanitary/wc_hung/image copy.png",
+          "src/files/images/sanitary/wc_hung/image copy 2.png",
+          "src/files/images/sanitary/wc_hung/image copy 3.png"
+        ],
         description: "Space-saving wall hung toilet with modern features"
       },
       {
         title: "Floor Mounted WC",
         image: "src/files/images/sanitary/floor_mounted_wc/image.png",
+        images: [
+          "src/files/images/sanitary/floor_mounted_wc/image.png",
+          "src/files/images/sanitary/floor_mounted_wc/image copy.png",
+          "src/files/images/sanitary/floor_mounted_wc/image copy 2.png",
+          "src/files/images/sanitary/floor_mounted_wc/image copy 3.png"
+        ],
         description: "Traditional floor mounted toilet with comfort features"
       },
       {
         title: "Bidet",
         image: "src/files/images/sanitary/bidet/image.png",
+        images: [
+          "src/files/images/sanitary/bidet/image.png",
+          "src/files/images/sanitary/bidet/image copy.png",
+          "src/files/images/sanitary/bidet/image copy 2.png",
+          "src/files/images/sanitary/bidet/image copy 3.png"
+        ],
         description: "Modern bidet with advanced hygiene features"
       },
       {
         title: "Urinal",
         image: "src/files/images/sanitary/urinal/image.png",
+        images: [
+          "src/files/images/sanitary/urinal/image.png",
+          "src/files/images/sanitary/urinal/image copy.png",
+          "src/files/images/sanitary/urinal/image copy 2.png",
+          "src/files/images/sanitary/urinal/image copy 3.png"
+        ],
         description: "Water-efficient urinal for commercial spaces"
       },
       {
         title: "Shower Tray",
         image: "src/files/images/sanitary/shower_tray/image.png",
+        images: [
+          "src/files/images/sanitary/shower_tray/image.png",
+          "src/files/images/sanitary/shower_tray/image copy.png",
+          "src/files/images/sanitary/shower_tray/image copy 2.png",
+          "src/files/images/sanitary/shower_tray/image copy 3.png"
+        ],
         description: "Durable shower tray with anti-slip surface"
       }
     ],
@@ -54,41 +137,89 @@ const Sanitary = () => {
       {
         title: "Shower Panel",
         image: "src/files/images/sanitary/shower_panel/Screenshot 2025-06-02 at 12.54.34.png",
+        images: [
+          "src/files/images/sanitary/shower_panel/Screenshot 2025-06-02 at 12.54.34.png",
+          "src/files/images/sanitary/shower_panel/image copy.png",
+          "src/files/images/sanitary/shower_panel/image copy 2.png",
+          "src/files/images/sanitary/shower_panel/image copy 3.png"
+        ],
         description: "Luxury shower panel with multiple functions"
       },
       {
         title: "Shower Enclosure",
         image: "src/files/images/sanitary/shower_enclosure/image.png",
+        images: [
+          "src/files/images/sanitary/shower_enclosure/image.png",
+          "src/files/images/sanitary/shower_enclosure/image copy.png",
+          "src/files/images/sanitary/shower_enclosure/image copy 2.png",
+          "src/files/images/sanitary/shower_enclosure/image copy 3.png"
+        ],
         description: "Modern shower enclosure with sleek design"
       },
       {
         title: "Bath Tub",
         image: "src/files/images/sanitary/bathtub/image.png",
+        images: [
+          "src/files/images/sanitary/bathtub/image.png",
+          "src/files/images/sanitary/bathtub/image copy.png",
+          "src/files/images/sanitary/bathtub/image copy 2.png",
+          "src/files/images/sanitary/bathtub/image copy 3.png"
+        ],
         description: "Comfortable bath tub with ergonomic design"
       },
       {
         title: "Jacuzzi",
         image: "src/files/images/sanitary/jacuzi/image.png",
+        images: [
+          "src/files/images/sanitary/jacuzi/image.png",
+          "src/files/images/sanitary/jacuzi/image copy.png",
+          "src/files/images/sanitary/jacuzi/image copy 2.png",
+          "src/files/images/sanitary/jacuzi/image copy 3.png"
+        ],
         description: "Luxury jacuzzi with hydrotherapy features"
       },
       {
         title: "Water Closet",
         image: "src/files/images/sanitary/water_closet/image.png",
+        images: [
+          "src/files/images/sanitary/water_closet/image.png",
+          "src/files/images/sanitary/water_closet/image copy.png",
+          "src/files/images/sanitary/water_closet/image copy 2.png",
+          "src/files/images/sanitary/water_closet/image copy 3.png"
+        ],
         description: "Complete water closet solution for modern bathrooms"
       },
       {
         title: "Accessories",
         image: "src/files/images/sanitary/accessories/image.png",
+        images: [
+          "src/files/images/sanitary/accessories/image.png",
+          "src/files/images/sanitary/accessories/image copy.png",
+          "src/files/images/sanitary/accessories/image copy 2.png",
+          "src/files/images/sanitary/accessories/image copy 3.png"
+        ],
         description: "Essential bathroom accessories and fittings"
       },
       {
         title: "Mirror Cabinet",
         image: "src/files/images/sanitary/mirror_cabinet/image.png",
+        images: [
+          "src/files/images/sanitary/mirror_cabinet/image.png",
+          "src/files/images/sanitary/mirror_cabinet/image copy.png",
+          "src/files/images/sanitary/mirror_cabinet/image copy 2.png",
+          "src/files/images/sanitary/mirror_cabinet/image copy 3.png"
+        ],
         description: "Smart mirror cabinet with storage space"
       },
       {
         title: "Towel Rack",
         image: "src/files/images/sanitary/towel_rack/image.png",
+        images: [
+          "src/files/images/sanitary/towel_rack/image.png",
+          "src/files/images/sanitary/towel_rack/image copy.png",
+          "src/files/images/sanitary/towel_rack/image copy 2.png",
+          "src/files/images/sanitary/towel_rack/image copy 3.png"
+        ],
         description: "Stylish towel rack with modern design"
       }
     ]
@@ -148,7 +279,7 @@ const Sanitary = () => {
             </a>
           </div>
           <button 
-            onClick={() => window.open('https://search.app/kBVniHcHw1bU7aMX9', '_blank')}
+            onClick={() => window.open('https://search.app/S3QcVLFeN8UsvbMY7', '_blank')}
             className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -159,8 +290,11 @@ const Sanitary = () => {
         </div>
       </div>
 
-      {/* Products Grid */}
+      {/* Enhanced Products Grid */}
       <div className="container mx-auto px-4 py-20 flex-grow relative">
+        {/* Background decoration */}
+        <div className="absolute top-10 right-10 w-72 h-72 bg-gradient-to-br from-yellow-200/20 to-orange-200/20 rounded-full blur-3xl"></div>
+        
         <div className="text-center mb-16 animate-fade-in relative z-10">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-4">
             Our Sanitary Collection
@@ -174,11 +308,18 @@ const Sanitary = () => {
           {sanitarySets[currentSlide].map((item, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 animate-fade-in border border-gray-100/50" 
+              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 animate-fade-in border border-gray-100/50 cursor-pointer" 
               style={{animationDelay: `${index * 0.1}s`}}
+              onClick={() => {
+                setCurrentSlideIndex(0);
+                setSelectedItem({ 
+                  images: item.images, 
+                  title: item.title 
+                });
+              }}
             >
               <div className="relative overflow-hidden">
-                <div className="h-48 bg-cover bg-center transition-all duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}}>
+                <div className="aspect-[4/3] bg-cover bg-center transition-all duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}}>
                   <div className="h-full bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-black/70 transition-all duration-500 flex items-end">
                     <span className="text-white font-bold text-xl p-6 transform group-hover:translate-y-0 translate-y-2 transition-transform duration-500">{item.title}</span>
                   </div>
@@ -194,6 +335,63 @@ const Sanitary = () => {
           ))}
         </div>
       </div>
+
+      {/* Image Modal */}
+      {selectedItem && (
+        <div 
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedItem(null)}
+        >
+          <div className="relative max-w-6xl w-full">
+            <button 
+              className="absolute -top-12 right-0 text-white hover:text-yellow-400 transition-colors duration-300"
+              onClick={() => setSelectedItem(null)}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            
+            <div className="relative">
+              <img 
+                src={selectedItem.images[currentSlideIndex]} 
+                alt={selectedItem.title} 
+                className="w-full h-auto rounded-lg shadow-2xl"
+              />
+              
+              {/* Navigation Arrows */}
+              <button 
+                className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-yellow-400 transition-colors duration-300"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleModalPrevSlide();
+                }}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              
+              <button 
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-yellow-400 transition-colors duration-300"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleModalNextSlide();
+                }}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+
+              {/* Image Counter */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full">
+                {currentSlideIndex + 1} / {selectedItem.images.length}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Slider Icon Section */}
       <div className="container mx-auto px-4 py-16 relative">

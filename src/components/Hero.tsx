@@ -5,6 +5,10 @@ import { ChevronRight, Star } from "lucide-react";
 
 const Hero = () => {
   const backgroundImages = [
+   
+    'src/files/images/int_1.jpg',
+    'src/files/images/int_2.jpg',
+  
     'src/files/images/hero_1.jpg',
     'src/files/images/hero_2.jpg',
     'src/files/images/hero_3.jpg',
