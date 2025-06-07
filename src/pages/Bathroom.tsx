@@ -45,51 +45,96 @@ const Bathroom = () => {
     [
       {
         title: "Grab Bars",
-        image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/accessories/grabBars/image.png",
         description: "Durable safety grab bars designed to provide support and stability in showers and near toilets.",
-        images:[]
+        images:["src/files/images/accessories/grabBars/image.png",
+          "src/files/images/accessories/grabBars/image copy.png",
+          "src/files/images/accessories/grabBars/image copy 4.png",
+          "src/files/images/accessories/grabBars/image copy 3.png"
+        ]
       },
       {
         title: "Soap Dispensers",
-        image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/accessories/soap_dispenser/image.png",
         description: "Convenient and stylish soap dispensers available in automatic and manual options.",
-        images: []
+        images: [
+          "src/files/images/accessories/soap_dispenser/image.png",
+          "src/files/images/accessories/soap_dispenser/image copy.png",
+          "src/files/images/accessories/soap_dispenser/image copy 2.png",
+          "src/files/images/accessories/soap_dispenser/image copy 3.png"
+
+        ]
       },
       {
         title: "Towel Ring",
-        image: "https://images.unsplash.com/photo-1594736797933-d0282ba4d0ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/accessories/towel_ring/image.png",
         description: "Compact and elegant towel rings for hand towels and small spaces.",
-        images: []
+        images: [
+          "src/files/images/accessories/towel_ring/image.png",
+          "src/files/images/accessories/towel_ring/image copy.png",
+          "src/files/images/accessories/towel_ring/image copy 2.png",
+          "src/files/images/accessories/towel_ring/image copy 3.png"
+
+        ]
       },
       {
         title: "Towel Rod",
-        image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/accessories/towel_rods/image.png",
         description: "Wall-mounted towel rods ideal for hanging full-sized towels.",
-        images: []
+        images: [
+          "src/files/images/accessories/towel_rods/image.png",
+          "src/files/images/accessories/towel_rods/image copy.png",
+          "src/files/images/accessories/towel_rods/image copy 2.png",
+          "src/files/images/accessories/towel_rods/image copy 3.png"
+        ]
       },
       {
         title: "Wall Pegs",
-        image: "https://images.unsplash.com/photo-1505691723518-36ecf12ebb26?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/accessories/wall_pegs/image copy.png",
         description: "Minimalist wall pegs for hanging towels, robes, and accessories.",
-        images: []
+        images: [
+          "src/files/images/accessories/wall_pegs/image copy.png",
+          "src/files/images/accessories/wall_pegs/image.png",
+          "src/files/images/accessories/wall_pegs/image copy 2.png",
+          "src/files/images/accessories/wall_pegs/image copy 3.png",
+          "src/files/images/accessories/wall_pegs/image copy 4.png"
+        ]
       },
       {
         title: "Curtain Rod",
-        image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/accessories/curtain_rods/image.png",
         description: "Adjustable curtain rods to support bathroom shower curtains securely.",
-        images: []
+        images: [
+          "src/files/images/accessories/curtain_rods/image.png",
+          "src/files/images/accessories/curtain_rods/image copy.png",
+          "src/files/images/accessories/curtain_rods/image copy 2.png",
+          "src/files/images/accessories/curtain_rods/image copy 3.png",
+          "src/files/images/accessories/curtain_rods/image copy 4.png"
+          ,
+          "src/files/images/accessories/curtain_rods/image copy 5.png"
+        ]
       },
       {
         title: "Curtain Brackets",
-        image: "https://images.unsplash.com/photo-1600585152915-d208bec867a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/accessories/curtain_brackets/image copy 3.png",
         description: "Sturdy curtain rod brackets for stable and stylish curtain installation.",
-        images: []
+        images: [
+          "src/files/images/accessories/curtain_brackets/image copy 3.png",
+          "src/files/images/accessories/curtain_brackets/image copy.png",
+          "src/files/images/accessories/curtain_brackets/image.png",
+          "src/files/images/accessories/curtain_brackets/image copy 2.png"
+        ]
       },
       {
         title: "Flanges",
-        image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "src/files/images/accessories/flanges/image.png",
         description: "Metal flanges to secure and support rods or piping fixtures.",
-        images: []
+        images: [
+          "src/files/images/accessories/flanges/image.png",
+          "src/files/images/accessories/flanges/image copy.png",
+          "src/files/images/accessories/flanges/image copy 2.png",
+          "src/files/images/accessories/flanges/image copy 3.png"
+        ]
       }
     ],
     // Second set of bathroom accessories
