@@ -48,14 +48,21 @@ const Faucets = () => {
         image: "src/files/images/faucets/florentinePrime/Screenshot 2025-06-02 at 13.39.24.png",
         description: "Premium brass faucet with elegant chrome finish and ceramic disc valves",
         "images": [
-          "src/files/images/faucets/florentinePrime/Screenshot 2025-06-02 at 13.39.24.png"]
+          "src/files/images/faucets/florentinePrime/Screenshot 2025-06-02 at 13.39.24.png",
+        "src/files/images/faucets/florentinePrime/image.png",
+      "src/files/images/faucets/florentinePrime/image copy.png",
+    "src/files/images/faucets/florentinePrime/image copy 2.png",
+  "src/files/images/faucets/florentinePrime/image copy 3.png"]
       },
       {
         title: "Laguna",
         image: "src/files/images/faucets/laguna/image.png",
         description: "Contemporary single-handle faucet with water-saving aerator technology",
         "images": [
-          "src/files/images/faucets/laguna/image.png"
+          "src/files/images/faucets/laguna/image.png",
+          "src/files/images/faucets/laguna/image copy.png",
+          "src/files/images/faucets/laguna/image copy 2.png",
+          "src/files/images/faucets/laguna/image copy 3.png"
         ]
       },
       {
@@ -63,7 +70,12 @@ const Faucets = () => {
         image: "src/files/images/faucets/continentalPrime/image.png",
         description: "Traditional dual-handle faucet with antique brass finish and ceramic handles",
         "images": [
-          "src/files/images/faucets/continentalPrime/image.png"
+          "src/files/images/faucets/continentalPrime/image.png",
+          "src/files/images/faucets/continentalPrime/image copy.png",
+          "src/files/images/faucets/continentalPrime/image copy 2.png",
+          "src/files/images/faucets/continentalPrime/image copy 3.png"
+          ,
+          "src/files/images/faucets/continentalPrime/image copy 4.png"
         ]
       },
       {
@@ -71,7 +83,11 @@ const Faucets = () => {
         image: "src/files/images/faucets/blushSensor/image.png",
         description: "Touchless sensor faucet with automatic shut-off and adjustable flow control",
         "images": [
-          "src/files/images/faucets/blushSensor/image.png"
+          "src/files/images/faucets/blushSensor/image.png",
+          "src/files/images/faucets/blushSensor/image copy.png",
+          "src/files/images/faucets/blushSensor/image copy 2.png",
+          "src/files/images/faucets/blushSensor/image copy 3.png",
+          "src/files/images/faucets/blushSensor/image copy 4.png"
         ]
       },
       {
@@ -79,7 +95,13 @@ const Faucets = () => {
         image: "src/files/images/faucets/queensPrime/image.png",
         description: "Luxury designer faucet with pull-out spray and 360-degree swivel spout",
         "images": [
-          "src/files/images/faucets/queensPrime/image.png"
+          "src/files/images/faucets/queensPrime/image.png",
+          "src/files/images/faucets/queensPrime/image copy.png",
+          "src/files/images/faucets/queensPrime/image copy 2.png",
+          "src/files/images/faucets/queensPrime/image copy 3.png",
+          "src/files/images/faucets/queensPrime/image copy 4.png"
+          ,
+          "src/files/images/faucets/queensPrime/image copy 5.png"
         ]
       },
       {
@@ -87,6 +109,9 @@ const Faucets = () => {
         image: "src/files/images/faucets/kitchen_sink_mixer/image.png",
         images: [
           "src/files/images/faucets/kitchen_sink_mixer/image.png",
+          "src/files/images/faucets/kitchen_sink_mixer/image copy.png",
+          "src/files/images/faucets/kitchen_sink_mixer/image copy 2.png",
+          "src/files/images/faucets/kitchen_sink_mixer/image copy 3.png",
 
         ],
         description: "Practical kitchen sink mixer with modern features"
@@ -96,15 +121,24 @@ const Faucets = () => {
         image: "src/files/images/faucets/kubix/image.png",
         description: "Square-profile faucet with geometric design and pressure-balancing valve",
         "images": [
-          "src/files/images/faucets/kubix/image.png"
-        ]
+          "src/files/images/faucets/kubix/image.png",
+          "src/files/images/faucets/kubix/image copy.png",
+          "src/files/images/faucets/kubix/image copy 2.png",
+          "src/files/images/faucets/kubix/image copy 3.png",
+          "src/files/images/faucets/kubix/image copy 4.png"
+
+  
+          ]
       },
       {
         title: "Opal Prime",
         image: "src/files/images/faucets/opal/image.png",
         description: "High-arc kitchen faucet with dual-function spray head and ceramic cartridge",
         "images": [
-          "src/files/images/faucets/opal/image.png"
+          "src/files/images/faucets/opal/image.png",
+          "src/files/images/faucets/opal/image copy.png",
+          "src/files/images/faucets/opal/image copy 2.png",
+          "src/files/images/faucets/opal/image copy 3.png",
         ]
       }
     ],
@@ -115,7 +149,10 @@ const Faucets = () => {
         image: "src/files/images/faucets/ornamix/image.png",
         description: "Decorative mixer faucet with ornate detailing and solid brass construction",
         "images": [
-          "src/files/images/faucets/ornamix/image.png"
+          "src/files/images/faucets/ornamix/image.png",
+          "src/files/images/faucets/ornamix/image copy.png",
+          "src/files/images/faucets/ornamix/image copy 2.png",
+          "src/files/images/faucets/ornamix/image copy 3.png",
         ]
       },
       {
@@ -123,7 +160,11 @@ const Faucets = () => {
         image: "src/files/images/faucets/alive/image.png",
         description: "Eco-friendly faucet with water-saving features and LED temperature display",
         "images": [
-          "src/files/images/faucets/alive/image.png"
+          "src/files/images/faucets/alive/image.png",
+          "src/files/images/faucets/alive/image copy.png",
+          "src/files/images/faucets/alive/image copy 2.png",
+          "src/files/images/faucets/alive/image copy 3.png",
+          "src/files/images/faucets/alive/image copy 4.png"
         ]
       },
       {
@@ -131,7 +172,13 @@ const Faucets = () => {
         image: "src/files/images/faucets/queens/image.png",
         description: "Classic basin faucet with elegant curves and long-lasting chrome plating",
         "images": [
-          "src/files/images/faucets/queens/image.png"
+          "src/files/images/faucets/queens/image.png",
+
+          "src/files/images/faucets/queens/image copy.png",
+          "src/files/images/faucets/queens/image copy 2.png",
+          "src/files/images/faucets/queens/image copy 3.png",
+          "src/files/images/faucets/queens/image copy 4.png",
+          "src/files/images/faucets/queens/image copy 5.png"
         ]
       },
       {
@@ -139,7 +186,13 @@ const Faucets = () => {
         image: "src/files/images/faucets/lyric/image.png",
         description: "Musical-inspired faucet design with smooth operation and anti-drip technology",
         "images": [
-          "src/files/images/faucets/lyric/image.png"
+          "src/files/images/faucets/lyric/image.png",
+          "src/files/images/faucets/lyric/image copy.png",
+          "src/files/images/faucets/lyric/image copy 2.png",
+          "src/files/images/faucets/lyric/image copy 3.png",
+          "src/files/images/faucets/lyric/image copy 4.png"
+          ,
+          "src/files/images/faucets/lyric/image copy 5.png"
         ]
       },
       {
@@ -147,7 +200,11 @@ const Faucets = () => {
         image: "src/files/images/faucets/aria/image.png",
         description: "Sleek bathroom faucet with waterfall spout and single-lever control",
         "images": [
-          "src/files/images/faucets/aria/image.png"
+          "src/files/images/faucets/aria/image.png",
+          "src/files/images/faucets/aria/image copy.png",
+          "src/files/images/faucets/aria/image copy 2.png",
+          "src/files/images/faucets/aria/image copy 3.png",
+          "src/files/images/faucets/aria/image copy 4.png"
         ]
       },
       {
@@ -155,7 +212,10 @@ const Faucets = () => {
         image: "src/files/images/faucets/fusion/image.png",
         description: "Hybrid design faucet combining modern and traditional styling elements",
         "images": [
-          "src/files/images/faucets/fusion/image.png"
+          "src/files/images/faucets/fusion/image.png",
+          "src/files/images/faucets/fusion/image copy.png",
+          "src/files/images/faucets/fusion/image copy 2.png",
+          "src/files/images/faucets/fusion/image copy 3.png",
         ]
       },
       {
@@ -163,7 +223,11 @@ const Faucets = () => {
         image: "src/files/images/faucets/pressMatic/image.png",
         description: "Self-closing push-button faucet ideal for commercial and public spaces",
         "images": [
-          "src/files/images/faucets/pressMatic/image.png"
+          "src/files/images/faucets/pressMatic/image.png",
+          "src/files/images/faucets/pressMatic/image copy.png",
+          "src/files/images/faucets/pressMatic/image copy 2.png",
+          "src/files/images/faucets/pressMatic/image copy 3.png",
+          "src/files/images/faucets/pressMatic/image copy 4.png"
         ]
       },
       {
@@ -171,7 +235,10 @@ const Faucets = () => {
         image: "src/files/images/faucets/medi/image.png",
         description: "Medical-grade faucet with antimicrobial coating and hands-free operation",
         "images": [
-          "src/files/images/faucets/medi/image.png"
+          "src/files/images/faucets/medi/image.png",
+          "src/files/images/faucets/medi/image copy.png",
+          "src/files/images/faucets/medi/image copy 2.png",
+          "src/files/images/faucets/medi/image copy 3.png",
         ]
       }
     ]
@@ -209,7 +276,7 @@ const Faucets = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="/bathroom" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              Bathroom
+            Accessories
             </a>
             <a href="/sanitary" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Sanitary
@@ -221,7 +288,7 @@ const Faucets = () => {
               Showers
             </a>
             <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              UPVC Doors & Windows
+              UPVC Doors
             </a>
             <a href="/kitchen-slabs" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Kitchen Slabs
@@ -271,7 +338,7 @@ const Faucets = () => {
               }}
             >
               <div className="relative overflow-hidden">
-                <div className="aspect-[4/3] bg-cover bg-center transition-all duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}}>
+                <div className="aspect-[4/3] bg-contain bg-center bg-no-repeat transition-all duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}}>
                   <div className="h-full bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-black/70 transition-all duration-500 flex items-end">
                     <span className="text-white font-bold text-xl p-6 transform group-hover:translate-y-0 translate-y-2 transition-transform duration-500">{item.title}</span>
                   </div>
@@ -308,7 +375,7 @@ const Faucets = () => {
               <img 
                 src={selectedItem.images[currentSlideIndex]} 
                 alt={selectedItem.title} 
-                className="w-full h-auto rounded-lg shadow-2xl"
+                className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
               />
               
               {/* Navigation Arrows */}

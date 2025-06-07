@@ -48,9 +48,10 @@ const Sanitary = () => {
         image: "src/files/images/sanitary/wall_mounted_basin/wall_mounted_basin.jpg",
         images: [
           "src/files/images/sanitary/wall_mounted_basin/wall_mounted_basin.jpg",
+          "src/files/images/sanitary/wall_mounted_basin/image.png",
           "src/files/images/sanitary/wall_mounted_basin/image copy.png",
-          "src/files/images/sanitary/wall_mounted_basin/image copy 2.png",
-          "src/files/images/sanitary/wall_mounted_basin/image copy 3.png"
+          "src/files/images/sanitary/wall_mounted_basin/image copy 2.png"
+
         ],
         description: "Modern wall mounted basin with elegant design"
       },
@@ -61,7 +62,8 @@ const Sanitary = () => {
           "src/files/images/sanitary/counter_top_washbasin/image.png",
           "src/files/images/sanitary/counter_top_washbasin/image copy.png",
           "src/files/images/sanitary/counter_top_washbasin/image copy 2.png",
-          "src/files/images/sanitary/counter_top_washbasin/image copy 3.png"
+          "src/files/images/sanitary/counter_top_washbasin/image copy 3.png",
+          "src/files/images/sanitary/counter_top_washbasin/image copy 4.png"
         ],
         description: "Stylish counter top basin for modern bathrooms"
       },
@@ -70,9 +72,11 @@ const Sanitary = () => {
         image: "src/files/images/sanitary/pedestal_basin/image.png",
         images: [
           "src/files/images/sanitary/pedestal_basin/image.png",
-          "src/files/images/sanitary/pedestal_basin/image copy.png",
+    
           "src/files/images/sanitary/pedestal_basin/image copy 2.png",
-          "src/files/images/sanitary/pedestal_basin/image copy 3.png"
+          "src/files/images/sanitary/pedestal_basin/image copy 3.png",
+          "src/files/images/sanitary/pedestal_basin/image copy 4.png",
+          "src/files/images/sanitary/pedestal_basin/image copy 5.png"
         ],
         description: "Classic pedestal basin with timeless appeal"
       },
@@ -81,6 +85,7 @@ const Sanitary = () => {
         image: "src/files/images/sanitary/wc_hung/wall_hung_2.jpg",
         images: [
           "src/files/images/sanitary/wc_hung/wall_hung_2.jpg",
+          "src/files/images/sanitary/wc_hung/image.png",
           "src/files/images/sanitary/wc_hung/image copy.png",
           "src/files/images/sanitary/wc_hung/image copy 2.png",
           "src/files/images/sanitary/wc_hung/image copy 3.png"
@@ -94,7 +99,9 @@ const Sanitary = () => {
           "src/files/images/sanitary/floor_mounted_wc/image.png",
           "src/files/images/sanitary/floor_mounted_wc/image copy.png",
           "src/files/images/sanitary/floor_mounted_wc/image copy 2.png",
-          "src/files/images/sanitary/floor_mounted_wc/image copy 3.png"
+          "src/files/images/sanitary/floor_mounted_wc/image copy 3.png",
+          "src/files/images/sanitary/floor_mounted_wc/image copy 4.png"
+
         ],
         description: "Traditional floor mounted toilet with comfort features"
       },
@@ -105,7 +112,8 @@ const Sanitary = () => {
           "src/files/images/sanitary/bidet/image.png",
           "src/files/images/sanitary/bidet/image copy.png",
           "src/files/images/sanitary/bidet/image copy 2.png",
-          "src/files/images/sanitary/bidet/image copy 3.png"
+          "src/files/images/sanitary/bidet/image copy 3.png",
+          "src/files/images/sanitary/bidet/image copy 4.png"
         ],
         description: "Modern bidet with advanced hygiene features"
       },
@@ -116,7 +124,8 @@ const Sanitary = () => {
           "src/files/images/sanitary/urinal/image.png",
           "src/files/images/sanitary/urinal/image copy.png",
           "src/files/images/sanitary/urinal/image copy 2.png",
-          "src/files/images/sanitary/urinal/image copy 3.png"
+          "src/files/images/sanitary/urinal/image copy 3.png",
+          "src/files/images/sanitary/urinal/image copy 4.png"
         ],
         description: "Water-efficient urinal for commercial spaces"
       },
@@ -127,7 +136,8 @@ const Sanitary = () => {
           "src/files/images/sanitary/shower_tray/image.png",
           "src/files/images/sanitary/shower_tray/image copy.png",
           "src/files/images/sanitary/shower_tray/image copy 2.png",
-          "src/files/images/sanitary/shower_tray/image copy 3.png"
+          "src/files/images/sanitary/shower_tray/image copy 3.png",
+          "src/files/images/sanitary/shower_tray/image copy 4.png"
         ],
         description: "Durable shower tray with anti-slip surface"
       }
@@ -141,7 +151,8 @@ const Sanitary = () => {
           "src/files/images/sanitary/shower_panel/Screenshot 2025-06-02 at 12.54.34.png",
           "src/files/images/sanitary/shower_panel/image copy.png",
           "src/files/images/sanitary/shower_panel/image copy 2.png",
-          "src/files/images/sanitary/shower_panel/image copy 3.png"
+          "src/files/images/sanitary/shower_panel/image copy 3.png",
+          "src/files/images/sanitary/shower_panel/image copy 4.png"
         ],
         description: "Luxury shower panel with multiple functions"
       },
@@ -163,7 +174,8 @@ const Sanitary = () => {
           "src/files/images/sanitary/bathtub/image.png",
           "src/files/images/sanitary/bathtub/image copy.png",
           "src/files/images/sanitary/bathtub/image copy 2.png",
-          "src/files/images/sanitary/bathtub/image copy 3.png"
+          "src/files/images/sanitary/bathtub/image copy 3.png",
+          "src/files/images/sanitary/bathtub/image copy 4.png"
         ],
         description: "Comfortable bath tub with ergonomic design"
       },
@@ -174,7 +186,8 @@ const Sanitary = () => {
           "src/files/images/sanitary/jacuzi/image.png",
           "src/files/images/sanitary/jacuzi/image copy.png",
           "src/files/images/sanitary/jacuzi/image copy 2.png",
-          "src/files/images/sanitary/jacuzi/image copy 3.png"
+          "src/files/images/sanitary/jacuzi/image copy 3.png",
+          "src/files/images/sanitary/jacuzi/image copy 4.png"
         ],
         description: "Luxury jacuzzi with hydrotherapy features"
       },
@@ -185,7 +198,9 @@ const Sanitary = () => {
           "src/files/images/sanitary/water_closet/image.png",
           "src/files/images/sanitary/water_closet/image copy.png",
           "src/files/images/sanitary/water_closet/image copy 2.png",
-          "src/files/images/sanitary/water_closet/image copy 3.png"
+          "src/files/images/sanitary/water_closet/image copy 3.png",
+          "src/files/images/sanitary/water_closet/image copy 4.png",
+          "src/files/images/sanitary/water_closet/image copy 5.png"
         ],
         description: "Complete water closet solution for modern bathrooms"
       },
@@ -194,9 +209,6 @@ const Sanitary = () => {
         image: "src/files/images/sanitary/accessories/image.png",
         images: [
           "src/files/images/sanitary/accessories/image.png",
-          "src/files/images/sanitary/accessories/image copy.png",
-          "src/files/images/sanitary/accessories/image copy 2.png",
-          "src/files/images/sanitary/accessories/image copy 3.png"
         ],
         description: "Essential bathroom accessories and fittings"
       },
@@ -218,7 +230,8 @@ const Sanitary = () => {
           "src/files/images/sanitary/towel_rack/image.png",
           "src/files/images/sanitary/towel_rack/image copy.png",
           "src/files/images/sanitary/towel_rack/image copy 2.png",
-          "src/files/images/sanitary/towel_rack/image copy 3.png"
+          "src/files/images/sanitary/towel_rack/image copy 3.png",
+          "src/files/images/sanitary/towel_rack/image copy 4.png"
         ],
         description: "Stylish towel rack with modern design"
       }
@@ -257,7 +270,7 @@ const Sanitary = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="/bathroom" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              Bathroom
+            Accessories
             </a>
             <a href="/sanitary" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Sanitary
@@ -269,7 +282,7 @@ const Sanitary = () => {
               Showers
             </a>
             <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              UPVC Doors & Windows
+              UPVC Doors
             </a>
             <a href="/kitchen-slabs" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Kitchen Slabs
@@ -319,7 +332,7 @@ const Sanitary = () => {
               }}
             >
               <div className="relative overflow-hidden">
-                <div className="aspect-[4/3] bg-cover bg-center transition-all duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}}>
+                <div className="aspect-[4/3] bg-contain bg-center bg-no-repeat transition-all duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}}>
                   <div className="h-full bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-black/70 transition-all duration-500 flex items-end">
                     <span className="text-white font-bold text-xl p-6 transform group-hover:translate-y-0 translate-y-2 transition-transform duration-500">{item.title}</span>
                   </div>
@@ -356,7 +369,7 @@ const Sanitary = () => {
               <img 
                 src={selectedItem.images[currentSlideIndex]} 
                 alt={selectedItem.title} 
-                className="w-full h-auto rounded-lg shadow-2xl"
+                className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
               />
               
               {/* Navigation Arrows */}

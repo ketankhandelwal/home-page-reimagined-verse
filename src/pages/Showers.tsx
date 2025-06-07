@@ -44,186 +44,107 @@ const Showers = () => {
     // First set of showers
     [
       {
-        title: "Wall Mounted Shower",
-        image: "src/files/images/showers/wall_mounted_shower/image.png",
-        images: [
-          "src/files/images/showers/wall_mounted_shower/image.png",
-          "src/files/images/showers/wall_mounted_shower/image copy.png",
-          "src/files/images/showers/wall_mounted_shower/image copy 2.png",
-          "src/files/images/showers/wall_mounted_shower/image copy 3.png"
-        ],
-        description: "Modern wall mounted shower with multiple functions"
+        title: "Rain Panels",
+        image: "src/files/images/showers/rainpanel/Screenshot 2025-06-02 at 13.12.17.png",
+        description: "Luxurious rain panels for ultimate shower experience with wide coverage",
+        "images": [
+          "src/files/images/showers/rainpanel/Screenshot 2025-06-02 at 13.12.17.png",
+          "src/files/images/showers/rainpanel/image.png",
+          "src/files/images/showers/rainpanel/image copy.png",
+          "src/files/images/showers/rainpanel/image copy 2.png"
+        ]
       },
       {
-        title: "Floor Mounted Shower",
-        image: "src/files/images/showers/floor_mounted_shower/image.png",
-        images: [
-          "src/files/images/showers/floor_mounted_shower/image.png",
-          "src/files/images/showers/floor_mounted_shower/image copy.png",
-          "src/files/images/showers/floor_mounted_shower/image copy 2.png",
-          "src/files/images/showers/floor_mounted_shower/image copy 3.png"
-        ],
-        description: "Luxury floor mounted shower with advanced features"
+        title: "Rain Heads",
+        image: "src/files/images/showers/rainhead/Screenshot 2025-06-02 at 13.13.06.png",
+        description: "Premium rain shower heads delivering gentle rainfall sensation",
+        "images": [
+          "src/files/images/showers/rainhead/Screenshot 2025-06-02 at 13.13.06.png",
+          "src/files/images/showers/rainhead/image.png",
+          "src/files/images/showers/rainhead/image copy.png",
+          "src/files/images/showers/rainhead/image copy 2.png",
+          "src/files/images/showers/rainhead/image copy 3.png"
+          ,
+          "src/files/images/showers/rainhead/image copy 4.png"
+        ]
       },
       {
-        title: "Shower Panel",
-        image: "src/files/images/showers/shower_panel/image.png",
-        images: [
-          "src/files/images/showers/shower_panel/image.png",
-          "src/files/images/showers/shower_panel/image copy.png",
-          "src/files/images/showers/shower_panel/image copy 2.png",
-          "src/files/images/showers/shower_panel/image copy 3.png"
-        ],
-        description: "Modern shower panel with multiple functions"
+        title: "Shower Heads",
+        image: "src/files/images/showers/showerheads/Screenshot 2025-06-02 at 13.13.25.png",
+        description: "High-quality shower heads with adjustable spray patterns and water flow",
+        "images": [
+          "src/files/images/showers/showerheads/Screenshot 2025-06-02 at 13.13.25.png",
+          "src/files/images/showers/showerheads/image.png",
+          "src/files/images/showers/showerheads/image copy.png",
+          "src/files/images/showers/showerheads/image copy 2.png",
+          "src/files/images/showers/showerheads/image copy 3.png",
+          "src/files/images/showers/showerheads/image copy 4.png"
+        ]
       },
       {
-        title: "Shower Enclosure",
-        image: "src/files/images/showers/shower_enclosure/image.png",
-        images: [
-          "src/files/images/showers/shower_enclosure/image.png",
-          "src/files/images/showers/shower_enclosure/image copy.png",
-          "src/files/images/showers/shower_enclosure/image copy 2.png",
-          "src/files/images/showers/shower_enclosure/image copy 3.png"
-        ],
-        description: "Modern shower enclosure with sleek design"
+        title: "Hand Showers",
+        image: "src/files/images/showers/handshowers/Screenshot 2025-06-02 at 13.13.56.png",
+        description: "Ergonomic handheld showers with flexible hose for maximum convenience",
+        "images": [
+          "src/files/images/showers/handshowers/Screenshot 2025-06-02 at 13.13.56.png",
+          "src/files/images/showers/handshowers/image.png",
+          "src/files/images/showers/handshowers/image copy.png",
+          "src/files/images/showers/handshowers/image copy 2.png",
+          "src/files/images/showers/handshowers/image copy 3.png",
+        ]
       },
       {
-        title: "Shower Tray",
-        image: "src/files/images/showers/shower_tray/image.png",
-        images: [
-          "src/files/images/showers/shower_tray/image.png",
-          "src/files/images/showers/shower_tray/image copy.png",
-          "src/files/images/showers/shower_tray/image copy 2.png",
-          "src/files/images/showers/shower_tray/image copy 3.png"
-        ],
-        description: "Durable shower tray with anti-slip surface"
+        title: "Body Sprays",
+        image: "src/files/images/showers/bodyspray/Screenshot 2025-06-02 at 13.14.53.png",
+        description: "Therapeutic body spray jets for a complete spa-like shower experience",
+        "images": [
+          "src/files/images/showers/bodyspray/Screenshot 2025-06-02 at 13.14.53.png",
+          "src/files/images/showers/bodyspray/image.png",
+          "src/files/images/showers/bodyspray/image copy.png",
+          "src/files/images/showers/bodyspray/image copy 2.png",
+          "src/files/images/showers/bodyspray/image copy 3.png"
+        ]
       },
       {
-        title: "Shower Head",
-        image: "src/files/images/showers/shower_head/image.png",
-        images: [
-          "src/files/images/showers/shower_head/image.png",
-          "src/files/images/showers/shower_head/image copy.png",
-          "src/files/images/showers/shower_head/image copy 2.png",
-          "src/files/images/showers/shower_head/image copy 3.png"
-        ],
-        description: "Modern shower head with multiple spray patterns"
+        title: "Steam Showers",
+        image: "src/files/images/showers/steamShower/Screenshot 2025-06-02 at 13.15.29.png",
+        description: "Complete steam shower systems for relaxation and wellness therapy",
+        "images": [
+          "src/files/images/showers/steamShower/Screenshot 2025-06-02 at 13.15.29.png",
+          "src/files/images/showers/steamShower/image.png",
+          "src/files/images/showers/steamShower/image copy.png",
+          "src/files/images/showers/steamShower/image copy 2.png",
+          "src/files/images/showers/steamShower/image copy 3.png",
+          "src/files/images/showers/steamShower/image copy 4.png"
+
+        ]
       },
       {
-        title: "Shower Mixer",
-        image: "src/files/images/showers/shower_mixer/image.png",
-        images: [
-          "src/files/images/showers/shower_mixer/image.png",
-          "src/files/images/showers/shower_mixer/image copy.png",
-          "src/files/images/showers/shower_mixer/image copy 2.png",
-          "src/files/images/showers/shower_mixer/image copy 3.png"
-        ],
-        description: "Modern shower mixer with temperature control"
+        title: "Multi Function Shower",
+        image: "src/files/images/showers/multiPurpose/Screenshot 2025-06-02 at 13.23.33.png",
+        description: "Versatile multi-function shower systems with various spray options",
+        "images": [
+          "src/files/images/showers/multiPurpose/Screenshot 2025-06-02 at 13.23.33.png",
+          "src/files/images/showers/multiPurpose/image.png",
+          "src/files/images/showers/multiPurpose/image copy.png",
+          "src/files/images/showers/multiPurpose/image copy 2.png",
+          "src/files/images/showers/multiPurpose/image copy 3.png"
+        ]
       },
       {
-        title: "Accessories",
-        image: "src/files/images/showers/accessories/image.png",
-        images: [
-          "src/files/images/showers/accessories/image.png",
-          "src/files/images/showers/accessories/image copy.png",
-          "src/files/images/showers/accessories/image copy 2.png",
-          "src/files/images/showers/accessories/image copy 3.png"
-        ],
-        description: "Essential shower accessories and fittings"
-      }
-    ],
-    // Second set of showers
-    [
-      {
-        title: "Wall Mounted Shower",
-        image: "src/files/images/showers/wall_mounted_shower/image.png",
-        images: [
-          "src/files/images/showers/wall_mounted_shower/image.png",
-          "src/files/images/showers/wall_mounted_shower/image copy.png",
-          "src/files/images/showers/wall_mounted_shower/image copy 2.png",
-          "src/files/images/showers/wall_mounted_shower/image copy 3.png"
-        ],
-        description: "Modern wall mounted shower with multiple functions"
-      },
-      {
-        title: "Floor Mounted Shower",
-        image: "src/files/images/showers/floor_mounted_shower/image.png",
-        images: [
-          "src/files/images/showers/floor_mounted_shower/image.png",
-          "src/files/images/showers/floor_mounted_shower/image copy.png",
-          "src/files/images/showers/floor_mounted_shower/image copy 2.png",
-          "src/files/images/showers/floor_mounted_shower/image copy 3.png"
-        ],
-        description: "Luxury floor mounted shower with advanced features"
-      },
-      {
-        title: "Shower Panel",
-        image: "src/files/images/showers/shower_panel/image.png",
-        images: [
-          "src/files/images/showers/shower_panel/image.png",
-          "src/files/images/showers/shower_panel/image copy.png",
-          "src/files/images/showers/shower_panel/image copy 2.png",
-          "src/files/images/showers/shower_panel/image copy 3.png"
-        ],
-        description: "Modern shower panel with multiple functions"
-      },
-      {
-        title: "Shower Enclosure",
-        image: "src/files/images/showers/shower_enclosure/image.png",
-        images: [
-          "src/files/images/showers/shower_enclosure/image.png",
-          "src/files/images/showers/shower_enclosure/image copy.png",
-          "src/files/images/showers/shower_enclosure/image copy 2.png",
-          "src/files/images/showers/shower_enclosure/image copy 3.png"
-        ],
-        description: "Modern shower enclosure with sleek design"
-      },
-      {
-        title: "Shower Tray",
-        image: "src/files/images/showers/shower_tray/image.png",
-        images: [
-          "src/files/images/showers/shower_tray/image.png",
-          "src/files/images/showers/shower_tray/image copy.png",
-          "src/files/images/showers/shower_tray/image copy 2.png",
-          "src/files/images/showers/shower_tray/image copy 3.png"
-        ],
-        description: "Durable shower tray with anti-slip surface"
-      },
-      {
-        title: "Shower Head",
-        image: "src/files/images/showers/shower_head/image.png",
-        images: [
-          "src/files/images/showers/shower_head/image.png",
-          "src/files/images/showers/shower_head/image copy.png",
-          "src/files/images/showers/shower_head/image copy 2.png",
-          "src/files/images/showers/shower_head/image copy 3.png"
-        ],
-        description: "Modern shower head with multiple spray patterns"
-      },
-      {
-        title: "Shower Mixer",
-        image: "src/files/images/showers/shower_mixer/image.png",
-        images: [
-          "src/files/images/showers/shower_mixer/image.png",
-          "src/files/images/showers/shower_mixer/image copy.png",
-          "src/files/images/showers/shower_mixer/image copy 2.png",
-          "src/files/images/showers/shower_mixer/image copy 3.png"
-        ],
-        description: "Modern shower mixer with temperature control"
-      },
-      {
-        title: "Accessories",
-        image: "src/files/images/showers/accessories/image.png",
-        images: [
-          "src/files/images/showers/accessories/image.png",
-          "src/files/images/showers/accessories/image copy.png",
-          "src/files/images/showers/accessories/image copy 2.png",
-          "src/files/images/showers/accessories/image copy 3.png"
-        ],
-        description: "Essential shower accessories and fittings"
+        title: "HydroLite Showers",
+        image: "src/files/images/showers/hydroliteShower/Screenshot 2025-06-02 at 13.20.34.png",
+        description: "Advanced HydroLite technology for efficient water usage and performance",
+        "images": [
+          "src/files/images/showers/hydroliteShower/Screenshot 2025-06-02 at 13.20.34.png",
+          "src/files/images/showers/hydroliteShower/image.png",
+          "src/files/images/showers/hydroliteShower/image copy.png",
+        ]
       }
     ]
   ];
+    
+  
 
   const handlePrevSlide = () => {
     setCurrentSlide((prev) => (prev === 0 ? showerSets.length - 1 : prev - 1));
@@ -257,7 +178,7 @@ const Showers = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="/bathroom" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              Bathroom
+            Accessories
             </a>
             <a href="/sanitary" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Sanitary
@@ -269,7 +190,7 @@ const Showers = () => {
               Showers
             </a>
             <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              UPVC Doors & Windows
+              UPVC Doors
             </a>
             <a href="/kitchen-slabs" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Kitchen Slabs
@@ -319,7 +240,7 @@ const Showers = () => {
               }}
             >
               <div className="relative overflow-hidden">
-                <div className="aspect-[4/3] bg-cover bg-center transition-all duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}}>
+                <div className="aspect-[4/3] bg-contain bg-center bg-no-repeat transition-all duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}}>
                   <div className="h-full bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-black/70 transition-all duration-500 flex items-end">
                     <span className="text-white font-bold text-xl p-6 transform group-hover:translate-y-0 translate-y-2 transition-transform duration-500">{item.title}</span>
                   </div>
@@ -356,7 +277,7 @@ const Showers = () => {
               <img 
                 src={selectedItem.images[currentSlideIndex]} 
                 alt={selectedItem.title} 
-                className="w-full h-auto rounded-lg shadow-2xl"
+                className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
               />
               
               {/* Navigation Arrows */}

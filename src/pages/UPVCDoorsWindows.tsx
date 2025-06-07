@@ -41,188 +41,65 @@ const UPVCDoorsWindows = () => {
   }, [selectedItem]);
 
   const upvcSets = [
-    // First set of UPVC items
-    [
+[
       {
-        title: "Sliding Doors",
-        image: "src/files/images/upvc/sliding_doors/image.png",
-        images: [
-          "src/files/images/upvc/sliding_doors/image.png",
-          "src/files/images/upvc/sliding_doors/image copy.png",
-          "src/files/images/upvc/sliding_doors/image copy 2.png",
-          "src/files/images/upvc/sliding_doors/image copy 3.png"
-        ],
-        description: "Modern sliding doors with smooth operation and excellent insulation"
+        "title": "2 Glazed Internal Wooden PVC Door",
+        "image": "src/files/images/doors/two_glazed/image.png",
+        "description": "Elegant two-panel glazed door with wooden finish for enhanced natural light",
+        "images": [
+          "src/files/images/doors/two_glazed/image.png"]
       },
       {
-        title: "French Doors",
-        image: "src/files/images/upvc/french_doors/image.png",
-        images: [
-          "src/files/images/upvc/french_doors/image.png",
-          "src/files/images/upvc/french_doors/image copy.png",
-          "src/files/images/upvc/french_doors/image copy 2.png",
-          "src/files/images/upvc/french_doors/image copy 3.png"
-        ],
-        description: "Elegant French doors with classic design and modern features"
+        "title": "3 Panelled Grained Wooden Internal PVC Door",
+        "image": "src/files/images/doors/three_panel/image.png",
+        "description": "Traditional three-panel door with realistic wood grain texture and durability",
+        "images": [
+          "src/files/images/doors/three_panel/image.png"]
       },
       {
-        title: "Casement Windows",
-        image: "src/files/images/upvc/casement_windows/image.png",
-        images: [
-          "src/files/images/upvc/casement_windows/image.png",
-          "src/files/images/upvc/casement_windows/image copy.png",
-          "src/files/images/upvc/casement_windows/image copy 2.png",
-          "src/files/images/upvc/casement_windows/image copy 3.png"
-        ],
-        description: "Versatile casement windows with excellent ventilation"
+        "title": "Anthracite Gray Rustic Internal PVC Door",
+        "image": "src/files/images/doors/rustic/image.png",
+        "description": "Modern anthracite gray door with rustic finish for contemporary interiors",
+        "images": [
+          "src/files/images/doors/rustic/image.png"]
       },
       {
-        title: "Tilt & Turn Windows",
-        image: "src/files/images/upvc/tilt_turn_windows/image.png",
-        images: [
-          "src/files/images/upvc/tilt_turn_windows/image.png",
-          "src/files/images/upvc/tilt_turn_windows/image copy.png",
-          "src/files/images/upvc/tilt_turn_windows/image copy 2.png",
-          "src/files/images/upvc/tilt_turn_windows/image copy 3.png"
-        ],
-        description: "Multi-functional tilt and turn windows for maximum flexibility"
+        "title": "Bamboo Colored 4 Panel Internal PVC Door",
+        "image": "src/files/images/doors/bamboo/image.png",
+        "description": "Natural bamboo-colored four-panel door combining style with eco-friendly aesthetics",
+        "images": [
+          "src/files/images/doors/bamboo/image.png"]
       },
       {
-        title: "Bay Windows",
-        image: "src/files/images/upvc/bay_windows/image.png",
-        images: [
-          "src/files/images/upvc/bay_windows/image.png",
-          "src/files/images/upvc/bay_windows/image copy.png",
-          "src/files/images/upvc/bay_windows/image copy 2.png",
-          "src/files/images/upvc/bay_windows/image copy 3.png"
-        ],
-        description: "Spacious bay windows that add character to any room"
+        "title": "Birch White Colored Glazed Internal PVC Door",
+        "image": "src/files/images/doors/whiteGlazed/image.png",
+        "description": "Bright birch white glazed door perfect for creating airy, spacious interiors",
+        "images": [
+          "src/files/images/doors/whiteGlazed/image.png"]
       },
       {
-        title: "Patio Doors",
-        image: "src/files/images/upvc/patio_doors/image.png",
-        images: [
-          "src/files/images/upvc/patio_doors/image.png",
-          "src/files/images/upvc/patio_doors/image copy.png",
-          "src/files/images/upvc/patio_doors/image copy 2.png",
-          "src/files/images/upvc/patio_doors/image copy 3.png"
-        ],
-        description: "Stylish patio doors perfect for indoor-outdoor living"
+        "title": "Classic Wooden Internal PVC Door",
+        "image": "src/files/images/doors/classicWoodenDoor/image.png",
+        "description": "Timeless classic wooden-style door with traditional design and modern PVC benefits",
+        "images": [
+          "src/files/images/doors/classicWoodenDoor/image.png"]
       },
       {
-        title: "Bi-fold Doors",
-        image: "src/files/images/upvc/bifold_doors/image.png",
-        images: [
-          "src/files/images/upvc/bifold_doors/image.png",
-          "src/files/images/upvc/bifold_doors/image copy.png",
-          "src/files/images/upvc/bifold_doors/image copy 2.png",
-          "src/files/images/upvc/bifold_doors/image copy 3.png"
-        ],
-        description: "Space-saving bi-fold doors with smooth folding mechanism"
+        "title": "Ecru Colored Lightly Grained PVC Panel Door",
+        "image": "src/files/images/doors/ercu/image.png",
+        "description": "Sophisticated ecru-colored door with subtle grain pattern for elegant interiors",
+        "images": [
+          "src/files/images/doors/ercu/image.png"]
       },
       {
-        title: "Fixed Windows",
-        image: "src/files/images/upvc/fixed_windows/image.png",
-        images: [
-          "src/files/images/upvc/fixed_windows/image.png",
-          "src/files/images/upvc/fixed_windows/image copy.png",
-          "src/files/images/upvc/fixed_windows/image copy 2.png",
-          "src/files/images/upvc/fixed_windows/image copy 3.png"
-        ],
-        description: "Energy-efficient fixed windows for maximum light"
+        "title": "Gold Half Glazed 2 Panel Internal PVC Door",
+        "image": "src/files/images/doors/gold_half/image.png",
+        "description": "Luxurious gold-toned half-glazed door with two panels for premium interior design",
+        "images": [
+          "src/files/images/doors/gold_half/image.png"]
       }
     ],
-    // Second set of UPVC items
-    [
-      {
-        title: "Awning Windows",
-        image: "src/files/images/upvc/awning_windows/image.png",
-        images: [
-          "src/files/images/upvc/awning_windows/image.png",
-          "src/files/images/upvc/awning_windows/image copy.png",
-          "src/files/images/upvc/awning_windows/image copy 2.png",
-          "src/files/images/upvc/awning_windows/image copy 3.png"
-        ],
-        description: "Practical awning windows for controlled ventilation"
-      },
-      {
-        title: "Hopper Windows",
-        image: "src/files/images/upvc/hopper_windows/image.png",
-        images: [
-          "src/files/images/upvc/hopper_windows/image.png",
-          "src/files/images/upvc/hopper_windows/image copy.png",
-          "src/files/images/upvc/hopper_windows/image copy 2.png",
-          "src/files/images/upvc/hopper_windows/image copy 3.png"
-        ],
-        description: "Compact hopper windows ideal for small spaces"
-      },
-      {
-        title: "Swing Doors",
-        image: "src/files/images/upvc/swing_doors/image.png",
-        images: [
-          "src/files/images/upvc/swing_doors/image.png",
-          "src/files/images/upvc/swing_doors/image copy.png",
-          "src/files/images/upvc/swing_doors/image copy 2.png",
-          "src/files/images/upvc/swing_doors/image copy 3.png"
-        ],
-        description: "Traditional swing doors with modern security features"
-      },
-      {
-        title: "Skylight Windows",
-        image: "src/files/images/upvc/skylight_windows/image.png",
-        images: [
-          "src/files/images/upvc/skylight_windows/image.png",
-          "src/files/images/upvc/skylight_windows/image copy.png",
-          "src/files/images/upvc/skylight_windows/image copy 2.png",
-          "src/files/images/upvc/skylight_windows/image copy 3.png"
-        ],
-        description: "Natural light enhancing skylight windows"
-      },
-      {
-        title: "Garden Doors",
-        image: "src/files/images/upvc/garden_doors/image.png",
-        images: [
-          "src/files/images/upvc/garden_doors/image.png",
-          "src/files/images/upvc/garden_doors/image copy.png",
-          "src/files/images/upvc/garden_doors/image copy 2.png",
-          "src/files/images/upvc/garden_doors/image copy 3.png"
-        ],
-        description: "Elegant garden doors connecting indoor and outdoor spaces"
-      },
-      {
-        title: "Picture Windows",
-        image: "src/files/images/upvc/picture_windows/image.png",
-        images: [
-          "src/files/images/upvc/picture_windows/image.png",
-          "src/files/images/upvc/picture_windows/image copy.png",
-          "src/files/images/upvc/picture_windows/image copy 2.png",
-          "src/files/images/upvc/picture_windows/image copy 3.png"
-        ],
-        description: "Large picture windows for unobstructed views"
-      },
-      {
-        title: "Entrance Doors",
-        image: "src/files/images/upvc/entrance_doors/image.png",
-        images: [
-          "src/files/images/upvc/entrance_doors/image.png",
-          "src/files/images/upvc/entrance_doors/image copy.png",
-          "src/files/images/upvc/entrance_doors/image copy 2.png",
-          "src/files/images/upvc/entrance_doors/image copy 3.png"
-        ],
-        description: "Secure and stylish entrance doors"
-      },
-      {
-        title: "Roof Windows",
-        image: "src/files/images/upvc/roof_windows/image.png",
-        images: [
-          "src/files/images/upvc/roof_windows/image.png",
-          "src/files/images/upvc/roof_windows/image copy.png",
-          "src/files/images/upvc/roof_windows/image copy 2.png",
-          "src/files/images/upvc/roof_windows/image copy 3.png"
-        ],
-        description: "Energy-efficient roof windows for attic spaces"
-      }
-    ]
+  
   ];
 
   const handlePrevSlide = () => {
@@ -245,9 +122,9 @@ const UPVCDoorsWindows = () => {
         <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
           <div className="text-white text-center animate-fade-in">
             <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-200 to-orange-200 bg-clip-text text-transparent leading-tight">
-              UPVC Doors & Windows
+              UPVC Doors
             </h1>
-            <p className="text-2xl text-gray-200 font-light">Premium quality UPVC doors and windows for your home</p>
+            <p className="text-2xl text-gray-200 font-light">Premium quality UPVC doors for your home</p>
           </div>
         </div>
       </div>
@@ -257,7 +134,7 @@ const UPVCDoorsWindows = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="/bathroom" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              Bathroom
+            Accessories
             </a>
             <a href="/sanitary" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Sanitary
@@ -269,7 +146,7 @@ const UPVCDoorsWindows = () => {
               Showers
             </a>
             <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              UPVC Doors & Windows
+              UPVC Doors
             </a>
             <a href="/kitchen-slabs" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Kitchen Slabs
@@ -300,7 +177,7 @@ const UPVCDoorsWindows = () => {
             Our UPVC Collection
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Explore our premium range of UPVC doors and windows designed to enhance your space with style and functionality
+            Explore our premium range of UPVC doors designed to enhance your space with style and functionality
           </p>
         </div>
         
@@ -319,7 +196,7 @@ const UPVCDoorsWindows = () => {
               }}
             >
               <div className="relative overflow-hidden">
-                <div className="aspect-[4/3] bg-cover bg-center transition-all duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}}>
+                <div className="aspect-[4/3] bg-contain bg-center bg-no-repeat transition-all duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}}>
                   <div className="h-full bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-black/70 transition-all duration-500 flex items-end">
                     <span className="text-white font-bold text-xl p-6 transform group-hover:translate-y-0 translate-y-2 transition-transform duration-500">{item.title}</span>
                   </div>
@@ -356,7 +233,7 @@ const UPVCDoorsWindows = () => {
               <img 
                 src={selectedItem.images[currentSlideIndex]} 
                 alt={selectedItem.title} 
-                className="w-full h-auto rounded-lg shadow-2xl"
+                className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
               />
               
               {/* Navigation Arrows */}

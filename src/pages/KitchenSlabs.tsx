@@ -138,7 +138,7 @@ const KitchenSlabs = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="/bathroom" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              Bathroom
+            Accessories
             </a>
             <a href="/sanitary" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Sanitary
@@ -150,7 +150,7 @@ const KitchenSlabs = () => {
               Showers
             </a>
             <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              UPVC Doors & Windows
+              UPVC Doors
             </a>
             <a href="/kitchen-slabs" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Kitchen Slabs
@@ -200,7 +200,7 @@ const KitchenSlabs = () => {
               }}
             >
               <div className="relative overflow-hidden">
-                <div className="aspect-[4/3] bg-cover bg-center transition-all duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}}>
+                <div className="aspect-[4/3] bg-contain bg-center bg-no-repeat transition-all duration-700 group-hover:scale-110" style={{backgroundImage: `url('${item.image}')`}}>
                   <div className="h-full bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-black/70 transition-all duration-500 flex items-end">
                     <span className="text-white font-bold text-xl p-6 transform group-hover:translate-y-0 translate-y-2 transition-transform duration-500">{item.title}</span>
                   </div>
@@ -237,7 +237,7 @@ const KitchenSlabs = () => {
               <img 
                 src={selectedItem.images[currentSlideIndex]} 
                 alt={selectedItem.title} 
-                className="w-full h-auto rounded-lg shadow-2xl"
+                className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
               />
               
               {/* Navigation Arrows */}
