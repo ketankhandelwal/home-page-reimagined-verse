@@ -216,7 +216,7 @@ const Bathroom = () => {
             backgroundImage: `url('src/files/images/accessories/image.png')`,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/30 to-black/40"></div>
 
         <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
           <div className="text-white text-center animate-fade-in">

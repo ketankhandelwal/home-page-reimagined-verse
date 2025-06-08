@@ -269,8 +269,9 @@ const Tiles = () => {
             style={{ backgroundImage: `url('${image}')` }}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
-        
+
+<div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/30 to-black/40"></div>
+
         {/* Decorative elements */}
         <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-yellow-400/30 to-orange-500/30 rounded-full blur-2xl animate-pulse"></div>
         <div className="absolute bottom-20 right-20 w-40 h-40 bg-gradient-to-tl from-blue-400/30 to-purple-500/30 rounded-full blur-2xl animate-pulse" style={{animationDelay: '1s'}}></div>

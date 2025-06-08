@@ -116,13 +116,13 @@ const Header = () => {
             transition={{ duration: 0.5 }}
             className="flex items-center"
           >
-            <Link to="/" className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center space-x-2">
               <img 
                 src="src/files/images/ChatGPT_Image_Jun_7__2025__01_07_22_PM-removebg-preview.png" 
                 alt="Kesarwani Sanitary Ware Logo" 
-                className="h-16 w-auto brightness-75 contrast-125"
+                className="h-12 md:h-16 w-auto brightness-75 contrast-125"
               />
-              <span className="text-2xl font-bold bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">
+              <span className="text-lg md:text-2xl font-bold bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">
                 KESARWANI SANITARY WARE
               </span>
             </Link>

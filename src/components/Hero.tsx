@@ -36,7 +36,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-r from-black/60 to-black/40 flex items-center overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-r from-black/60 to-black/40 flex items-center overflow-hidden pt-32 md:pt-0">
       {/* Background Images with Fade Effect */}
       {backgroundImages.map((image, index) => (
         <motion.div
@@ -65,32 +65,30 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="text-white"
           >
-            <div className="flex items-center gap-2 mb-6">
-              <Star className="w-5 h-5 text-yellow-400" />
-              <span className="text-yellow-400 font-medium">Pratapgarh's Premium Sanitary Ware</span>
+            <div className="flex items-center gap-2 mb-4 md:mb-6">
+              <Star className="w-4 h-4 md:w-5 md:h-5 text-yellow-400" />
+              <span className="text-sm md:text-base text-yellow-400 font-medium">Pratapgarh's Premium Sanitary Ware</span>
             </div>
             
-            <h1 className="text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 md:mb-6 leading-tight">
               Transform Your Space with{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
                 Premium Quality
               </span>
             </h1>
             
-            <p className="text-xl mb-8 text-gray-200 leading-relaxed">
+            <p className="text-base md:text-xl mb-6 md:mb-8 text-gray-200 leading-relaxed">
               Discover our exclusive collection of trendy tiles, durable faucets, elegant bathroom accessories & smart kitchen slabs. Elevate your home with style and quality.
             </p>
             
             <div className="flex flex-wrap gap-4">
               <Button 
                 onClick={scrollToContact}
-                className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-8 py-6 text-lg rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Get Your Free Quote
-                <ChevronRight className="ml-2 w-5 h-5" />
+                <ChevronRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
               </Button>
-              
-           
             </div>
           </motion.div>
           
