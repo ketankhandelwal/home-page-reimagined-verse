@@ -5,15 +5,13 @@ import { ChevronRight, Star } from "lucide-react";
 
 const Hero = () => {
   const backgroundImages = [
-   
-    'src/files/images/int_1.jpg',
-    'src/files/images/int_2.jpg',
-  
-    'src/files/images/hero_1.jpg',
-    'src/files/images/hero_2.jpg',
-    'src/files/images/hero_3.jpg',
-    'src/files/images/hero_4.jpg',
-    'src/files/images/hero_5.jpg'
+    '/files/images/int_1.jpg',
+    '/files/images/int_2.jpg',
+    '/files/images/hero_1.jpg',
+    '/files/images/hero_2.jpg',
+    '/files/images/hero_3.jpg',
+    '/files/images/hero_4.jpg',
+    '/files/images/hero_5.jpg'
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -56,59 +54,39 @@ const Hero = () => {
       <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-yellow-200/20 to-orange-300/20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-tl from-blue-200/20 to-purple-300/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
       
+      {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
-          {/* Main Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="text-white"
           >
-            <div className="flex items-center gap-2 mb-4 md:mb-6">
-              <Star className="w-4 h-4 md:w-5 md:h-5 text-yellow-400" />
-              <span className="text-sm md:text-base text-yellow-400 font-medium">Pratapgarh's Premium Sanitary Ware</span>
+            <div className="inline-block px-4 py-2 bg-white/10 backdrop-blur-md rounded-full mb-6 border border-white/20">
+              <span className="text-yellow-300 font-semibold text-sm uppercase tracking-wider">Premium Quality</span>
             </div>
-            
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 md:mb-6 leading-tight">
-              Transform Your Space with{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
-                Premium Quality
-              </span>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-200 to-orange-200 bg-clip-text text-transparent leading-tight">
+              Transform Your Space with Premium Sanitary Ware
             </h1>
-            
-            <p className="text-base md:text-xl mb-6 md:mb-8 text-gray-200 leading-relaxed">
-              Discover our exclusive collection of trendy tiles, durable faucets, elegant bathroom accessories & smart kitchen slabs. Elevate your home with style and quality.
+            <p className="text-xl text-gray-200 mb-8">
+              Discover our extensive collection of high-quality sanitary ware, tiles, and bathroom accessories.
             </p>
-            
             <div className="flex flex-wrap gap-4">
-              <Button 
+              <Button
                 onClick={scrollToContact}
-                className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-6 rounded-full text-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
               >
-                Get Your Free Quote
-                <ChevronRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
+                Contact Us
+                <ChevronRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button
+                variant="outline"
+                className="border-2 border-white/20 text-white px-8 py-6 rounded-full text-lg font-semibold hover:bg-white/10 transition-all duration-300"
+              >
+                View Catalog
               </Button>
             </div>
-          </motion.div>
-          
-          {/* Stats Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8"
-          >
-            {[
-              { number: "500+", label: "Products Available" },
-              { number: "25+", label: "Years Experience" },
-              { number: "10k+", label: "Happy Customers" }
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl font-bold text-yellow-400 mb-2">{stat.number}</div>
-                <div className="text-gray-300">{stat.label}</div>
-              </div>
-            ))}
           </motion.div>
         </div>
       </div>

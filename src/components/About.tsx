@@ -21,10 +21,10 @@ const About = () => {
 
   // Array of store images - replace with your actual image paths
   const storeImages = [
-    "   src/files/images/exterior.jpg",
-    "   src/files/images/int_1.jpg",
-    "  src/files/images/int_2.jpg",
-    "   src/files/images/int_3.jpg",
+    "/files/images/exterior.jpg",
+    "/files/images/int_1.jpg",
+    "/files/images/int_2.jpg",
+    "/files/images/int_3.jpg",
   ];
 
   const features = [
