@@ -24,24 +24,24 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'index.html'),
-      },
       output: {
         assetFileNames: (assetInfo) => {
           const name = assetInfo.name;
-          if (!name) return 'assets/[name][extname]';
+          if (!name) return 'assets/[name]-[hash][extname]';
           
-          if (name.endsWith('.jpg') || name.endsWith('.png') || name.endsWith('.gif')) {
-            return 'assets/images/[name][extname]';
+          if (name.match(/\.(jpg|jpeg|png|gif|svg)$/)) {
+            return 'assets/images/[name]-[hash][extname]';
           }
-          if (name.endsWith('.mp4')) {
-            return 'assets/videos/[name][extname]';
+          if (name.match(/\.(mp4|webm|ogg)$/)) {
+            return 'assets/videos/[name]-[hash][extname]';
           }
-          return 'assets/[name][extname]';
+          if (name.match(/\.(css)$/)) {
+            return 'assets/css/[name]-[hash][extname]';
+          }
+          return 'assets/[name]-[hash][extname]';
         },
-        chunkFileNames: 'assets/[name]-[hash].js',
-        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
       },
     },
   },
