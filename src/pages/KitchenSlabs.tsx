@@ -40,67 +40,67 @@ const KitchenSlabs = () => {
     [
       {
         "title": "Polished Granite",
-        "image": "src/files/images/kitchen/polished_granite/image copy.png",
+        "image": "files/images/kitchen/polished_granite/image copy.png",
         "description": "Luxurious polished granite countertops with natural patterns and high-gloss finish",
         "images": [
-       "src/files/images/kitchen/polished_granite/image copy.png"
+       "files/images/kitchen/polished_granite/image copy.png"
         ]
       },
       {
         "title": "Laminate Kitchen Countertops",
-        "image": "src/files/images/kitchen/laminated_kitchen/image.png",
+        "image": "files/images/kitchen/laminated_kitchen/image.png",
         "description": "Affordable and durable laminate countertops with various design options",
         "images": [
-          "src/files/images/kitchen/laminated_kitchen/image.png"
+          "files/images/kitchen/laminated_kitchen/image.png"
         ]
       },
       {
         "title": "Wooden Countertops",
-        "image": "src/files/images/kitchen/wooden/image.png",
+        "image": "files/images/kitchen/wooden/image.png",
         "description": "Warm and natural wood countertops perfect for traditional and modern kitchens",
         "images": [
-          "src/files/images/kitchen/wooden/image.png"
+          "files/images/kitchen/wooden/image.png"
         ]
 
       },
       {
         "title": "Marble Countertops",
-        "image": "src/files/images/kitchen/marble/image.png",
+        "image": "files/images/kitchen/marble/image.png",
         "description": "Elegant marble countertops with unique veining and timeless appeal",
         "images": [
-          "src/files/images/kitchen/marble/image.png"
+          "files/images/kitchen/marble/image.png"
         ]
       },
       {
         "title": "Honed Granite",
-        "image": "src/files/images/kitchen/honed/image.png",
+        "image": "files/images/kitchen/honed/image.png",
         "description": "Sophisticated honed granite with matte finish and scratch-resistant surface",
         "images": [
-          "src/files/images/kitchen/honed/image.png"
+          "files/images/kitchen/honed/image.png"
         ]
       },
       {
         "title": "Stainless Steel Kitchen Countertops",
-        "image": "src/files/images/kitchen/stainless/image.png",
+        "image": "files/images/kitchen/stainless/image.png",
         "description": "Professional-grade stainless steel countertops, hygienic and heat-resistant",
         "images": [
-          "src/files/images/kitchen/stainless/image.png"
+          "files/images/kitchen/stainless/image.png"
         ]
       },
       {
         "title": "Glass Countertops",
-        "image": "src/files/images/kitchen/glass/image.png",
+        "image": "files/images/kitchen/glass/image.png",
         "description": "Modern tempered glass countertops with sleek appearance and easy maintenance",
         "images": [
-          "src/files/images/kitchen/glass/image.png"
+          "files/images/kitchen/glass/image.png"
         ]
       },
       {
         "title": "Concrete Kitchen Countertops",
-        "image": "src/files/images/kitchen/concrete/image.png",
+        "image": "files/images/kitchen/concrete/image.png",
         "description": "Contemporary concrete countertops with customizable colors and textures",
         "images": [
-          "src/files/images/kitchen/concrete/image.png"
+          "files/images/kitchen/concrete/image.png"
         ]
       }
     ]
@@ -120,7 +120,7 @@ const KitchenSlabs = () => {
       
       {/* Hero Section */}
       <div className="relative h-[600px] overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('src/files/images/kitchen/image.png')` }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('files/images/kitchen/image.png')` }} />
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/30 to-black/40"></div>
         
         <div className="relative container mx-auto px-4 h-full flex items-center justify-center">

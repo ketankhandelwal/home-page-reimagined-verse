@@ -7,10 +7,10 @@ const Tiles = () => {
   const [selectedTile, setSelectedTile] = useState<{ images: string[], title: string } | null>(null);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const heroImages = [
-    'src/files/images/tiles/3d_tiles/3d_tiles.jpg',
-    'src/files/images/tiles/digital_tiles/digital_tiles.jpg',
-    'src/files/images/tiles/glass_tile/image.png',
-    'src/files/images/tiles/marble_tiles/image.png',
+    'files/images/tiles/3d_tiles/3d_tiles.jpg',
+    'files/images/tiles/digital_tiles/digital_tiles.jpg',
+    'files/images/tiles/glass_tile/image.png',
+    'files/images/tiles/marble_tiles/image.png',
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -63,102 +63,102 @@ const Tiles = () => {
     [
       {
         title: "Ceramic Tiles",
-        image: "src/files/images/tiles/ceramic_tiles/ceramic_tile_1.jpg",
+        image: "files/images/tiles/ceramic_tiles/ceramic_tile_1.jpg",
         images: [
-          "src/files/images/tiles/ceramic_tiles/ceramic_tile_1.jpg",
-          "src/files/images/tiles/ceramic_tiles/cera_1.png",
-          "src/files/images/tiles/ceramic_tiles/cera_2.png",
-          "src/files/images/tiles/ceramic_tiles/cera_3.png",
-          "src/files/images/tiles/ceramic_tiles/cera_4.png"
+          "files/images/tiles/ceramic_tiles/ceramic_tile_1.jpg",
+          "files/images/tiles/ceramic_tiles/cera_1.png",
+          "files/images/tiles/ceramic_tiles/cera_2.png",
+          "files/images/tiles/ceramic_tiles/cera_3.png",
+          "files/images/tiles/ceramic_tiles/cera_4.png"
         ],
         description: "High-quality Ceramic Tiles with elegant finish"
       },
       {
         title: "Porcelain Tiles",
-        image: "src/files/images/tiles/porcelain_tile/porcelain_tile.jpeg",
+        image: "files/images/tiles/porcelain_tile/porcelain_tile.jpeg",
         images: [
-          "src/files/images/tiles/porcelain_tile/porcelain_tile.jpeg",
-          "src/files/images/tiles/porcelain_tile/porce_1.png",
-          "src/files/images/tiles/porcelain_tile/porce_2.png",
-          "src/files/images/tiles/porcelain_tile/porce_3.png",
-          "src/files/images/tiles/porcelain_tile/porce_4.png",
-          "src/files/images/tiles/porcelain_tile/porce_5.png",
-          "src/files/images/tiles/porcelain_tile/porce_6.png"
+          "files/images/tiles/porcelain_tile/porcelain_tile.jpeg",
+          "files/images/tiles/porcelain_tile/porce_1.png",
+          "files/images/tiles/porcelain_tile/porce_2.png",
+          "files/images/tiles/porcelain_tile/porce_3.png",
+          "files/images/tiles/porcelain_tile/porce_4.png",
+          "files/images/tiles/porcelain_tile/porce_5.png",
+          "files/images/tiles/porcelain_tile/porce_6.png"
 
         ],
         description: "Fire resistant and water proof Porcelain Tiles"
       },
       {
         title: "Vitrified Tiles",
-        image: "src/files/images/tiles/vitrified_tile/vitrified_tiles.jpg",
+        image: "files/images/tiles/vitrified_tile/vitrified_tiles.jpg",
         images: [
-          "src/files/images/tiles/vitrified_tile/vitrified_tiles.jpg",
-          "src/files/images/tiles/vitrified_tile/vetri_1.png",
-          "src/files/images/tiles/vitrified_tile/vetri_2.png",
-          "src/files/images/tiles/vitrified_tile/vetri_3.png",
-          "src/files/images/tiles/vitrified_tile/vetri_4.png",
-          "src/files/images/tiles/vitrified_tile/vetri_5.png"
+          "files/images/tiles/vitrified_tile/vitrified_tiles.jpg",
+          "files/images/tiles/vitrified_tile/vetri_1.png",
+          "files/images/tiles/vitrified_tile/vetri_2.png",
+          "files/images/tiles/vitrified_tile/vetri_3.png",
+          "files/images/tiles/vitrified_tile/vetri_4.png",
+          "files/images/tiles/vitrified_tile/vetri_5.png"
         ],
         description: "Traditional Vitrified Tiles with modern finish"
       },
       {
         title: "Marble Tiles",
-        image: "src/files/images/tiles/marble_tiles/image.png",
+        image: "files/images/tiles/marble_tiles/image.png",
         images: [
-          "src/files/images/tiles/marble_tiles/image.png",
-          "src/files/images/tiles/marble_tiles/image copy.png",
-          "src/files/images/tiles/marble_tiles/image copy 2.png",
-          "src/files/images/tiles/marble_tiles/image copy 3.png",
-          "src/files/images/tiles/marble_tiles/image copy 4.png",
-          "src/files/images/tiles/marble_tiles/image copy 5.png"
+          "files/images/tiles/marble_tiles/image.png",
+          "files/images/tiles/marble_tiles/image copy.png",
+          "files/images/tiles/marble_tiles/image copy 2.png",
+          "files/images/tiles/marble_tiles/image copy 3.png",
+          "files/images/tiles/marble_tiles/image copy 4.png",
+          "files/images/tiles/marble_tiles/image copy 5.png"
 
         ],
         description: "Water resistant Marble Tiles for bathrooms"
       },
       {
         title: "Digital Tiles",
-        image: "src/files/images/tiles/digital_tiles/digital_tiles.jpg",
+        image: "files/images/tiles/digital_tiles/digital_tiles.jpg",
         images: [
-          "src/files/images/tiles/digital_tiles/digital_tiles.jpg",
-          "src/files/images/tiles/digital_tiles/image copy 2.png",
-          "src/files/images/tiles/digital_tiles/image copy.png",
-          "src/files/images/tiles/digital_tiles/image.png"
+          "files/images/tiles/digital_tiles/digital_tiles.jpg",
+          "files/images/tiles/digital_tiles/image copy 2.png",
+          "files/images/tiles/digital_tiles/image copy.png",
+          "files/images/tiles/digital_tiles/image.png"
         ],
         description: "Modern digital printed tiles with unique patterns"
       },
       {
         title: "3D Tiles",
-        image: "src/files/images/tiles/3d_tiles/3d_tiles.jpg",
+        image: "files/images/tiles/3d_tiles/3d_tiles.jpg",
         images: [
-          "src/files/images/tiles/3d_tiles/3d_tiles.jpg",
-          "src/files/images/tiles/3d_tiles/image copy 2.png",
-          "src/files/images/tiles/3d_tiles/image copy 3.png",
-          "src/files/images/tiles/3d_tiles/image.png"
+          "files/images/tiles/3d_tiles/3d_tiles.jpg",
+          "files/images/tiles/3d_tiles/image copy 2.png",
+          "files/images/tiles/3d_tiles/image copy 3.png",
+          "files/images/tiles/3d_tiles/image.png"
         ],
         description: "Dimensional tiles for modern interiors"
       },
       {
         title: "Pool Tiles",
-        image: "src/files/images/tiles/pool_tiles/pool_tiles.jpg",
+        image: "files/images/tiles/pool_tiles/pool_tiles.jpg",
         images: [
-          "src/files/images/tiles/pool_tiles/pool_tiles.jpg",
-          "src/files/images/tiles/pool_tiles/image copy 2.png",
-          "src/files/images/tiles/pool_tiles/image copy 3.png",
-          "src/files/images/tiles/pool_tiles/image copy.png",
-          "src/files/images/tiles/pool_tiles/image.png"
+          "files/images/tiles/pool_tiles/pool_tiles.jpg",
+          "files/images/tiles/pool_tiles/image copy 2.png",
+          "files/images/tiles/pool_tiles/image copy 3.png",
+          "files/images/tiles/pool_tiles/image copy.png",
+          "files/images/tiles/pool_tiles/image.png"
         ],
         description: "Specialized tiles for swimming pools"
       },
       {
         title: "Anti-Slip Tiles",
-        image: "src/files/images/tiles/anti_slip_tiles/anti_slip_tiles.webp",
+        image: "files/images/tiles/anti_slip_tiles/anti_slip_tiles.webp",
         images: [
-          "src/files/images/tiles/anti_slip_tiles/anti_slip_tiles.webp",
-          "src/files/images/tiles/anti_slip_tiles/anti_slip_tile_2.jpg",
-          "src/files/images/tiles/anti_slip_tiles/image copy 2.png",
-          "src/files/images/tiles/anti_slip_tiles/image copy 3.png",
-          "src/files/images/tiles/anti_slip_tiles/image copy.png",
-          "src/files/images/tiles/anti_slip_tiles/image.png"
+          "files/images/tiles/anti_slip_tiles/anti_slip_tiles.webp",
+          "files/images/tiles/anti_slip_tiles/anti_slip_tile_2.jpg",
+          "files/images/tiles/anti_slip_tiles/image copy 2.png",
+          "files/images/tiles/anti_slip_tiles/image copy 3.png",
+          "files/images/tiles/anti_slip_tiles/image copy.png",
+          "files/images/tiles/anti_slip_tiles/image.png"
         ],
         description: "Safety-focused tiles for wet areas"
       }
@@ -167,89 +167,89 @@ const Tiles = () => {
     [
       {
         title: "Metallic Tiles",
-        image: "src/files/images/tiles/metallic_tiles/image.png",
+        image: "files/images/tiles/metallic_tiles/image.png",
         images: [
-          "src/files/images/tiles/metallic_tiles/image.png",
-          "src/files/images/tiles/metallic_tiles/image copy 2.png",
-          "src/files/images/tiles/metallic_tiles/image copy 3.png",
-          "src/files/images/tiles/metallic_tiles/image copy.png"
+          "files/images/tiles/metallic_tiles/image.png",
+          "files/images/tiles/metallic_tiles/image copy 2.png",
+          "files/images/tiles/metallic_tiles/image copy 3.png",
+          "files/images/tiles/metallic_tiles/image copy.png"
         ],
         description: "Luxurious metallic finish tiles"
       },
       {
         title: "Glass Tiles",
-        image: "src/files/images/tiles/glass_tile/image.png",
+        image: "files/images/tiles/glass_tile/image.png",
         images: [
-          "src/files/images/tiles/glass_tile/image.png",
-          "src/files/images/tiles/glass_tile/image copy.png"
+          "files/images/tiles/glass_tile/image.png",
+          "files/images/tiles/glass_tile/image copy.png"
         ],
         description: "Elegant glass tiles for modern spaces"
       },
       {
         title: "Wood Look Tiles",
-        image: "src/files/images/tiles/wood_look_tile/image.png",
+        image: "files/images/tiles/wood_look_tile/image.png",
         images: [
-          "src/files/images/tiles/wood_look_tile/image.png",
-          "src/files/images/tiles/wood_look_tile/image copy.png",
-          "src/files/images/tiles/wood_look_tile/image copy 2.png",
-          "src/files/images/tiles/wood_look_tile/image copy 3.png"
+          "files/images/tiles/wood_look_tile/image.png",
+          "files/images/tiles/wood_look_tile/image copy.png",
+          "files/images/tiles/wood_look_tile/image copy 2.png",
+          "files/images/tiles/wood_look_tile/image copy 3.png"
         ],
         description: "Wooden appearance with tile durability"
       },
       {
         title: "Stone Look Tiles",
-        image: "src/files/images/tiles/stone_look_tile/image.png",
+        image: "files/images/tiles/stone_look_tile/image.png",
         images: [
-          "src/files/images/tiles/stone_look_tile/image.png",
-          "src/files/images/tiles/stone_look_tile/image copy.png",
-          "src/files/images/tiles/stone_look_tile/image copy 2.png",
-          "src/files/images/tiles/stone_look_tile/image copy 3.png"
+          "files/images/tiles/stone_look_tile/image.png",
+          "files/images/tiles/stone_look_tile/image copy.png",
+          "files/images/tiles/stone_look_tile/image copy 2.png",
+          "files/images/tiles/stone_look_tile/image copy 3.png"
         ],
         description: "Natural stone appearance with modern benefits"
       },
       {
         title: "Mosaic Tiles",
-        image: "src/files/images/tiles/mosaic_tile/image.png",
+        image: "files/images/tiles/mosaic_tile/image.png",
         images: [
-          "src/files/images/tiles/mosaic_tile/image.png",
-          "src/files/images/tiles/mosaic_tile/image copy.png",
-          "src/files/images/tiles/mosaic_tile/image copy 2.png",
-          "src/files/images/tiles/mosaic_tile/image copy 3.png"
+          "files/images/tiles/mosaic_tile/image.png",
+          "files/images/tiles/mosaic_tile/image copy.png",
+          "files/images/tiles/mosaic_tile/image copy 2.png",
+          "files/images/tiles/mosaic_tile/image copy 3.png"
         ],
         description: "Artistic mosaic patterns for unique designs"
       },
       {
         title: "Granite Tiles",
-        image: "src/files/images/tiles/granite_tile/image.png",
+        image: "files/images/tiles/granite_tile/image.png",
         images: [
-          "src/files/images/tiles/granite_tile/image.png",
-          "src/files/images/tiles/granite_tile/image copy.png",
-          "src/files/images/tiles/granite_tile/image copy 2.png",
-        "src/files/images/tiles/granite_tile/image copy 3.png"],
+          "files/images/tiles/granite_tile/image.png",
+          "files/images/tiles/granite_tile/image copy.png",
+          "files/images/tiles/granite_tile/image copy 2.png",
+        "files/images/tiles/granite_tile/image copy 3.png"],
         description: "Durable and elegant granite tiles for floors"
       },
       {
         title: "Wall Tiles",
-        image: "src/files/images/tiles/wall_tile/image.png",
+        image: "files/images/tiles/wall_tile/image.png",
         images: [
-          "src/files/images/tiles/wall_tile/image.png",
+          "files/images/tiles/wall_tile/image.png",
           
-          "src/files/images/tiles/wall_tile/image copy.png",
-          "src/files/images/tiles/wall_tile/image copy 2.png",
-          "src/files/images/tiles/wall_tile/image copy 3.png",
-          "src/files/images/tiles/wall_tile/image copy 4.png"
+          "files/images/tiles/wall_tile/image copy.png",
+          "files/images/tiles/wall_tile/image copy 2.png",
+          "files/images/tiles/wall_tile/image copy 3.png",
+          "files/images/tiles/wall_tile/image copy 4.png"
         ],
         description: "Stylish wall tiles for interior decoration"
       },
       {
         title: "Outdoor Tiles",
-        image: "src/files/images/tiles/outdoor_tiles/image.png",
+        image: "files/images/tiles/outdoor_tiles/image.png",
         images: [
-          "src/files/images/tiles/outdoor_tiles/image.png",
-          "src/files/images/tiles/outdoor_tiles/image copy.png",
-          "src/files/images/tiles/outdoor_tiles/image copy 2.png",
-          "src/files/images/tiles/outdoor_tiles/image copy 3.png",
-          "src/files/images/tiles/outdoor_tiles/image copy 4.png"
+          "files/images/tiles/outdoor_tiles/image.png",
+          "files/images/tiles/outdoor_tiles/image copy.png",
+          "files/images/tiles/outdoor_tiles/image copy 2.png",
+          "files/images/tiles/outdoor_tiles/image copy 3.png",
+          "files/images/tiles/outdoor_tiles/image copy 4.png"
         ],
         description: "Weather-resistant tiles for outdoor spaces"
       }

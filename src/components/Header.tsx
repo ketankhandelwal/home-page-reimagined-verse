@@ -118,7 +118,7 @@ const Header = () => {
           >
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="src/files/images/ChatGPT_Image_Jun_7__2025__01_07_22_PM-removebg-preview.png" 
+                src="files/images/ChatGPT_Image_Jun_7__2025__01_07_22_PM-removebg-preview.png" 
                 alt="Kesarwani Sanitary Ware Logo" 
                 className="h-12 md:h-16 w-auto brightness-100 contrast-150"
               />

@@ -45,100 +45,100 @@ const Showers = () => {
     [
       {
         title: "Rain Panels",
-        image: "src/files/images/showers/rainpanel/Screenshot 2025-06-02 at 13.12.17.png",
+        image: "files/images/showers/rainpanel/Screenshot 2025-06-02 at 13.12.17.png",
         description: "Luxurious rain panels for ultimate shower experience with wide coverage",
         "images": [
-          "src/files/images/showers/rainpanel/Screenshot 2025-06-02 at 13.12.17.png",
-          "src/files/images/showers/rainpanel/image.png",
-          "src/files/images/showers/rainpanel/image copy.png",
-          "src/files/images/showers/rainpanel/image copy 2.png"
+          "files/images/showers/rainpanel/Screenshot 2025-06-02 at 13.12.17.png",
+          "files/images/showers/rainpanel/image.png",
+          "files/images/showers/rainpanel/image copy.png",
+          "files/images/showers/rainpanel/image copy 2.png"
         ]
       },
       {
         title: "Rain Heads",
-        image: "src/files/images/showers/rainhead/Screenshot 2025-06-02 at 13.13.06.png",
+        image: "files/images/showers/rainhead/Screenshot 2025-06-02 at 13.13.06.png",
         description: "Premium rain shower heads delivering gentle rainfall sensation",
         "images": [
-          "src/files/images/showers/rainhead/Screenshot 2025-06-02 at 13.13.06.png",
-          "src/files/images/showers/rainhead/image.png",
-          "src/files/images/showers/rainhead/image copy.png",
-          "src/files/images/showers/rainhead/image copy 2.png",
-          "src/files/images/showers/rainhead/image copy 3.png"
+          "files/images/showers/rainhead/Screenshot 2025-06-02 at 13.13.06.png",
+          "files/images/showers/rainhead/image.png",
+          "files/images/showers/rainhead/image copy.png",
+          "files/images/showers/rainhead/image copy 2.png",
+          "files/images/showers/rainhead/image copy 3.png"
           ,
-          "src/files/images/showers/rainhead/image copy 4.png"
+          "files/images/showers/rainhead/image copy 4.png"
         ]
       },
       {
         title: "Shower Heads",
-        image: "src/files/images/showers/showerheads/Screenshot 2025-06-02 at 13.13.25.png",
+        image: "files/images/showers/showerheads/Screenshot 2025-06-02 at 13.13.25.png",
         description: "High-quality shower heads with adjustable spray patterns and water flow",
         "images": [
-          "src/files/images/showers/showerheads/Screenshot 2025-06-02 at 13.13.25.png",
-          "src/files/images/showers/showerheads/image.png",
-          "src/files/images/showers/showerheads/image copy.png",
-          "src/files/images/showers/showerheads/image copy 2.png",
-          "src/files/images/showers/showerheads/image copy 3.png",
-          "src/files/images/showers/showerheads/image copy 4.png"
+          "files/images/showers/showerheads/Screenshot 2025-06-02 at 13.13.25.png",
+          "files/images/showers/showerheads/image.png",
+          "files/images/showers/showerheads/image copy.png",
+          "files/images/showers/showerheads/image copy 2.png",
+          "files/images/showers/showerheads/image copy 3.png",
+          "files/images/showers/showerheads/image copy 4.png"
         ]
       },
       {
         title: "Hand Showers",
-        image: "src/files/images/showers/handshowers/Screenshot 2025-06-02 at 13.13.56.png",
+        image: "files/images/showers/handshowers/Screenshot 2025-06-02 at 13.13.56.png",
         description: "Ergonomic handheld showers with flexible hose for maximum convenience",
         "images": [
-          "src/files/images/showers/handshowers/Screenshot 2025-06-02 at 13.13.56.png",
-          "src/files/images/showers/handshowers/image.png",
-          "src/files/images/showers/handshowers/image copy.png",
-          "src/files/images/showers/handshowers/image copy 2.png",
-          "src/files/images/showers/handshowers/image copy 3.png",
+          "files/images/showers/handshowers/Screenshot 2025-06-02 at 13.13.56.png",
+          "files/images/showers/handshowers/image.png",
+          "files/images/showers/handshowers/image copy.png",
+          "files/images/showers/handshowers/image copy 2.png",
+          "files/images/showers/handshowers/image copy 3.png",
         ]
       },
       {
         title: "Body Sprays",
-        image: "src/files/images/showers/bodyspray/Screenshot 2025-06-02 at 13.14.53.png",
+        image: "files/images/showers/bodyspray/Screenshot 2025-06-02 at 13.14.53.png",
         description: "Therapeutic body spray jets for a complete spa-like shower experience",
         "images": [
-          "src/files/images/showers/bodyspray/Screenshot 2025-06-02 at 13.14.53.png",
-          "src/files/images/showers/bodyspray/image.png",
-          "src/files/images/showers/bodyspray/image copy.png",
-          "src/files/images/showers/bodyspray/image copy 2.png",
-          "src/files/images/showers/bodyspray/image copy 3.png"
+          "files/images/showers/bodyspray/Screenshot 2025-06-02 at 13.14.53.png",
+          "files/images/showers/bodyspray/image.png",
+          "files/images/showers/bodyspray/image copy.png",
+          "files/images/showers/bodyspray/image copy 2.png",
+          "files/images/showers/bodyspray/image copy 3.png"
         ]
       },
       {
         title: "Steam Showers",
-        image: "src/files/images/showers/steamShower/Screenshot 2025-06-02 at 13.15.29.png",
+        image: "files/images/showers/steamShower/Screenshot 2025-06-02 at 13.15.29.png",
         description: "Complete steam shower systems for relaxation and wellness therapy",
         "images": [
-          "src/files/images/showers/steamShower/Screenshot 2025-06-02 at 13.15.29.png",
-          "src/files/images/showers/steamShower/image.png",
-          "src/files/images/showers/steamShower/image copy.png",
-          "src/files/images/showers/steamShower/image copy 2.png",
-          "src/files/images/showers/steamShower/image copy 3.png",
-          "src/files/images/showers/steamShower/image copy 4.png"
+          "files/images/showers/steamShower/Screenshot 2025-06-02 at 13.15.29.png",
+          "files/images/showers/steamShower/image.png",
+          "files/images/showers/steamShower/image copy.png",
+          "files/images/showers/steamShower/image copy 2.png",
+          "files/images/showers/steamShower/image copy 3.png",
+          "files/images/showers/steamShower/image copy 4.png"
 
         ]
       },
       {
         title: "Multi Function Shower",
-        image: "src/files/images/showers/multiPurpose/Screenshot 2025-06-02 at 13.23.33.png",
+        image: "files/images/showers/multiPurpose/Screenshot 2025-06-02 at 13.23.33.png",
         description: "Versatile multi-function shower systems with various spray options",
         "images": [
-          "src/files/images/showers/multiPurpose/Screenshot 2025-06-02 at 13.23.33.png",
-          "src/files/images/showers/multiPurpose/image.png",
-          "src/files/images/showers/multiPurpose/image copy.png",
-          "src/files/images/showers/multiPurpose/image copy 2.png",
-          "src/files/images/showers/multiPurpose/image copy 3.png"
+          "files/images/showers/multiPurpose/Screenshot 2025-06-02 at 13.23.33.png",
+          "files/images/showers/multiPurpose/image.png",
+          "files/images/showers/multiPurpose/image copy.png",
+          "files/images/showers/multiPurpose/image copy 2.png",
+          "files/images/showers/multiPurpose/image copy 3.png"
         ]
       },
       {
         title: "HydroLite Showers",
-        image: "src/files/images/showers/hydroliteShower/Screenshot 2025-06-02 at 13.20.34.png",
+        image: "files/images/showers/hydroliteShower/Screenshot 2025-06-02 at 13.20.34.png",
         description: "Advanced HydroLite technology for efficient water usage and performance",
         "images": [
-          "src/files/images/showers/hydroliteShower/Screenshot 2025-06-02 at 13.20.34.png",
-          "src/files/images/showers/hydroliteShower/image.png",
-          "src/files/images/showers/hydroliteShower/image copy.png",
+          "files/images/showers/hydroliteShower/Screenshot 2025-06-02 at 13.20.34.png",
+          "files/images/showers/hydroliteShower/image.png",
+          "files/images/showers/hydroliteShower/image copy.png",
         ]
       }
     ]
@@ -160,7 +160,7 @@ const Showers = () => {
       
       {/* Hero Section */}
       <div className="relative h-[600px] overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('src/files/images/showers/image.png')` }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('files/images/showers/image.png')` }} />
 
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/30 to-black/40"></div>
 

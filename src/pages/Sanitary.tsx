@@ -45,99 +45,99 @@ const Sanitary = () => {
     [
       {
         title: "Wall Mounted Basin",
-        image: "src/files/images/sanitary/wall_mounted_basin/wall_mounted_basin.jpg",
+        image: "files/images/sanitary/wall_mounted_basin/wall_mounted_basin.jpg",
         images: [
-          "src/files/images/sanitary/wall_mounted_basin/wall_mounted_basin.jpg",
-          "src/files/images/sanitary/wall_mounted_basin/image.png",
-          "src/files/images/sanitary/wall_mounted_basin/image copy.png",
-          "src/files/images/sanitary/wall_mounted_basin/image copy 2.png"
+          "files/images/sanitary/wall_mounted_basin/wall_mounted_basin.jpg",
+          "files/images/sanitary/wall_mounted_basin/image.png",
+          "files/images/sanitary/wall_mounted_basin/image copy.png",
+          "files/images/sanitary/wall_mounted_basin/image copy 2.png"
 
         ],
         description: "Modern wall mounted basin with elegant design"
       },
       {
         title: "Counter Top Basin",
-        image: "src/files/images/sanitary/counter_top_washbasin/image.png",
+        image: "files/images/sanitary/counter_top_washbasin/image.png",
         images: [
-          "src/files/images/sanitary/counter_top_washbasin/image.png",
-          "src/files/images/sanitary/counter_top_washbasin/image copy.png",
-          "src/files/images/sanitary/counter_top_washbasin/image copy 2.png",
-          "src/files/images/sanitary/counter_top_washbasin/image copy 3.png",
-          "src/files/images/sanitary/counter_top_washbasin/image copy 4.png"
+          "files/images/sanitary/counter_top_washbasin/image.png",
+          "files/images/sanitary/counter_top_washbasin/image copy.png",
+          "files/images/sanitary/counter_top_washbasin/image copy 2.png",
+          "files/images/sanitary/counter_top_washbasin/image copy 3.png",
+          "files/images/sanitary/counter_top_washbasin/image copy 4.png"
         ],
         description: "Stylish counter top basin for modern bathrooms"
       },
       {
         title: "Pedestal Basin",
-        image: "src/files/images/sanitary/pedestal_basin/image.png",
+        image: "files/images/sanitary/pedestal_basin/image.png",
         images: [
-          "src/files/images/sanitary/pedestal_basin/image.png",
+          "files/images/sanitary/pedestal_basin/image.png",
     
-          "src/files/images/sanitary/pedestal_basin/image copy 2.png",
-          "src/files/images/sanitary/pedestal_basin/image copy 3.png",
-          "src/files/images/sanitary/pedestal_basin/image copy 4.png",
-          "src/files/images/sanitary/pedestal_basin/image copy 5.png"
+          "files/images/sanitary/pedestal_basin/image copy 2.png",
+          "files/images/sanitary/pedestal_basin/image copy 3.png",
+          "files/images/sanitary/pedestal_basin/image copy 4.png",
+          "files/images/sanitary/pedestal_basin/image copy 5.png"
         ],
         description: "Classic pedestal basin with timeless appeal"
       },
       {
         title: "Wall Hung WC",
-        image: "src/files/images/sanitary/wc_hung/wall_hung_2.jpg",
+        image: "files/images/sanitary/wc_hung/wall_hung_2.jpg",
         images: [
-          "src/files/images/sanitary/wc_hung/wall_hung_2.jpg",
-          "src/files/images/sanitary/wc_hung/image.png",
-          "src/files/images/sanitary/wc_hung/image copy.png",
-          "src/files/images/sanitary/wc_hung/image copy 2.png",
-          "src/files/images/sanitary/wc_hung/image copy 3.png"
+          "files/images/sanitary/wc_hung/wall_hung_2.jpg",
+          "files/images/sanitary/wc_hung/image.png",
+          "files/images/sanitary/wc_hung/image copy.png",
+          "files/images/sanitary/wc_hung/image copy 2.png",
+          "files/images/sanitary/wc_hung/image copy 3.png"
         ],
         description: "Space-saving wall hung toilet with modern features"
       },
       {
         title: "Floor Mounted WC",
-        image: "src/files/images/sanitary/floor_mounted_wc/image.png",
+        image: "files/images/sanitary/floor_mounted_wc/image.png",
         images: [
-          "src/files/images/sanitary/floor_mounted_wc/image.png",
-          "src/files/images/sanitary/floor_mounted_wc/image copy.png",
-          "src/files/images/sanitary/floor_mounted_wc/image copy 2.png",
-          "src/files/images/sanitary/floor_mounted_wc/image copy 3.png",
-          "src/files/images/sanitary/floor_mounted_wc/image copy 4.png"
+          "files/images/sanitary/floor_mounted_wc/image.png",
+          "files/images/sanitary/floor_mounted_wc/image copy.png",
+          "files/images/sanitary/floor_mounted_wc/image copy 2.png",
+          "files/images/sanitary/floor_mounted_wc/image copy 3.png",
+          "files/images/sanitary/floor_mounted_wc/image copy 4.png"
 
         ],
         description: "Traditional floor mounted toilet with comfort features"
       },
       {
         title: "Bidet",
-        image: "src/files/images/sanitary/bidet/image.png",
+        image: "files/images/sanitary/bidet/image.png",
         images: [
-          "src/files/images/sanitary/bidet/image.png",
-          "src/files/images/sanitary/bidet/image copy.png",
-          "src/files/images/sanitary/bidet/image copy 2.png",
-          "src/files/images/sanitary/bidet/image copy 3.png",
-          "src/files/images/sanitary/bidet/image copy 4.png"
+          "files/images/sanitary/bidet/image.png",
+          "files/images/sanitary/bidet/image copy.png",
+          "files/images/sanitary/bidet/image copy 2.png",
+          "files/images/sanitary/bidet/image copy 3.png",
+          "files/images/sanitary/bidet/image copy 4.png"
         ],
         description: "Modern bidet with advanced hygiene features"
       },
       {
         title: "Urinal",
-        image: "src/files/images/sanitary/urinal/image.png",
+        image: "files/images/sanitary/urinal/image.png",
         images: [
-          "src/files/images/sanitary/urinal/image.png",
-          "src/files/images/sanitary/urinal/image copy.png",
-          "src/files/images/sanitary/urinal/image copy 2.png",
-          "src/files/images/sanitary/urinal/image copy 3.png",
-          "src/files/images/sanitary/urinal/image copy 4.png"
+          "files/images/sanitary/urinal/image.png",
+          "files/images/sanitary/urinal/image copy.png",
+          "files/images/sanitary/urinal/image copy 2.png",
+          "files/images/sanitary/urinal/image copy 3.png",
+          "files/images/sanitary/urinal/image copy 4.png"
         ],
         description: "Water-efficient urinal for commercial spaces"
       },
       {
         title: "Shower Tray",
-        image: "src/files/images/sanitary/shower_tray/image.png",
+        image: "files/images/sanitary/shower_tray/image.png",
         images: [
-          "src/files/images/sanitary/shower_tray/image.png",
-          "src/files/images/sanitary/shower_tray/image copy.png",
-          "src/files/images/sanitary/shower_tray/image copy 2.png",
-          "src/files/images/sanitary/shower_tray/image copy 3.png",
-          "src/files/images/sanitary/shower_tray/image copy 4.png"
+          "files/images/sanitary/shower_tray/image.png",
+          "files/images/sanitary/shower_tray/image copy.png",
+          "files/images/sanitary/shower_tray/image copy 2.png",
+          "files/images/sanitary/shower_tray/image copy 3.png",
+          "files/images/sanitary/shower_tray/image copy 4.png"
         ],
         description: "Durable shower tray with anti-slip surface"
       }
@@ -146,92 +146,92 @@ const Sanitary = () => {
     [
       {
         title: "Shower Panel",
-        image: "src/files/images/sanitary/shower_panel/Screenshot 2025-06-02 at 12.54.34.png",
+        image: "files/images/sanitary/shower_panel/Screenshot 2025-06-02 at 12.54.34.png",
         images: [
-          "src/files/images/sanitary/shower_panel/Screenshot 2025-06-02 at 12.54.34.png",
-          "src/files/images/sanitary/shower_panel/image copy.png",
-          "src/files/images/sanitary/shower_panel/image copy 2.png",
-          "src/files/images/sanitary/shower_panel/image copy 3.png",
-          "src/files/images/sanitary/shower_panel/image copy 4.png"
+          "files/images/sanitary/shower_panel/Screenshot 2025-06-02 at 12.54.34.png",
+          "files/images/sanitary/shower_panel/image copy.png",
+          "files/images/sanitary/shower_panel/image copy 2.png",
+          "files/images/sanitary/shower_panel/image copy 3.png",
+          "files/images/sanitary/shower_panel/image copy 4.png"
         ],
         description: "Luxury shower panel with multiple functions"
       },
       {
         title: "Shower Enclosure",
-        image: "src/files/images/sanitary/shower_enclosure/image.png",
+        image: "files/images/sanitary/shower_enclosure/image.png",
         images: [
-          "src/files/images/sanitary/shower_enclosure/image.png",
-          "src/files/images/sanitary/shower_enclosure/image copy.png",
-          "src/files/images/sanitary/shower_enclosure/image copy 2.png",
-          "src/files/images/sanitary/shower_enclosure/image copy 3.png"
+          "files/images/sanitary/shower_enclosure/image.png",
+          "files/images/sanitary/shower_enclosure/image copy.png",
+          "files/images/sanitary/shower_enclosure/image copy 2.png",
+          "files/images/sanitary/shower_enclosure/image copy 3.png"
         ],
         description: "Modern shower enclosure with sleek design"
       },
       {
         title: "Bath Tub",
-        image: "src/files/images/sanitary/bathtub/image.png",
+        image: "files/images/sanitary/bathtub/image.png",
         images: [
-          "src/files/images/sanitary/bathtub/image.png",
-          "src/files/images/sanitary/bathtub/image copy.png",
-          "src/files/images/sanitary/bathtub/image copy 2.png",
-          "src/files/images/sanitary/bathtub/image copy 3.png",
-          "src/files/images/sanitary/bathtub/image copy 4.png"
+          "files/images/sanitary/bathtub/image.png",
+          "files/images/sanitary/bathtub/image copy.png",
+          "files/images/sanitary/bathtub/image copy 2.png",
+          "files/images/sanitary/bathtub/image copy 3.png",
+          "files/images/sanitary/bathtub/image copy 4.png"
         ],
         description: "Comfortable bath tub with ergonomic design"
       },
       {
         title: "Jacuzzi",
-        image: "src/files/images/sanitary/jacuzi/image.png",
+        image: "files/images/sanitary/jacuzi/image.png",
         images: [
-          "src/files/images/sanitary/jacuzi/image.png",
-          "src/files/images/sanitary/jacuzi/image copy.png",
-          "src/files/images/sanitary/jacuzi/image copy 2.png",
-          "src/files/images/sanitary/jacuzi/image copy 3.png",
-          "src/files/images/sanitary/jacuzi/image copy 4.png"
+          "files/images/sanitary/jacuzi/image.png",
+          "files/images/sanitary/jacuzi/image copy.png",
+          "files/images/sanitary/jacuzi/image copy 2.png",
+          "files/images/sanitary/jacuzi/image copy 3.png",
+          "files/images/sanitary/jacuzi/image copy 4.png"
         ],
         description: "Luxury jacuzzi with hydrotherapy features"
       },
       {
         title: "Water Closet",
-        image: "src/files/images/sanitary/water_closet/image.png",
+        image: "files/images/sanitary/water_closet/image.png",
         images: [
-          "src/files/images/sanitary/water_closet/image.png",
-          "src/files/images/sanitary/water_closet/image copy.png",
-          "src/files/images/sanitary/water_closet/image copy 2.png",
-          "src/files/images/sanitary/water_closet/image copy 3.png",
-          "src/files/images/sanitary/water_closet/image copy 4.png",
-          "src/files/images/sanitary/water_closet/image copy 5.png"
+          "files/images/sanitary/water_closet/image.png",
+          "files/images/sanitary/water_closet/image copy.png",
+          "files/images/sanitary/water_closet/image copy 2.png",
+          "files/images/sanitary/water_closet/image copy 3.png",
+          "files/images/sanitary/water_closet/image copy 4.png",
+          "files/images/sanitary/water_closet/image copy 5.png"
         ],
         description: "Complete water closet solution for modern bathrooms"
       },
       {
         title: "Accessories",
-        image: "src/files/images/sanitary/accessories/image.png",
+        image: "files/images/sanitary/accessories/image.png",
         images: [
-          "src/files/images/sanitary/accessories/image.png",
+          "files/images/sanitary/accessories/image.png",
         ],
         description: "Essential bathroom accessories and fittings"
       },
       {
         title: "Mirror Cabinet",
-        image: "src/files/images/sanitary/mirror_cabinet/image.png",
+        image: "files/images/sanitary/mirror_cabinet/image.png",
         images: [
-          "src/files/images/sanitary/mirror_cabinet/image.png",
-          "src/files/images/sanitary/mirror_cabinet/image copy.png",
-          "src/files/images/sanitary/mirror_cabinet/image copy 2.png",
-          "src/files/images/sanitary/mirror_cabinet/image copy 3.png"
+          "files/images/sanitary/mirror_cabinet/image.png",
+          "files/images/sanitary/mirror_cabinet/image copy.png",
+          "files/images/sanitary/mirror_cabinet/image copy 2.png",
+          "files/images/sanitary/mirror_cabinet/image copy 3.png"
         ],
         description: "Smart mirror cabinet with storage space"
       },
       {
         title: "Towel Rack",
-        image: "src/files/images/sanitary/towel_rack/image.png",
+        image: "files/images/sanitary/towel_rack/image.png",
         images: [
-          "src/files/images/sanitary/towel_rack/image.png",
-          "src/files/images/sanitary/towel_rack/image copy.png",
-          "src/files/images/sanitary/towel_rack/image copy 2.png",
-          "src/files/images/sanitary/towel_rack/image copy 3.png",
-          "src/files/images/sanitary/towel_rack/image copy 4.png"
+          "files/images/sanitary/towel_rack/image.png",
+          "files/images/sanitary/towel_rack/image copy.png",
+          "files/images/sanitary/towel_rack/image copy 2.png",
+          "files/images/sanitary/towel_rack/image copy 3.png",
+          "files/images/sanitary/towel_rack/image copy 4.png"
         ],
         description: "Stylish towel rack with modern design"
       }
@@ -252,7 +252,7 @@ const Sanitary = () => {
       
       {/* Hero Section */}
       <div className="relative h-[600px] overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('src/files/images/sanitary/pexels-vika-glitter-392079-3315291.jpg')` }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('files/images/sanitary/pexels-vika-glitter-392079-3315291.jpg')` }} />
 
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/30 to-black/40"></div>
 

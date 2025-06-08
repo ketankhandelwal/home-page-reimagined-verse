@@ -48,103 +48,103 @@ const Bathroom = () => {
     [
       {
         title: "Grab Bars",
-        image: "src/files/images/accessories/grabBars/image.png",
+        image: "files/images/accessories/grabBars/image.png",
         description:
           "Durable safety grab bars designed to provide support and stability in showers and near toilets.",
         images: [
-          "src/files/images/accessories/grabBars/image.png",
-          "src/files/images/accessories/grabBars/image copy.png",
-          "src/files/images/accessories/grabBars/image copy 4.png",
-          "src/files/images/accessories/grabBars/image copy 3.png",
+          "files/images/accessories/grabBars/image.png",
+          "files/images/accessories/grabBars/image copy.png",
+          "files/images/accessories/grabBars/image copy 4.png",
+          "files/images/accessories/grabBars/image copy 3.png",
         ],
       },
       {
         title: "Soap Dispensers",
-        image: "src/files/images/accessories/soap_dispenser/image.png",
+        image: "files/images/accessories/soap_dispenser/image.png",
         description:
           "Convenient and stylish soap dispensers available in automatic and manual options.",
         images: [
-          "src/files/images/accessories/soap_dispenser/image.png",
-          "src/files/images/accessories/soap_dispenser/image copy.png",
-          "src/files/images/accessories/soap_dispenser/image copy 2.png",
-          "src/files/images/accessories/soap_dispenser/image copy 3.png",
+          "files/images/accessories/soap_dispenser/image.png",
+          "files/images/accessories/soap_dispenser/image copy.png",
+          "files/images/accessories/soap_dispenser/image copy 2.png",
+          "files/images/accessories/soap_dispenser/image copy 3.png",
         ],
       },
       {
         title: "Towel Ring",
-        image: "src/files/images/accessories/towel_ring/image.png",
+        image: "files/images/accessories/towel_ring/image.png",
         description:
           "Compact and elegant towel rings for hand towels and small spaces.",
         images: [
-          "src/files/images/accessories/towel_ring/image.png",
-          "src/files/images/accessories/towel_ring/image copy.png",
-          "src/files/images/accessories/towel_ring/image copy 2.png",
-          "src/files/images/accessories/towel_ring/image copy 3.png",
+          "files/images/accessories/towel_ring/image.png",
+          "files/images/accessories/towel_ring/image copy.png",
+          "files/images/accessories/towel_ring/image copy 2.png",
+          "files/images/accessories/towel_ring/image copy 3.png",
         ],
       },
       {
         title: "Towel Rod",
-        image: "src/files/images/accessories/towel_rods/image.png",
+        image: "files/images/accessories/towel_rods/image.png",
         description:
           "Wall-mounted towel rods ideal for hanging full-sized towels.",
         images: [
-          "src/files/images/accessories/towel_rods/image.png",
-          "src/files/images/accessories/towel_rods/image copy.png",
-          "src/files/images/accessories/towel_rods/image copy 2.png",
-          "src/files/images/accessories/towel_rods/image copy 3.png",
+          "files/images/accessories/towel_rods/image.png",
+          "files/images/accessories/towel_rods/image copy.png",
+          "files/images/accessories/towel_rods/image copy 2.png",
+          "files/images/accessories/towel_rods/image copy 3.png",
         ],
       },
       {
         title: "Bathroom Sets",
-        image: "src/files/images/accessories/bathroom_Sets/image copy 2.png",
+        image: "files/images/accessories/bathroom_Sets/image copy 2.png",
         description:
           "Coordinated bathroom sets including dispensers, holders, and accessories.",
         images: [
-          "src/files/images/accessories/bathroom_Sets/image copy 2.png",
-          "src/files/images/accessories/bathroom_Sets/image.png",
-          "src/files/images/accessories/bathroom_Sets/image copy.png",
-          "src/files/images/accessories/bathroom_Sets/image copy 3.png",
+          "files/images/accessories/bathroom_Sets/image copy 2.png",
+          "files/images/accessories/bathroom_Sets/image.png",
+          "files/images/accessories/bathroom_Sets/image copy.png",
+          "files/images/accessories/bathroom_Sets/image copy 3.png",
         ],
       },
       {
         title: "Towel Rack",
-        image: "src/files/images/accessories/towel_rack/image copy.png",
+        image: "files/images/accessories/towel_rack/image copy.png",
         description:
           "Spacious towel racks for organizing and drying multiple towels.",
         images: [
-          "src/files/images/accessories/towel_rack/image copy.png",
-          "src/files/images/accessories/towel_rack/image.png",
-          "src/files/images/accessories/towel_rack/image copy 2.png",
-          "src/files/images/accessories/towel_rack/image copy 3.png",
-          "src/files/images/accessories/towel_rack/image copy 4.png",
+          "files/images/accessories/towel_rack/image copy.png",
+          "files/images/accessories/towel_rack/image.png",
+          "files/images/accessories/towel_rack/image copy 2.png",
+          "files/images/accessories/towel_rack/image copy 3.png",
+          "files/images/accessories/towel_rack/image copy 4.png",
         ],
       },
  
       {
         title: "Corner Shelves",
-        image: "src/files/images/accessories/corner_shelves/image.png",
+        image: "files/images/accessories/corner_shelves/image.png",
         description:
           "Space-saving corner shelves for organizing toiletries and accessories.",
         images: [
-          "src/files/images/accessories/corner_shelves/image.png",
-          "src/files/images/accessories/corner_shelves/image copy.png",
-          "src/files/images/accessories/corner_shelves/image copy 2.png",
-          "src/files/images/accessories/corner_shelves/image copy 3.png",
-          "src/files/images/accessories/corner_shelves/image copy 4.png",
-          "src/files/images/accessories/corner_shelves/image copy 5.png",
+          "files/images/accessories/corner_shelves/image.png",
+          "files/images/accessories/corner_shelves/image copy.png",
+          "files/images/accessories/corner_shelves/image copy 2.png",
+          "files/images/accessories/corner_shelves/image copy 3.png",
+          "files/images/accessories/corner_shelves/image copy 4.png",
+          "files/images/accessories/corner_shelves/image copy 5.png",
         ],
       },
       {
         title: "Wall Pegs",
-        image: "src/files/images/accessories/wall_pegs/image copy.png",
+        image: "files/images/accessories/wall_pegs/image copy.png",
         description:
           "Minimalist wall pegs for hanging towels, robes, and accessories.",
         images: [
-          "src/files/images/accessories/wall_pegs/image copy.png",
-          "src/files/images/accessories/wall_pegs/image.png",
-          "src/files/images/accessories/wall_pegs/image copy 2.png",
-          "src/files/images/accessories/wall_pegs/image copy 3.png",
-          "src/files/images/accessories/wall_pegs/image copy 4.png",
+          "files/images/accessories/wall_pegs/image copy.png",
+          "files/images/accessories/wall_pegs/image.png",
+          "files/images/accessories/wall_pegs/image copy 2.png",
+          "files/images/accessories/wall_pegs/image copy 3.png",
+          "files/images/accessories/wall_pegs/image copy 4.png",
         ],
       }
     ],
@@ -152,39 +152,39 @@ const Bathroom = () => {
     [
       {
         title: "Hinges",
-        image: "src/files/images/accessories/hinges/image.png",
+        image: "files/images/accessories/hinges/image.png",
         description:
           "High-quality door hinges for cabinets and bathroom enclosures.",
         images: [
-          "src/files/images/accessories/hinges/image.png",
-          "src/files/images/accessories/hinges/image copy.png",
-          "src/files/images/accessories/hinges/image copy 2.png",
-          "src/files/images/accessories/hinges/image copy 3.png",
+          "files/images/accessories/hinges/image.png",
+          "files/images/accessories/hinges/image copy.png",
+          "files/images/accessories/hinges/image copy 2.png",
+          "files/images/accessories/hinges/image copy 3.png",
         ],
       },
       {
         title: "Napkin Holder",
-        image: "src/files/images/accessories/napkin_holder/image.png",
+        image: "files/images/accessories/napkin_holder/image.png",
         description:
           "Modern and functional napkin holders for bathroom and dining areas.",
         images: [
-          "src/files/images/accessories/napkin_holder/image.png",
-          "src/files/images/accessories/napkin_holder/image copy.png",
-          "src/files/images/accessories/napkin_holder/image copy 2.png",
-          "src/files/images/accessories/napkin_holder/image copy 3.png",
-          "src/files/images/accessories/napkin_holder/image copy 4.png",
+          "files/images/accessories/napkin_holder/image.png",
+          "files/images/accessories/napkin_holder/image copy.png",
+          "files/images/accessories/napkin_holder/image copy 2.png",
+          "files/images/accessories/napkin_holder/image copy 3.png",
+          "files/images/accessories/napkin_holder/image copy 4.png",
         ],
       },
       {
         title: "Tumbler Holder",
-        image: "src/files/images/accessories/tumbler/image.png",
+        image: "files/images/accessories/tumbler/image.png",
         description:
           "Mounted tumbler holders for easy access to cups and toothbrushes.",
         images: [
-          "src/files/images/accessories/tumbler/image.png",
-          "src/files/images/accessories/tumbler/image copy.png",
-          "src/files/images/accessories/tumbler/image copy 2.png",
-          "src/files/images/accessories/tumbler/image copy 3.png",
+          "files/images/accessories/tumbler/image.png",
+          "files/images/accessories/tumbler/image copy.png",
+          "files/images/accessories/tumbler/image copy 2.png",
+          "files/images/accessories/tumbler/image copy 3.png",
         ],
       },
 
@@ -213,7 +213,7 @@ const Bathroom = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('src/files/images/accessories/image.png')`,
+            backgroundImage: `url('files/images/accessories/image.png')`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/30 to-black/40"></div>

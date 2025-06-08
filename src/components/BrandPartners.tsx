@@ -1,17 +1,17 @@
 const BrandPartners = () => {
   const brands = [
-    { name: "Astral Pipes", logo: "src/files/images/brands/astral.png" },
-    { name: "RAK Ceramic", logo: "src/files/images/brands/rak.png" },
-    { name: "Rudraksha", logo: "src/files/images/brands/rudra.png" },
-    { name: "Varmora", logo: "src/files/images/brands/varmora.png" },
-    { name: "Prayag", logo: "src/files/images/brands/prayg.png" },
-    { name: "Cera Ceramics", logo: "src/files/images/brands/cera.png" },
-    { name: "Supreme", logo: "src/files/images/brands/sup.png" },
-    { name: "Plasto", logo: "src/files/images/brands/plasto.png" },
-    { name: "Max", logo: "src/files/images/brands/max.png" },
-    { name: "Eauset", logo: "src/files/images/brands/eauset.png" },
-    { name: "Xen", logo: "src/files/images/brands/Xen.png" },
-    { name: "Gravity", logo: "src/files/images/brands/gravity.png" },
+    { name: "Astral Pipes", logo: "files/images/brands/astral.png" },
+    { name: "RAK Ceramic", logo: "files/images/brands/rak.png" },
+    { name: "Rudraksha", logo: "files/images/brands/rudra.png" },
+    { name: "Varmora", logo: "files/images/brands/varmora.png" },
+    { name: "Prayag", logo: "files/images/brands/prayg.png" },
+    { name: "Cera Ceramics", logo: "files/images/brands/cera.png" },
+    { name: "Supreme", logo: "files/images/brands/sup.png" },
+    { name: "Plasto", logo: "files/images/brands/plasto.png" },
+    { name: "Max", logo: "files/images/brands/max.png" },
+    { name: "Eauset", logo: "files/images/brands/eauset.png" },
+    { name: "Xen", logo: "files/images/brands/Xen.png" },
+    { name: "Gravity", logo: "files/images/brands/gravity.png" },
   ];
 
   return (

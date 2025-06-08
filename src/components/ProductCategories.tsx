@@ -12,32 +12,32 @@ const ProductCategories = () => {
   const categories = [
     {
       title: "Tiles",
-      image: "src/files/images/tiles/stone_look_tile/image.png",
+      image: "files/images/tiles/stone_look_tile/image.png",
       route: "/tiles"
     },
     {
       title: "Sanitary",
-      image: "src/files/images/sanitary/counter_top_washbasin/image.png",
+      image: "files/images/sanitary/counter_top_washbasin/image.png",
       route: "/sanitary"
     },
     {
       title: "Faucets",
-      image: "src/files/images/faucets/pressMatic/image.png",
+      image: "files/images/faucets/pressMatic/image.png",
       route: "/faucets"
     },
     {
       title: "Showers",
-      image: "src/files/images/showers/rainhead/rainhead.png",
+      image: "files/images/showers/rainhead/rainhead.png",
       route: "/showers"
     },
     {
       title: "Kitchen Slabs",
-      image: "src/files/images/kitchen/concrete/image.png",
+      image: "files/images/kitchen/concrete/image.png",
       route: "/kitchen-slabs"
     },
     {
       title: "PVC Doors",
-      image: "src/files/images/doors/two_glazed/image.png",
+      image: "files/images/doors/two_glazed/image.png",
       route: "/pvc-doors-windows"
     }
   ];
