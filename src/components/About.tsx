@@ -104,7 +104,7 @@ const About = () => {
               <div className="relative overflow-hidden rounded-2xl shadow-2xl transform group-hover:scale-105 transition-all duration-700">
                 <video
                   ref={videoRef}
-                  src="src/files/videos/IMG_6952.MP4"
+                  src="/files/videos/IMG_6952.MP4"
                   autoPlay
                   muted
                   loop

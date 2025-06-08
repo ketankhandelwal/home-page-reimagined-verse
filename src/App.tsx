@@ -18,31 +18,36 @@ import BathroomAccessories from "./pages/Bathroom";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter basename="/home-page-reimagined-verse">
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/tiles" element={<Tiles />} />
-          <Route path="/bathroom" element={<BathroomAccessories />} />
-          <Route path="/sanitary" element={<Sanitary />} />
-          <Route path="/pvc-doors-windows" element={<UPVCDoorsWindows />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/kitchen-slabs" element={<KitchenSlabs />} />
-          <Route path="/pvc-doors" element={<UPVCDoorsWindows />} />
-          <Route path="/faucets" element={<Faucets />} />
-          <Route path="/showers" element={<Showers />} />
-          
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  const isProduction = import.meta.env.PROD;
+  const basename = isProduction ? '/home-page-reimagined-verse' : '';
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter basename={basename}>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/tiles" element={<Tiles />} />
+            <Route path="/bathroom" element={<BathroomAccessories />} />
+            <Route path="/sanitary" element={<Sanitary />} />
+            <Route path="/pvc-doors-windows" element={<UPVCDoorsWindows />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/kitchen-slabs" element={<KitchenSlabs />} />
+            <Route path="/pvc-doors" element={<UPVCDoorsWindows />} />
+            <Route path="/faucets" element={<Faucets />} />
+            <Route path="/showers" element={<Showers />} />
+            
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
