@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://ketankhandelwal.github.io/home-page-reimagined-verse/",
-  
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -44,42 +44,43 @@ const Faucets = () => {
     // First set of faucets
     [
       {
-        title: "Florentine Prime",
-        image: "src/files/images/faucets/florentinePrime/Screenshot 2025-06-02 at 13.39.24.png",
+        title: "DORA",
+        image: "src/files/images/faucets/dora/image.png",
         description: "Premium brass faucet with elegant chrome finish and ceramic disc valves",
         "images": [
-          "src/files/images/faucets/florentinePrime/Screenshot 2025-06-02 at 13.39.24.png",
-        "src/files/images/faucets/florentinePrime/image.png",
-      "src/files/images/faucets/florentinePrime/image copy.png",
-    "src/files/images/faucets/florentinePrime/image copy 2.png",
-  "src/files/images/faucets/florentinePrime/image copy 3.png"]
+          "src/files/images/faucets/dora/image copy 4.png",
+        "src/files/images/faucets/dora/image.png",
+      "src/files/images/faucets/dora/image copy.png",
+    "src/files/images/faucets/dora/image copy 2.png",
+  "src/files/images/faucets/dora/image copy 3.png",
+          "src/files/images/faucets/dora/image copy 5.png",]
       },
       {
-        title: "Laguna",
-        image: "src/files/images/faucets/laguna/image.png",
+        title: "BRENTA",
+        image: "src/files/images/faucets/brenta/image.png",
         description: "Contemporary single-handle faucet with water-saving aerator technology",
         "images": [
-          "src/files/images/faucets/laguna/image.png",
-          "src/files/images/faucets/laguna/image copy.png",
-          "src/files/images/faucets/laguna/image copy 2.png",
-          "src/files/images/faucets/laguna/image copy 3.png"
+       "src/files/images/faucets/brenta/image.png",
+          "src/files/images/faucets/brenta/image copy.png",
+          "src/files/images/faucets/brenta/image copy 2.png",
+          "src/files/images/faucets/brenta/image copy 3.png",
+          "src/files/images/faucets/brenta/image copy 4.png"
         ]
       },
       {
-        title: "Continental Prime",
-        image: "src/files/images/faucets/continentalPrime/image.png",
+        title: "FUJI",
+        image: "src/files/images/faucets/fuji/image.png",
         description: "Traditional dual-handle faucet with antique brass finish and ceramic handles",
         "images": [
-          "src/files/images/faucets/continentalPrime/image.png",
-          "src/files/images/faucets/continentalPrime/image copy.png",
-          "src/files/images/faucets/continentalPrime/image copy 2.png",
-          "src/files/images/faucets/continentalPrime/image copy 3.png"
-          ,
-          "src/files/images/faucets/continentalPrime/image copy 4.png"
+         "src/files/images/faucets/fuji/image.png",
+          "src/files/images/faucets/fuji/image copy.png",
+          "src/files/images/faucets/fuji/image copy 2.png",
+          "src/files/images/faucets/fuji/image copy 3.png",
+          "src/files/images/faucets/fuji/image copy 4.png"
         ]
       },
       {
-        title: "Blush Sensor Faucets",
+        title: "PRISTINE",
         image: "src/files/images/faucets/blushSensor/image.png",
         description: "Touchless sensor faucet with automatic shut-off and adjustable flow control",
         "images": [
@@ -91,131 +92,121 @@ const Faucets = () => {
         ]
       },
       {
-        title: "Queen's Prime",
-        image: "src/files/images/faucets/queensPrime/image.png",
+        title: "OTRA",
+        image: "src/files/images/faucets/otra/image.png",
         description: "Luxury designer faucet with pull-out spray and 360-degree swivel spout",
         "images": [
-          "src/files/images/faucets/queensPrime/image.png",
-          "src/files/images/faucets/queensPrime/image copy.png",
-          "src/files/images/faucets/queensPrime/image copy 2.png",
-          "src/files/images/faucets/queensPrime/image copy 3.png",
-          "src/files/images/faucets/queensPrime/image copy 4.png"
-          ,
-          "src/files/images/faucets/queensPrime/image copy 5.png"
+         "src/files/images/faucets/otra/image.png",
+          "src/files/images/faucets/otra/image copy.png",
+          "src/files/images/faucets/otra/image copy 2.png",
+          "src/files/images/faucets/otra/image copy 3.png",
+          "src/files/images/faucets/otra/image copy 4.png"
         ]
       },
       {
-        title: "Kitchen Sink Mixer",
-        image: "src/files/images/faucets/kitchen_sink_mixer/image.png",
+        title: "MONTANA",
+        image: "src/files/images/faucets/montana/image.png",
         images: [
-          "src/files/images/faucets/kitchen_sink_mixer/image.png",
-          "src/files/images/faucets/kitchen_sink_mixer/image copy.png",
-          "src/files/images/faucets/kitchen_sink_mixer/image copy 2.png",
-          "src/files/images/faucets/kitchen_sink_mixer/image copy 3.png",
+         "src/files/images/faucets/montana/image.png",
+          "src/files/images/faucets/montana/image copy.png",
+          "src/files/images/faucets/montana/image copy 2.png",
+          "src/files/images/faucets/montana/image copy 3.png",
 
         ],
         description: "Practical kitchen sink mixer with modern features"
       },
       {
-        title: "Kubix Prime",
-        image: "src/files/images/faucets/kubix/image.png",
+        title: "ASHLEY",
+        image: "src/files/images/faucets/ashley/image.png",
         description: "Square-profile faucet with geometric design and pressure-balancing valve",
         "images": [
-          "src/files/images/faucets/kubix/image.png",
-          "src/files/images/faucets/kubix/image copy.png",
-          "src/files/images/faucets/kubix/image copy 2.png",
-          "src/files/images/faucets/kubix/image copy 3.png",
-          "src/files/images/faucets/kubix/image copy 4.png"
+         "src/files/images/faucets/ashley/image.png",
+          "src/files/images/faucets/ashley/image copy.png",
+          "src/files/images/faucets/ashley/image copy 2.png",
+          "src/files/images/faucets/ashley/image copy 3.png",
 
   
           ]
       },
       {
-        title: "Opal Prime",
-        image: "src/files/images/faucets/opal/image.png",
+        title: "RIO",
+        image: "src/files/images/faucets/rio/image.png",
         description: "High-arc kitchen faucet with dual-function spray head and ceramic cartridge",
         "images": [
-          "src/files/images/faucets/opal/image.png",
-          "src/files/images/faucets/opal/image copy.png",
-          "src/files/images/faucets/opal/image copy 2.png",
-          "src/files/images/faucets/opal/image copy 3.png",
+      "src/files/images/faucets/rio/image.png",
+          "src/files/images/faucets/rio/image copy.png",
+          "src/files/images/faucets/rio/image copy 2.png",
+          "src/files/images/faucets/rio/image copy 3.png",
         ]
       }
     ],
     // Second set of faucets
     [
       {
-        title: "Ornamix Prime",
-        image: "src/files/images/faucets/ornamix/image.png",
+        title: "ORNE",
+        image: "src/files/images/faucets/orne/image.png",
         description: "Decorative mixer faucet with ornate detailing and solid brass construction",
         "images": [
-          "src/files/images/faucets/ornamix/image.png",
-          "src/files/images/faucets/ornamix/image copy.png",
-          "src/files/images/faucets/ornamix/image copy 2.png",
-          "src/files/images/faucets/ornamix/image copy 3.png",
+       "src/files/images/faucets/orne/image.png",
+          "src/files/images/faucets/orne/image copy.png",
+          "src/files/images/faucets/orne/image copy 2.png",
+          "src/files/images/faucets/orne/image copy 3.png",
         ]
       },
       {
-        title: "Alive",
-        image: "src/files/images/faucets/alive/image.png",
+        title: "EBRO",
+        image: "src/files/images/faucets/ebro/image.png",
         description: "Eco-friendly faucet with water-saving features and LED temperature display",
         "images": [
-          "src/files/images/faucets/alive/image.png",
-          "src/files/images/faucets/alive/image copy.png",
-          "src/files/images/faucets/alive/image copy 2.png",
-          "src/files/images/faucets/alive/image copy 3.png",
-          "src/files/images/faucets/alive/image copy 4.png"
+        "src/files/images/faucets/ebro/image.png",
+          "src/files/images/faucets/ebro/image copy.png",
+          "src/files/images/faucets/ebro/image copy 2.png",
+          "src/files/images/faucets/ebro/image copy 3.png",
         ]
       },
       {
-        title: "Queen's",
-        image: "src/files/images/faucets/queens/image.png",
+        title: "CARIO",
+        image: "src/files/images/faucets/cario/image.png",
         description: "Classic basin faucet with elegant curves and long-lasting chrome plating",
         "images": [
-          "src/files/images/faucets/queens/image.png",
-
-          "src/files/images/faucets/queens/image copy.png",
-          "src/files/images/faucets/queens/image copy 2.png",
-          "src/files/images/faucets/queens/image copy 3.png",
-          "src/files/images/faucets/queens/image copy 4.png",
-          "src/files/images/faucets/queens/image copy 5.png"
+          "src/files/images/faucets/cario/image.png",
+          "src/files/images/faucets/cario/image copy.png",
+          "src/files/images/faucets/cario/image copy 2.png",
+          "src/files/images/faucets/cario/image copy 3.png",
         ]
       },
       {
-        title: "Lyric",
-        image: "src/files/images/faucets/lyric/image.png",
+        title: "AQUA SENSE",
+        image: "src/files/images/faucets/aqua_sense/image.png",
         description: "Musical-inspired faucet design with smooth operation and anti-drip technology",
         "images": [
-          "src/files/images/faucets/lyric/image.png",
-          "src/files/images/faucets/lyric/image copy.png",
-          "src/files/images/faucets/lyric/image copy 2.png",
-          "src/files/images/faucets/lyric/image copy 3.png",
-          "src/files/images/faucets/lyric/image copy 4.png"
-          ,
-          "src/files/images/faucets/lyric/image copy 5.png"
+       "src/files/images/faucets/aqua_sense/image.png",
+       "src/files/images/faucets/orne/image copy.png",
+       "src/files/images/faucets/orne/image copy 2.png",
+       "src/files/images/faucets/orne/image copy 3.png",
+
         ]
       },
       {
-        title: "Aria",
-        image: "src/files/images/faucets/aria/image.png",
+        title: "SENORITA GRAVITY",
+        image: "src/files/images/faucets/senorita/image.png",
         description: "Sleek bathroom faucet with waterfall spout and single-lever control",
         "images": [
-          "src/files/images/faucets/aria/image.png",
-          "src/files/images/faucets/aria/image copy.png",
-          "src/files/images/faucets/aria/image copy 2.png",
-          "src/files/images/faucets/aria/image copy 3.png",
-          "src/files/images/faucets/aria/image copy 4.png"
+         "src/files/images/faucets/senorita/image.png",
+          "src/files/images/faucets/senorita/image copy.png",
+          "src/files/images/faucets/senorita/image copy 2.png",
+          "src/files/images/faucets/senorita/image copy 3.png",
         ]
       },
       {
-        title: "Fusion",
-        image: "src/files/images/faucets/fusion/image.png",
+        title: "PULLOUT KITCHEN FAUCET",
+        image: "src/files/images/faucets/kitchen/image.png",
         description: "Hybrid design faucet combining modern and traditional styling elements",
         "images": [
-          "src/files/images/faucets/fusion/image.png",
-          "src/files/images/faucets/fusion/image copy.png",
-          "src/files/images/faucets/fusion/image copy 2.png",
-          "src/files/images/faucets/fusion/image copy 3.png",
+          "src/files/images/faucets/kitchen/image.png",
+          "src/files/images/faucets/kitchen/image copy.png",
+          "src/files/images/faucets/kitchen/image copy 2.png",
+          "src/files/images/faucets/kitchen/image copy 3.png",
         ]
       },
       {
@@ -231,7 +222,7 @@ const Faucets = () => {
         ]
       },
       {
-        title: "Medi Series",
+        title: "Medi",
         image: "src/files/images/faucets/medi/image.png",
         description: "Medical-grade faucet with antimicrobial coating and hands-free operation",
         "images": [
