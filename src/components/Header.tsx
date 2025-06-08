@@ -91,7 +91,7 @@ const Header = () => {
             <div className="flex items-center space-x-6">
               <a href="tel:+919876543210" className="flex items-center hover:text-yellow-400 transition-colors">
                 <Phone className="w-4 h-4 mr-2" />
-                +91 98765 43210
+                +91 80901 40600
               </a>
               <a href="https://maps.app.goo.gl/nnJVqa5H3yDYagQZA" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-yellow-400 transition-colors">
                 <MapPin className="w-4 h-4 mr-2" />
@@ -100,7 +100,7 @@ const Header = () => {
             </div>
             <div className="flex items-center">
               <Clock className="w-4 h-4 mr-2" />
-              Mon-Sun: 10:00 AM - 8:00 PM
+              Sun-Fri: 10:00 AM - 8:00 PM
             </div>
           </div>
         </div>
@@ -116,8 +116,15 @@ const Header = () => {
             transition={{ duration: 0.5 }}
             className="flex items-center"
           >
-            <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">
-              KESARWANI SANITARY WARE
+            <Link to="/" className="flex items-center space-x-3">
+              <img 
+                src="src/files/images/ChatGPT_Image_Jun_7__2025__01_07_22_PM-removebg-preview.png" 
+                alt="Kesarwani Sanitary Ware Logo" 
+                className="h-16 w-auto brightness-75 contrast-125"
+              />
+              <span className="text-2xl font-bold bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">
+                KESARWANI SANITARY WARE
+              </span>
             </Link>
           </motion.div>
 
@@ -287,7 +294,7 @@ const Header = () => {
       </motion.div>
 
       {/* Partition Line */}
-      <div className="h-px bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent"></div>
+      <div className="h-px bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent -mt-4"></div>
     </motion.header>
   );
 };

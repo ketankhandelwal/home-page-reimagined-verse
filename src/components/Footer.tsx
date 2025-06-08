@@ -16,7 +16,7 @@ const Footer = () => {
     products: [
       { name: "Tiles", path: "/tiles" },
       { name: "Sanitary Ware", path: "/sanitary" },
-      { name: "Bathroom", path: "/bathroom" },
+      { name: "Bathroom Accessories", path: "/bathroom" },
       { name: "Faucets", path: "/faucets" },
       { name: "Kitchen Slabs", path: "/kitchen-slabs" },
       { name: "PVC Doors", path: "/pvc-doors" }
@@ -24,7 +24,7 @@ const Footer = () => {
     company: [
   
       { name: "Contact", path: "/contact" },
-      { name: "Gallery", path: "/gallery" },
+    
       {name : "Products", path: "/tiles"}
     ]
   };
@@ -135,20 +135,20 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-yellow-400" />
-                <a href="tel:+919876543210" className="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
-                  +91 98765 43210
+                <a href="tel:+918090140600" className="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
+                  +91 80901 40600
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-yellow-400" />
-                <a href="mailto:kesarwanisanitaryhardware@gmail.com" className="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
-                  kesarwanisanitaryhardware@gmail.com
+                <a href="mailto:kesarwanisanitarywares@gmail.com" className="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
+                  kesarwanisanitarywares@gmail.com
                 </a>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-yellow-400 mt-1" />
                 <p className="text-gray-400">
-                  Mon - Sun: 10:00 AM - 8:00 PM<br />
+                  Sun - Fri: 10:00 AM - 8:00 PM<br />
 
                 </p>
               </div>

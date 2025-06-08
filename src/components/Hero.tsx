@@ -50,7 +50,7 @@ const Hero = () => {
       ))}
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/50" />
       
       {/* Decorative Elements */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-yellow-200/20 to-orange-300/20 rounded-full blur-3xl animate-pulse"></div>

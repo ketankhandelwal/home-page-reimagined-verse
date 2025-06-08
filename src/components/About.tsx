@@ -8,12 +8,16 @@ import {
   X,
   ChevronLeft,
   ChevronRight,
+  Volume2,
+  VolumeX,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const About = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isMuted, setIsMuted] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   // Array of store images - replace with your actual image paths
   const storeImages = [
@@ -67,6 +71,13 @@ const About = () => {
     setCurrentImageIndex(index);
   };
 
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
+
   return (
     <>
       <section
@@ -92,6 +103,7 @@ const About = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
               <div className="relative overflow-hidden rounded-2xl shadow-2xl transform group-hover:scale-105 transition-all duration-700">
                 <video
+                  ref={videoRef}
                   src="src/files/videos/IMG_6952.MP4"
                   autoPlay
                   muted
@@ -100,6 +112,16 @@ const About = () => {
                   className="w-full h-auto max-h-[600px] object-contain transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <button
+                  onClick={toggleMute}
+                  className="absolute top-4 right-4 bg-black/10 hover:bg-black/20 rounded-full p-2 transition-colors duration-200 z-10"
+                >
+                  {isMuted ? (
+                    <VolumeX className="w-6 h-6 text-black" />
+                  ) : (
+                    <Volume2 className="w-6 h-6 text-black" />
+                  )}
+                </button>
               </div>
             </motion.div>
 
@@ -151,7 +173,22 @@ const About = () => {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-8 py-6 text-lg rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                <Button 
+                  onClick={() => {
+                    const contactSection = document.getElementById('contact-section');
+                    if (contactSection) {
+                      const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+                      const elementPosition = contactSection.getBoundingClientRect().top;
+                      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                      });
+                    }
+                  }}
+                  className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-8 py-6 text-lg rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
                   Learn More About Us
                 </Button>
                 <Button

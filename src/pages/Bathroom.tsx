@@ -95,6 +95,46 @@ const Bathroom = () => {
         ],
       },
       {
+        title: "Bathroom Sets",
+        image: "src/files/images/accessories/bathroom_Sets/image copy 2.png",
+        description:
+          "Coordinated bathroom sets including dispensers, holders, and accessories.",
+        images: [
+          "src/files/images/accessories/bathroom_Sets/image copy 2.png",
+          "src/files/images/accessories/bathroom_Sets/image.png",
+          "src/files/images/accessories/bathroom_Sets/image copy.png",
+          "src/files/images/accessories/bathroom_Sets/image copy 3.png",
+        ],
+      },
+      {
+        title: "Towel Rack",
+        image: "src/files/images/accessories/towel_rack/image copy.png",
+        description:
+          "Spacious towel racks for organizing and drying multiple towels.",
+        images: [
+          "src/files/images/accessories/towel_rack/image copy.png",
+          "src/files/images/accessories/towel_rack/image.png",
+          "src/files/images/accessories/towel_rack/image copy 2.png",
+          "src/files/images/accessories/towel_rack/image copy 3.png",
+          "src/files/images/accessories/towel_rack/image copy 4.png",
+        ],
+      },
+ 
+      {
+        title: "Corner Shelves",
+        image: "src/files/images/accessories/corner_shelves/image.png",
+        description:
+          "Space-saving corner shelves for organizing toiletries and accessories.",
+        images: [
+          "src/files/images/accessories/corner_shelves/image.png",
+          "src/files/images/accessories/corner_shelves/image copy.png",
+          "src/files/images/accessories/corner_shelves/image copy 2.png",
+          "src/files/images/accessories/corner_shelves/image copy 3.png",
+          "src/files/images/accessories/corner_shelves/image copy 4.png",
+          "src/files/images/accessories/corner_shelves/image copy 5.png",
+        ],
+      },
+      {
         title: "Wall Pegs",
         image: "src/files/images/accessories/wall_pegs/image copy.png",
         description:
@@ -106,45 +146,7 @@ const Bathroom = () => {
           "src/files/images/accessories/wall_pegs/image copy 3.png",
           "src/files/images/accessories/wall_pegs/image copy 4.png",
         ],
-      },
-      {
-        title: "Curtain Rod",
-        image: "src/files/images/accessories/curtain_rods/image.png",
-        description:
-          "Adjustable curtain rods to support bathroom shower curtains securely.",
-        images: [
-          "src/files/images/accessories/curtain_rods/image.png",
-          "src/files/images/accessories/curtain_rods/image copy.png",
-          "src/files/images/accessories/curtain_rods/image copy 2.png",
-          "src/files/images/accessories/curtain_rods/image copy 3.png",
-          "src/files/images/accessories/curtain_rods/image copy 4.png",
-          "src/files/images/accessories/curtain_rods/image copy 5.png",
-        ],
-      },
-      {
-        title: "Curtain Brackets",
-        image: "src/files/images/accessories/curtain_brackets/image copy 3.png",
-        description:
-          "Sturdy curtain rod brackets for stable and stylish curtain installation.",
-        images: [
-          "src/files/images/accessories/curtain_brackets/image copy 3.png",
-          "src/files/images/accessories/curtain_brackets/image copy.png",
-          "src/files/images/accessories/curtain_brackets/image.png",
-          "src/files/images/accessories/curtain_brackets/image copy 2.png",
-        ],
-      },
-      {
-        title: "Flanges",
-        image: "src/files/images/accessories/flanges/image.png",
-        description:
-          "Metal flanges to secure and support rods or piping fixtures.",
-        images: [
-          "src/files/images/accessories/flanges/image.png",
-          "src/files/images/accessories/flanges/image copy.png",
-          "src/files/images/accessories/flanges/image copy 2.png",
-          "src/files/images/accessories/flanges/image copy 3.png",
-        ],
-      },
+      }
     ],
     // Second set of bathroom accessories
     [
@@ -185,70 +187,8 @@ const Bathroom = () => {
           "src/files/images/accessories/tumbler/image copy 3.png",
         ],
       },
-      {
-        title: "Nut Bolts",
-        image: "src/files/images/accessories/nut_bolts/image.png",
-        description:
-          "Essential hardware including nuts and bolts for secure bathroom installations.",
-        images: [
-          "src/files/images/accessories/nut_bolts/image.png",
-          "src/files/images/accessories/nut_bolts/image copy.png",
-          "src/files/images/accessories/nut_bolts/image copy 2.png",
-          "src/files/images/accessories/nut_bolts/image copy 3.png",
-          "src/files/images/accessories/nut_bolts/image copy 4.png",
-        ],
-      },
-      {
-        title: "Bathroom Sets",
-        image: "src/files/images/accessories/bathroom_Sets/image copy 2.png",
-        description:
-          "Coordinated bathroom sets including dispensers, holders, and accessories.",
-        images: [
-          "src/files/images/accessories/bathroom_Sets/image copy 2.png",
-          "src/files/images/accessories/bathroom_Sets/image.png",
-          "src/files/images/accessories/bathroom_Sets/image copy.png",
-          "src/files/images/accessories/bathroom_Sets/image copy 3.png",
-        ],
-      },
-      {
-        title: "Towel Rack",
-        image: "src/files/images/accessories/towel_rack/image copy.png",
-        description:
-          "Spacious towel racks for organizing and drying multiple towels.",
-        images: [
-          "src/files/images/accessories/towel_rack/image copy.png",
-          "src/files/images/accessories/towel_rack/image.png",
-          "src/files/images/accessories/towel_rack/image copy 2.png",
-          "src/files/images/accessories/towel_rack/image copy 3.png",
-          "src/files/images/accessories/towel_rack/image copy 4.png",
-        ],
-      },
-      {
-        title: "Drawer Channels",
-        image: "src/files/images/accessories/drawer_channel/image.png",
-        description:
-          "Smooth sliding drawer channels for bathroom vanities and cabinets.",
-        images: [
-          "src/files/images/accessories/drawer_channel/image.png",
-          "src/files/images/accessories/drawer_channel/image copy.png",
-          "src/files/images/accessories/drawer_channel/image copy 2.png",
-          "src/files/images/accessories/drawer_channel/image copy 3.png",
-        ],
-      },
-      {
-        title: "Corner Shelves",
-        image: "src/files/images/accessories/corner_shelves/image.png",
-        description:
-          "Space-saving corner shelves for organizing toiletries and accessories.",
-        images: [
-          "src/files/images/accessories/corner_shelves/image.png",
-          "src/files/images/accessories/corner_shelves/image copy.png",
-          "src/files/images/accessories/corner_shelves/image copy 2.png",
-          "src/files/images/accessories/corner_shelves/image copy 3.png",
-          "src/files/images/accessories/corner_shelves/image copy 4.png",
-          "src/files/images/accessories/corner_shelves/image copy 5.png",
-        ],
-      },
+
+  
     ],
   ];
 
@@ -269,11 +209,11 @@ const Bathroom = () => {
       <Header />
 
       {/* Hero Section */}
-      <div className="relative h-[400px] overflow-hidden">
+      <div className="relative h-[600px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`,
+            backgroundImage: `url('src/files/images/accessories/image.png')`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
@@ -319,10 +259,10 @@ const Bathroom = () => {
               Showers
             </a>
             <a
-              href="/upvc-doors-windows"
+              href="/pvc-doors-windows"
               className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
-              UPVC Doors
+              PVC Doors
             </a>
             <a
               href="/kitchen-slabs"
@@ -339,7 +279,7 @@ const Bathroom = () => {
           </div>
           <button
             onClick={() =>
-              window.open("https://search.app/S3QcVLFeN8UsvbMY7", "_blank")
+              window.open("https://search.app/pAGp6f3hUBtcdQjd7", "_blank")
             }
             className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
           >

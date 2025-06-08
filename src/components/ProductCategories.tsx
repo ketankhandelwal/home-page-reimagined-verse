@@ -38,7 +38,7 @@ const ProductCategories = () => {
     {
       title: "PVC Doors",
       image: "src/files/images/doors/two_glazed/image.png",
-      route: "/upvc-doors-windows"
+      route: "/pvc-doors-windows"
     }
   ];
 

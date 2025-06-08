@@ -259,7 +259,7 @@ const Tiles = () => {
       <Header />
       
       {/* Enhanced Hero Section */}
-      <div className="relative h-[500px] overflow-hidden">
+      <div className="relative h-[600px] overflow-hidden">
         {heroImages.map((image, index) => (
           <div
             key={index}
@@ -305,8 +305,8 @@ const Tiles = () => {
             <a href="/showers" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Showers
             </a>
-            <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              UPVC Doors
+            <a href="/pvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              PVC Doors
             </a>
            
             <a href="/kitchen-slabs" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">

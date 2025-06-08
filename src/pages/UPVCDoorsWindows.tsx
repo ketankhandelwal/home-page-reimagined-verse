@@ -115,16 +115,16 @@ const UPVCDoorsWindows = () => {
       <Header />
       
       {/* Hero Section */}
-      <div className="relative h-[400px] overflow-hidden">
+      <div className="relative h-[600px] overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')` }} />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
         
         <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
           <div className="text-white text-center animate-fade-in">
             <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-200 to-orange-200 bg-clip-text text-transparent leading-tight">
-              UPVC Doors
+              PVC Doors
             </h1>
-            <p className="text-2xl text-gray-200 font-light">Premium quality UPVC doors for your home</p>
+            <p className="text-2xl text-gray-200 font-light">Premium quality PVC doors for your home</p>
           </div>
         </div>
       </div>
@@ -145,8 +145,8 @@ const UPVCDoorsWindows = () => {
             <a href="/showers" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Showers
             </a>
-            <a href="/upvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              UPVC Doors
+            <a href="/pvc-doors-windows" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              PVC Doors
             </a>
             <a href="/kitchen-slabs" className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Kitchen Slabs
@@ -155,15 +155,7 @@ const UPVCDoorsWindows = () => {
               Faucets
             </a>
           </div>
-          <button 
-            onClick={() => window.open('https://search.app/S3QcVLFeN8UsvbMY7', '_blank')}
-            className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-            Download UPVC Catalog
-          </button>
+
         </div>
       </div>
 
@@ -174,10 +166,10 @@ const UPVCDoorsWindows = () => {
         
         <div className="text-center mb-16 animate-fade-in relative z-10">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-4">
-            Our UPVC Collection
+            Our PVC Collection
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Explore our premium range of UPVC doors designed to enhance your space with style and functionality
+            Explore our premium range of PVC doors designed to enhance your space with style and functionality
           </p>
         </div>
         

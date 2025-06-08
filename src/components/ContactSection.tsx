@@ -1,11 +1,54 @@
-
 import { MapPin, Mail, Phone, Send, User, MessageSquare, Home, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useForm, ValidationError } from '@formspree/react';
+import { useState } from "react";
 
 const ContactSection = () => {
+  const [state, handleSubmit] = useForm("mvgrzedv");
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    address: '',
+    category: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleCategoryChange = (value: string) => {
+    setFormData(prev => ({
+      ...prev,
+      category: value
+    }));
+  };
+
+  if (state.succeeded) {
+    return (
+      <div className="min-h-[60vh] flex items-center justify-center">
+        <div className="text-center p-8 bg-white rounded-2xl shadow-xl max-w-md">
+          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <h3 className="text-2xl font-bold text-gray-800 mb-2">Thank You!</h3>
+          <p className="text-gray-600">Your message has been sent successfully. We'll get back to you soon.</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <section id="contact-section" className="py-20 bg-gradient-to-br from-gray-50 via-white to-yellow-50 relative overflow-hidden">
       {/* Background decorative elements */}
@@ -64,7 +107,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg mb-2 text-white">Email Us</h4>
-                      <p className="text-yellow-50">kesarwanisanitaryhardware@gmail.com</p>
+                      <p className="text-yellow-50">kesarwanisanitarywares@gmail.com</p>
                     </div>
                   </div>
 
@@ -83,12 +126,12 @@ const ContactSection = () => {
                   <h4 className="font-bold text-lg mb-3">Business Hours</h4>
                   <div className="space-y-2 text-yellow-50">
                     <div className="flex justify-between">
-                      <span>Monday - Saturday</span>
-                      <span className="font-semibold">9:00 AM - 7:00 PM</span>
+                      <span>Sunday - Friday</span>
+                      <span className="font-semibold">10:00 AM - 8:00 PM</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Sunday</span>
-                      <span className="font-semibold">10:00 AM - 6:00 PM</span>
+                      <span>Saturday</span>
+                      <span className="font-semibold">Closed</span>
                     </div>
                   </div>
                 </div>
@@ -113,21 +156,31 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                <form className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="relative group">
                       <User className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5 group-focus-within:text-yellow-600 transition-colors duration-300" />
                       <Input 
                         placeholder="First Name" 
+                        name="firstName"
+                        value={formData.firstName}
+                        onChange={handleChange}
+                        required
                         className="pl-12 h-14 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-yellow-500 focus:bg-white transition-all duration-300 text-gray-800 placeholder-gray-500" 
                       />
+                      <ValidationError prefix="First Name" field="firstName" errors={state.errors} />
                     </div>
                     <div className="relative group">
                       <User className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5 group-focus-within:text-yellow-600 transition-colors duration-300" />
                       <Input 
                         placeholder="Last Name" 
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleChange}
+                        required
                         className="pl-12 h-14 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-yellow-500 focus:bg-white transition-all duration-300 text-gray-800 placeholder-gray-500" 
                       />
+                      <ValidationError prefix="Last Name" field="lastName" errors={state.errors} />
                     </div>
                   </div>
                   
@@ -137,16 +190,26 @@ const ContactSection = () => {
                       <Input 
                         placeholder="Your Email" 
                         type="email" 
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
                         className="pl-12 h-14 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-yellow-500 focus:bg-white transition-all duration-300 text-gray-800 placeholder-gray-500" 
                       />
+                      <ValidationError prefix="Email" field="email" errors={state.errors} />
                     </div>
                     <div className="relative group">
                       <Phone className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5 group-focus-within:text-yellow-600 transition-colors duration-300" />
                       <Input 
                         placeholder="Your Phone" 
                         type="tel" 
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        required
                         className="pl-12 h-14 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-yellow-500 focus:bg-white transition-all duration-300 text-gray-800 placeholder-gray-500" 
                       />
+                      <ValidationError prefix="Phone" field="phone" errors={state.errors} />
                     </div>
                   </div>
 
@@ -154,13 +217,18 @@ const ContactSection = () => {
                     <Home className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5 group-focus-within:text-yellow-600 transition-colors duration-300" />
                     <Input 
                       placeholder="Your Address" 
+                      name="address"
+                      value={formData.address}
+                      onChange={handleChange}
+                      required
                       className="pl-12 h-14 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-yellow-500 focus:bg-white transition-all duration-300 text-gray-800 placeholder-gray-500" 
                     />
+                    <ValidationError prefix="Address" field="address" errors={state.errors} />
                   </div>
 
                   <div className="relative group">
                     <Package className="absolute left-4 top-6 text-gray-400 w-5 h-5 group-focus-within:text-yellow-600 transition-colors duration-300 z-10" />
-                    <Select>
+                    <Select onValueChange={handleCategoryChange} required>
                       <SelectTrigger className="pl-12 h-14 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-yellow-500 focus:bg-white transition-all duration-300 text-gray-800">
                         <SelectValue placeholder="Select Product Category" />
                       </SelectTrigger>
@@ -173,19 +241,29 @@ const ContactSection = () => {
                         <SelectItem value="interior" className="py-3 px-4 hover:bg-yellow-50 rounded-lg">🏠 Kitchen Slabs</SelectItem>
                       </SelectContent>
                     </Select>
+                    <ValidationError prefix="Category" field="category" errors={state.errors} />
                   </div>
 
                   <div className="relative group">
                     <MessageSquare className="absolute left-4 top-6 text-gray-400 w-5 h-5 group-focus-within:text-yellow-600 transition-colors duration-300" />
                     <Textarea 
                       placeholder="Tell us about your project requirements..." 
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
                       className="pl-12 pt-6 min-h-[140px] bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-yellow-500 focus:bg-white transition-all duration-300 text-gray-800 placeholder-gray-500 resize-none" 
                     />
+                    <ValidationError prefix="Message" field="message" errors={state.errors} />
                   </div>
 
-                  <Button className="w-full h-16 bg-gradient-to-r from-yellow-600 via-yellow-500 to-orange-500 hover:from-yellow-700 hover:via-yellow-600 hover:to-orange-600 text-white text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-[1.02] transition-all duration-300 group">
+                  <Button 
+                    type="submit" 
+                    disabled={state.submitting}
+                    className="w-full h-16 bg-gradient-to-r from-yellow-600 via-yellow-500 to-orange-500 hover:from-yellow-700 hover:via-yellow-600 hover:to-orange-600 text-white text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-[1.02] transition-all duration-300 group"
+                  >
                     <Send className="w-5 h-5 mr-3 group-hover:translate-x-1 transition-transform duration-300" />
-                    Send Message & Get Free Quote
+                    {state.submitting ? 'Sending...' : 'Send Message & Get Free Quote'}
                   </Button>
                 </form>
 
