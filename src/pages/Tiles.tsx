@@ -190,9 +190,9 @@ const Tiles = () => {
         image: "src/files/images/tiles/wood_look_tile/image.png",
         images: [
           "src/files/images/tiles/wood_look_tile/image.png",
-          "src/files/images/tiles/wood_look_tile/wood_tile_2.jpg",
-          "src/files/images/tiles/wood_look_tile/wood_tile_3.jpg",
-          "src/files/images/tiles/wood_look_tile/wood_tile_4.jpg"
+          "src/files/images/tiles/wood_look_tile/image copy.png",
+          "src/files/images/tiles/wood_look_tile/image copy 2.png",
+          "src/files/images/tiles/wood_look_tile/image copy 3.png"
         ],
         description: "Wooden appearance with tile durability"
       },
@@ -201,9 +201,9 @@ const Tiles = () => {
         image: "src/files/images/tiles/stone_look_tile/image.png",
         images: [
           "src/files/images/tiles/stone_look_tile/image.png",
-          "src/files/images/tiles/stone_look_tile/stone_tile_2.jpg",
-          "src/files/images/tiles/stone_look_tile/stone_tile_3.jpg",
-          "src/files/images/tiles/stone_look_tile/stone_tile_4.jpg"
+          "src/files/images/tiles/stone_look_tile/image copy.png",
+          "src/files/images/tiles/stone_look_tile/image copy 2.png",
+          "src/files/images/tiles/stone_look_tile/image copy 3.png"
         ],
         description: "Natural stone appearance with modern benefits"
       },
@@ -212,9 +212,9 @@ const Tiles = () => {
         image: "src/files/images/tiles/mosaic_tile/image.png",
         images: [
           "src/files/images/tiles/mosaic_tile/image.png",
-          "src/files/images/tiles/mosaic_tile/mosaic_tile_2.jpg",
-          "src/files/images/tiles/mosaic_tile/mosaic_tile_3.jpg",
-          "src/files/images/tiles/mosaic_tile/mosaic_tile_4.jpg"
+          "src/files/images/tiles/mosaic_tile/image copy.png",
+          "src/files/images/tiles/mosaic_tile/image copy 2.png",
+          "src/files/images/tiles/mosaic_tile/image copy 3.png"
         ],
         description: "Artistic mosaic patterns for unique designs"
       },
@@ -223,10 +223,9 @@ const Tiles = () => {
         image: "src/files/images/tiles/granite_tile/image.png",
         images: [
           "src/files/images/tiles/granite_tile/image.png",
-          "src/files/images/tiles/granite_tile/granite_tile_2.jpg",
-          "src/files/images/tiles/granite_tile/granite_tile_3.jpg",
-          "src/files/images/tiles/granite_tile/granite_tile_4.jpg"
-        ],
+          "src/files/images/tiles/granite_tile/image copy.png",
+          "src/files/images/tiles/granite_tile/image copy 2.png",
+        "src/files/images/tiles/granite_tile/image copy 3.png"],
         description: "Durable and elegant granite tiles for floors"
       },
       {
@@ -234,9 +233,11 @@ const Tiles = () => {
         image: "src/files/images/tiles/wall_tile/image.png",
         images: [
           "src/files/images/tiles/wall_tile/image.png",
-          "src/files/images/tiles/wall_tile/wall_tile_2.jpg",
-          "src/files/images/tiles/wall_tile/wall_tile_3.jpg",
-          "src/files/images/tiles/wall_tile/wall_tile_4.jpg"
+          
+          "src/files/images/tiles/wall_tile/image copy.png",
+          "src/files/images/tiles/wall_tile/image copy 2.png",
+          "src/files/images/tiles/wall_tile/image copy 3.png",
+          "src/files/images/tiles/wall_tile/image copy 4.png"
         ],
         description: "Stylish wall tiles for interior decoration"
       },
@@ -245,9 +246,10 @@ const Tiles = () => {
         image: "src/files/images/tiles/outdoor_tiles/image.png",
         images: [
           "src/files/images/tiles/outdoor_tiles/image.png",
-          "src/files/images/tiles/outdoor_tiles/outdoor_tile_2.jpg",
-          "src/files/images/tiles/outdoor_tiles/outdoor_tile_3.jpg",
-          "src/files/images/tiles/outdoor_tiles/outdoor_tile_4.jpg"
+          "src/files/images/tiles/outdoor_tiles/image copy.png",
+          "src/files/images/tiles/outdoor_tiles/image copy 2.png",
+          "src/files/images/tiles/outdoor_tiles/image copy 3.png",
+          "src/files/images/tiles/outdoor_tiles/image copy 4.png"
         ],
         description: "Weather-resistant tiles for outdoor spaces"
       }

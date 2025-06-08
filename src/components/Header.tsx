@@ -120,7 +120,7 @@ const Header = () => {
               <img 
                 src="src/files/images/ChatGPT_Image_Jun_7__2025__01_07_22_PM-removebg-preview.png" 
                 alt="Kesarwani Sanitary Ware Logo" 
-                className="h-12 md:h-16 w-auto brightness-75 contrast-125"
+                className="h-12 md:h-16 w-auto brightness-100 contrast-150"
               />
               <span className="text-lg md:text-2xl font-bold bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent">
                 KESARWANI SANITARY WARE
