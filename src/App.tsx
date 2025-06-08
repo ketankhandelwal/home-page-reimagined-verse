@@ -19,15 +19,12 @@ import BathroomAccessories from "./pages/Bathroom";
 const queryClient = new QueryClient();
 
 const App = () => {
-  const isProduction = import.meta.env.PROD;
-  const basename = isProduction ? '/home-page-reimagined-verse' : '';
-
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter basename={basename}>
+        <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/contact" element={<Contact />} />

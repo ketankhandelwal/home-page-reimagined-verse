@@ -5,10 +5,13 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base:  '/',
+  base: '/',  // Root path for Hostinger
   server: {
     host: "::",
     port: 8080,
+    headers: {
+      'Content-Type': 'application/javascript',
+    },
   },
   plugins: [
     react(),
@@ -26,6 +29,7 @@ export default defineConfig(({ mode }) => ({
     sourcemap: false,
     rollupOptions: {
       output: {
+        format: 'es',
         assetFileNames: (assetInfo) => {
           const name = assetInfo.name;
           if (!name) return 'assets/[name]-[hash][extname]';
