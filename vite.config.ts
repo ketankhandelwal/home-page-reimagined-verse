@@ -20,4 +20,29 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+      },
+      output: {
+        assetFileNames: (assetInfo) => {
+          const name = assetInfo.name;
+          if (!name) return 'assets/[name][extname]';
+          
+          if (name.endsWith('.jpg') || name.endsWith('.png') || name.endsWith('.gif')) {
+            return 'assets/images/[name][extname]';
+          }
+          if (name.endsWith('.mp4')) {
+            return 'assets/videos/[name][extname]';
+          }
+          return 'assets/[name][extname]';
+        },
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+      },
+    },
+  },
 }));
