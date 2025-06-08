@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Faucets = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -45,210 +46,198 @@ const Faucets = () => {
 
   const faucetSets = [
     // First set of faucets
-    [
-      {
-        title: "DORA",
-        image: "files/images/faucets/dora/image.png",
-        description:
-          "Premium brass faucet with elegant chrome finish and ceramic disc valves",
-        images: [
-          "files/images/faucets/dora/image copy 4.png",
-          "files/images/faucets/dora/image.png",
-          "files/images/faucets/dora/image copy.png",
-          "files/images/faucets/dora/image copy 2.png",
-          "files/images/faucets/dora/image copy 3.png",
-          "files/images/faucets/dora/image copy 5.png",
-        ],
-      },
-      {
-        title: "BRENTA",
-        image: "files/images/faucets/brenta/image.png",
-        description:
-          "Contemporary single-handle faucet with water-saving aerator technology",
-        images: [
-          "files/images/faucets/brenta/image.png",
-          "files/images/faucets/brenta/image copy.png",
-          "files/images/faucets/brenta/image copy 2.png",
-          "files/images/faucets/brenta/image copy 3.png",
-          "files/images/faucets/brenta/image copy 4.png",
-        ],
-      },
-      {
-        title: "FUJI",
-        image: "files/images/faucets/fuji/image.png",
-        description:
-          "Traditional dual-handle faucet with antique brass finish and ceramic handles",
-        images: [
-          "files/images/faucets/fuji/image.png",
-          "files/images/faucets/fuji/image copy.png",
-          "files/images/faucets/fuji/image copy 2.png",
-          "files/images/faucets/fuji/image copy 3.png",
-          "files/images/faucets/fuji/image copy 4.png",
-        ],
-      },
-      {
-        title: "PRISTINE",
-        image: "files/images/faucets/blushSensor/image.png",
-        description:
-          "Touchless sensor faucet with automatic shut-off and adjustable flow control",
-        images: [
-          "files/images/faucets/blushSensor/image.png",
-          "files/images/faucets/blushSensor/image copy.png",
-          "files/images/faucets/blushSensor/image copy 2.png",
-          "files/images/faucets/blushSensor/image copy 3.png",
-          "files/images/faucets/blushSensor/image copy 4.png",
-        ],
-      },
-      {
-        title: "OTRA",
-        image: "files/images/faucets/otra/image.png",
-        description:
-          "Luxury designer faucet with pull-out spray and 360-degree swivel spout",
-        images: [
-          "files/images/faucets/otra/image.png",
-          "files/images/faucets/otra/image copy.png",
-          "files/images/faucets/otra/image copy 2.png",
-          "files/images/faucets/otra/image copy 3.png",
-          "files/images/faucets/otra/image copy 4.png",
-        ],
-      },
-      {
-        title: "MONTANA",
-        image: "files/images/faucets/montana/image.png",
-        images: [
-          "files/images/faucets/montana/image.png",
-          "files/images/faucets/montana/image copy.png",
-          "files/images/faucets/montana/image copy 2.png",
-          "files/images/faucets/montana/image copy 3.png",
-        ],
-        description: "Practical kitchen sink mixer with modern features",
-      },
-      {
-        title: "ASHLEY",
-        image: "files/images/faucets/ashley/image.png",
-        description:
-          "Square-profile faucet with geometric design and pressure-balancing valve",
-        images: [
-          "files/images/faucets/ashley/image.png",
-          "files/images/faucets/ashley/image copy.png",
-          "files/images/faucets/ashley/image copy 2.png",
-          "files/images/faucets/ashley/image copy 3.png",
-        ],
-      },
-      {
-        title: "RIO",
-        image: "files/images/faucets/rio/image.png",
-        description:
-          "High-arc kitchen faucet with dual-function spray head and ceramic cartridge",
-        images: [
-          "files/images/faucets/rio/image.png",
-          "files/images/faucets/rio/image copy.png",
-          "files/images/faucets/rio/image copy 2.png",
-          "files/images/faucets/rio/image copy 3.png",
-        ],
-      },
-    ],
-    // Second set of faucets
-    [
-      {
-        title: "ORNE",
-        image: "files/images/faucets/orne/image.png",
-        description:
-          "Decorative mixer faucet with ornate detailing and solid brass construction",
-        images: [
-          "files/images/faucets/orne/image.png",
-          "files/images/faucets/orne/image copy.png",
-          "files/images/faucets/orne/image copy 2.png",
-          "files/images/faucets/orne/image copy 3.png",
-        ],
-      },
-      {
-        title: "EBRO",
-        image: "files/images/faucets/ebro/image.png",
-        description:
-          "Eco-friendly faucet with water-saving features and LED temperature display",
-        images: [
-          "files/images/faucets/ebro/image.png",
-          "files/images/faucets/ebro/image copy.png",
-          "files/images/faucets/ebro/image copy 2.png",
-          "files/images/faucets/ebro/image copy 3.png",
-        ],
-      },
-      {
-        title: "CARIO",
-        image: "files/images/faucets/cario/image.png",
-        description:
-          "Classic basin faucet with elegant curves and long-lasting chrome plating",
-        images: [
-          "files/images/faucets/cario/image.png",
-          "files/images/faucets/cario/image copy.png",
-          "files/images/faucets/cario/image copy 2.png",
-          "files/images/faucets/cario/image copy 3.png",
-        ],
-      },
-      {
-        title: "AQUA SENSE",
-        image: "files/images/faucets/aqua_sense/image.png",
-        description:
-          "Musical-inspired faucet design with smooth operation and anti-drip technology",
-        images: [
-          "files/images/faucets/aqua_sense/image.png",
-          "files/images/faucets/orne/image copy.png",
-          "files/images/faucets/orne/image copy 2.png",
-          "files/images/faucets/orne/image copy 3.png",
-        ],
-      },
-      {
-        title: "SENORITA GRAVITY",
-        image: "files/images/faucets/senorita/image.png",
-        description:
-          "Sleek bathroom faucet with waterfall spout and single-lever control",
-        images: [
-          "files/images/faucets/senorita/image.png",
-          "files/images/faucets/senorita/image copy.png",
-          "files/images/faucets/senorita/image copy 2.png",
-          "files/images/faucets/senorita/image copy 3.png",
-        ],
-      },
-      {
-        title: "PULLOUT KITCHEN FAUCET",
-        image: "files/images/faucets/kitchen/image.png",
-        description:
-          "Hybrid design faucet combining modern and traditional styling elements",
-        images: [
-          "files/images/faucets/kitchen/image.png",
-          "files/images/faucets/kitchen/image copy.png",
-          "files/images/faucets/kitchen/image copy 2.png",
-          "files/images/faucets/kitchen/image copy 3.png",
-        ],
-      },
-      {
-        title: "Pressmatic Taps",
-        image: "files/images/faucets/pressMatic/image.png",
-        description:
-          "Self-closing push-button faucet ideal for commercial and public spaces",
-        images: [
-          "files/images/faucets/pressMatic/image.png",
-          "files/images/faucets/pressMatic/image copy.png",
-          "files/images/faucets/pressMatic/image copy 2.png",
-          "files/images/faucets/pressMatic/image copy 3.png",
-          "files/images/faucets/pressMatic/image copy 4.png",
-        ],
-      },
-      {
-        title: "Medi",
-        image: "files/images/faucets/medi/image.png",
-        description:
-          "Medical-grade faucet with antimicrobial coating and hands-free operation",
-        images: [
-          "files/images/faucets/medi/image.png",
-          "files/images/faucets/medi/image copy.png",
-          "files/images/faucets/medi/image copy 2.png",
-          "files/images/faucets/medi/image copy 3.png",
-        ],
-      },
-    ],
-  ];
+    
+      [
+        {
+          title: "DORA",
+          image: "files/images/faucets/dora/image.png",
+          description: "Dora explorer-inspired faucet with adventure-ready durability and child-friendly design features",
+          images: [
+            "files/images/faucets/dora/image copy 4.png",
+            "files/images/faucets/dora/image.png",
+            "files/images/faucets/dora/image copy.png",
+            "files/images/faucets/dora/image copy 2.png",
+            "files/images/faucets/dora/image copy 3.png",
+            "files/images/faucets/dora/image copy 5.png",
+          ],
+        },
+        {
+          title: "BRENTA",
+          image: "files/images/faucets/brenta/image.png",
+          description: "Brenta river-inspired flowing design with contemporary single-handle operation and water-saving technology",
+          images: [
+            "files/images/faucets/brenta/image.png",
+            "files/images/faucets/brenta/image copy.png",
+            "files/images/faucets/brenta/image copy 2.png",
+            "files/images/faucets/brenta/image copy 3.png",
+            "files/images/faucets/brenta/image copy 4.png",
+          ],
+        },
+        {
+          title: "FUJI",
+          image: "files/images/faucets/fuji/image.png",
+          description: "Fuji mountain-inspired elegant faucet with traditional Japanese design elements and dual-handle ceramic controls",
+          images: [
+            "files/images/faucets/fuji/image.png",
+            "files/images/faucets/fuji/image copy.png",
+            "files/images/faucets/fuji/image copy 2.png",
+            "files/images/faucets/fuji/image copy 3.png",
+            "files/images/faucets/fuji/image copy 4.png",
+          ],
+        },
+        {
+          title: "PRISTINE",
+          image: "files/images/faucets/blushSensor/image.png",
+          description: "Pristine clean operation with touchless sensor technology and automatic shut-off for ultimate hygiene",
+          images: [
+            "files/images/faucets/blushSensor/image.png",
+            "files/images/faucets/blushSensor/image copy.png",
+            "files/images/faucets/blushSensor/image copy 2.png",
+            "files/images/faucets/blushSensor/image copy 3.png",
+            "files/images/faucets/blushSensor/image copy 4.png",
+          ],
+        },
+        {
+          title: "OTRA",
+          image: "files/images/faucets/otra/image.png",
+          description: "Otra (Spanish for 'another') unique designer faucet offering distinctive luxury with pull-out spray functionality",
+          images: [
+            "files/images/faucets/otra/image.png",
+            "files/images/faucets/otra/image copy.png",
+            "files/images/faucets/otra/image copy 2.png",
+            "files/images/faucets/otra/image copy 3.png",
+            "files/images/faucets/otra/image copy 4.png",
+          ],
+        },
+        {
+          title: "MONTANA",
+          image: "files/images/faucets/montana/image.png",
+          images: [
+            "files/images/faucets/montana/image.png",
+            "files/images/faucets/montana/image copy.png",
+            "files/images/faucets/montana/image copy 2.png",
+            "files/images/faucets/montana/image copy 3.png",
+          ],
+          description: "Montana state-inspired rugged kitchen mixer with big sky durability and practical modern features",
+        },
+        {
+          title: "ASHLEY",
+          image: "files/images/faucets/ashley/image.png",
+          description: "Ashley name-inspired elegant square-profile faucet with sophisticated geometric design and balanced water pressure",
+          images: [
+            "files/images/faucets/ashley/image.png",
+            "files/images/faucets/ashley/image copy.png",
+            "files/images/faucets/ashley/image copy 2.png",
+            "files/images/faucets/ashley/image copy 3.png",
+          ],
+        },
+        {
+          title: "RIO",
+          image: "files/images/faucets/rio/image.png",
+          description: "Rio river-inspired high-arc kitchen faucet with flowing design and dual-function spray head technology",
+          images: [
+            "files/images/faucets/rio/image.png",
+            "files/images/faucets/rio/image copy.png",
+            "files/images/faucets/rio/image copy 2.png",
+            "files/images/faucets/rio/image copy 3.png",
+          ],
+        },
+      ],
+      // Second set of faucets
+      [
+        {
+          title: "ORNE",
+          image: "files/images/faucets/orne/image.png",
+          description: "Orne French river-inspired decorative mixer with ornate European detailing and solid brass construction",
+          images: [
+            "files/images/faucets/orne/image.png",
+            "files/images/faucets/orne/image copy.png",
+            "files/images/faucets/orne/image copy 2.png",
+            "files/images/faucets/orne/image copy 3.png",
+          ],
+        },
+        {
+          title: "EBRO",
+          image: "files/images/faucets/ebro/image.png",
+          description: "Ebro Spanish river-inspired eco-friendly faucet with Mediterranean design and LED temperature display technology",
+          images: [
+            "files/images/faucets/ebro/image.png",
+            "files/images/faucets/ebro/image copy.png",
+            "files/images/faucets/ebro/image copy 2.png",
+            "files/images/faucets/ebro/image copy 3.png",
+          ],
+        },
+        {
+          title: "CARIO",
+          image: "files/images/faucets/cario/image.png",
+          description: "Cario (Cairo-inspired) basin faucet with Egyptian elegance, classic curves and long-lasting chrome finish",
+          images: [
+            "files/images/faucets/cario/image.png",
+            "files/images/faucets/cario/image copy.png",
+            "files/images/faucets/cario/image copy 2.png",
+            "files/images/faucets/cario/image copy 3.png",
+          ],
+        },
+        {
+          title: "AQUA SENSE",
+          image: "files/images/faucets/aqua_sense/image.png",
+          description: "Aqua Sense intelligent water-sensing faucet with musical-inspired design and advanced anti-drip technology",
+          images: [
+            "files/images/faucets/aqua_sense/image.png",
+            "files/images/faucets/orne/image copy.png",
+            "files/images/faucets/orne/image copy 2.png",
+            "files/images/faucets/orne/image copy 3.png",
+          ],
+        },
+        {
+          title: "SENORITA GRAVITY",
+          image: "files/images/faucets/senorita/image.png",
+          description: "Senorita Gravity elegant Spanish lady-inspired bathroom faucet with graceful waterfall spout design",
+          images: [
+            "files/images/faucets/senorita/image.png",
+            "files/images/faucets/senorita/image copy.png",
+            "files/images/faucets/senorita/image copy 2.png",
+            "files/images/faucets/senorita/image copy 3.png",
+          ],
+        },
+        {
+          title: "PULLOUT KITCHEN FAUCET",
+          image: "files/images/faucets/kitchen/image.png",
+          description: "Pullout Kitchen Faucet with versatile extending spray head combining modern functionality with traditional styling",
+          images: [
+            "files/images/faucets/kitchen/image.png",
+            "files/images/faucets/kitchen/image copy.png",
+            "files/images/faucets/kitchen/image copy 2.png",
+            "files/images/faucets/kitchen/image copy 3.png",
+          ],
+        },
+        {
+          title: "Pressmatic Taps",
+          image: "files/images/faucets/pressMatic/image.png",
+          description: "Pressmatic Taps self-closing push-button system ideal for commercial spaces with automatic water conservation",
+          images: [
+            "files/images/faucets/pressMatic/image.png",
+            "files/images/faucets/pressMatic/image copy.png",
+            "files/images/faucets/pressMatic/image copy 2.png",
+            "files/images/faucets/pressMatic/image copy 3.png",
+            "files/images/faucets/pressMatic/image copy 4.png",
+          ],
+        },
+        {
+          title: "Medi",
+          image: "files/images/faucets/medi/image.png",
+          description: "Medi medical-grade faucet with antimicrobial coating and hands-free operation for healthcare environments",
+          images: [
+            "files/images/faucets/medi/image.png",
+            "files/images/faucets/medi/image copy.png",
+            "files/images/faucets/medi/image copy 2.png",
+            "files/images/faucets/medi/image copy 3.png",
+          ],
+        },
+      ]
+    ]
+  
+  // Flatten the faucetSets array for easier access
 
   const handlePrevSlide = () => {
     setCurrentSlide((prev) => (prev === 0 ? faucetSets.length - 1 : prev - 1));
@@ -288,48 +277,48 @@ const Faucets = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
           <div className="flex flex-wrap gap-4 justify-center">
-            <a
-              href="/bathroom"
+            <Link
+              to="/bathroom"
               className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               Accessories
-            </a>
-            <a
-              href="/sanitary"
+            </Link>
+            <Link
+              to="/sanitary"
               className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               Sanitary
-            </a>
-            <a
-              href="/tiles"
+            </Link>
+            <Link
+              to="/tiles"
               className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               Tiles
-            </a>
-            <a
-              href="/showers"
+            </Link>
+            <Link
+              to="/showers"
               className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               Showers
-            </a>
-            <a
-              href="/pvc-doors-windows"
+            </Link>
+            <Link
+              to="/pvc-doors-windows"
               className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               PVC Doors
-            </a>
-            <a
-              href="/kitchen-slabs"
+            </Link>
+            <Link
+              to="/kitchen-slabs"
               className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               Kitchen Slabs
-            </a>
-            <a
-              href="/faucets"
+            </Link>
+            <Link
+              to="/faucets"
               className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               Faucets
-            </a>
+            </Link>
           </div>
           <button
             onClick={() => {

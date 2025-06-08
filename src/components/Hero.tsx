@@ -77,15 +77,10 @@ const Hero = () => {
                 onClick={scrollToContact}
                 className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-6 rounded-full text-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
               >
-                Contact Us
+                GET A FREE QUOTE
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button
-                variant="outline"
-                className="border-2 border-white/20 text-white px-8 py-6 rounded-full text-lg font-semibold hover:bg-white/10 transition-all duration-300"
-              >
-                View Catalog
-              </Button>
+           
             </div>
           </motion.div>
         </div>
