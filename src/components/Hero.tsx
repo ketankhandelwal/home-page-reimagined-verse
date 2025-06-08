@@ -5,13 +5,13 @@ import { ChevronRight, Star } from "lucide-react";
 
 const Hero = () => {
   const backgroundImages = [
-    '/home-page-reimagined-verse/files/images/int_1.jpg',
-    '/home-page-reimagined-verse/files/images/int_2.jpg',
-    '/home-page-reimagined-verse/files/images/hero_1.jpg',
-    '/home-page-reimagined-verse/files/images/hero_2.jpg',
-    '/home-page-reimagined-verse/files/images/hero_3.jpg',
-    '/home-page-reimagined-verse/files/images/hero_4.jpg',
-    '/home-page-reimagined-verse/files/images/hero_5.jpg'
+    'files/images/int_1.jpg',
+    'files/images/int_2.jpg',
+    'files/images/hero_1.jpg',
+    'files/images/hero_2.jpg',
+    'files/images/hero_3.jpg',
+    'files/images/hero_4.jpg',
+    'files/images/hero_5.jpg'
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

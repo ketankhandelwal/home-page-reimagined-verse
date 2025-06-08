@@ -21,10 +21,10 @@ const About = () => {
 
   // Array of store images - replace with your actual image paths
   const storeImages = [
-    "/home-page-reimagined-verse/files/images/exterior.jpg",
-    "/home-page-reimagined-verse/files/images/int_1.jpg",
-    "/home-page-reimagined-verse/files/images/int_2.jpg",
-    "/home-page-reimagined-verse/files/images/int_3.jpg",
+    "files/images/exterior.jpg",
+    "files/images/int_1.jpg",
+    "files/images/int_2.jpg",
+    "files/images/int_3.jpg",
   ];
 
   const features = [
@@ -104,7 +104,7 @@ const About = () => {
               <div className="relative overflow-hidden rounded-2xl shadow-2xl transform group-hover:scale-105 transition-all duration-700">
                 <video
                   ref={videoRef}
-                  src="/home-page-reimagined-verse/files/videos/IMG_6952.MP4"
+                  src="files/videos/IMG_6952.MP4"
                   autoPlay
                   muted
                   loop
