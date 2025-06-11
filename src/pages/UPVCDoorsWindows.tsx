@@ -44,60 +44,74 @@ const UPVCDoorsWindows = () => {
   const upvcSets = [
 [
       {
-        "title": "2 Glazed Internal Wooden PVC Door",
-        "image": "files/images/doors/two_glazed/image.png",
+        "title": "3D Bonny Wooden PVC Door",
+        "image": "files/images/doors/3d_bonny/image1.png",
         "description": "Elegant two-panel glazed door with wooden finish for enhanced natural light",
         "images": [
-          "files/images/doors/two_glazed/image.png"]
+          "files/images/doors/3d_bonny/image1.png",
+          "files/images/doors/3d_bonny/image2.png",]
       },
       {
-        "title": "3 Panelled Grained Wooden Internal PVC Door",
-        "image": "files/images/doors/three_panel/image.png",
+        "title": "Digital Bonny Wooden PVC Door",
+        "image": "files/images/doors/digital_bonny/image1.png",
         "description": "Traditional three-panel door with realistic wood grain texture and durability",
         "images": [
-          "files/images/doors/three_panel/image.png"]
+          "public/files/images/doors/digital_bonny/image1.png"  ,
+          "public/files/images/doors/digital_bonny/image2.png"]
       },
       {
-        "title": "Anthracite Gray Rustic Internal PVC Door",
-        "image": "files/images/doors/rustic/image.png",
+        "title": "Both Side Premium Digital PVC Door",
+        "image": "files/images/doors/both_side_premium_digital/image1.png",
         "description": "Modern anthracite gray door with rustic finish for contemporary interiors",
         "images": [
-          "files/images/doors/rustic/image.png"]
+          "files/images/doors/both_side_premium_digital/image1.png",
+          
+          "files/images/doors/both_side_premium_digital/image2.png",
+          "files/images/doors/both_side_premium_digital/image3.png"]
       },
       {
-        "title": "Bamboo Colored 4 Panel Internal PVC Door",
-        "image": "files/images/doors/bamboo/image.png",
+        "title": "3D Super Digital PVC Door",
+        "image": "files/images/doors/3d_super_digital/image1.png",
         "description": "Natural bamboo-colored four-panel door combining style with eco-friendly aesthetics",
         "images": [
-          "files/images/doors/bamboo/image.png"]
+          "files/images/doors/3d_super_digital/image1.png",
+          "files/images/doors/3d_super_digital/image2.png",
+          "files/images/doors/3d_super_digital/image3.png"]
       },
       {
-        "title": "Birch White Colored Glazed Internal PVC Door",
-        "image": "files/images/doors/whiteGlazed/image.png",
+        "title": "Digital Mirror PVC Door",
+        "image": "files/images/doors/digital_mirror/image1.png",
         "description": "Bright birch white glazed door perfect for creating airy, spacious interiors",
         "images": [
-          "files/images/doors/whiteGlazed/image.png"]
+          "files/images/doors/digital_mirror/image1.png",
+          "files/images/doors/digital_mirror/image2.png",]
       },
       {
-        "title": "Classic Wooden Internal PVC Door",
-        "image": "files/images/doors/classicWoodenDoor/image.png",
+        "title": "Dual Digital SL",
+        "image": "files/images/doors/dual_digital_sl/image1.png",
         "description": "Timeless classic wooden-style door with traditional design and modern PVC benefits",
         "images": [
-          "files/images/doors/classicWoodenDoor/image.png"]
+          "files/images/doors/dual_digital_sl/image1.png",
+          "files/images/doors/dual_digital_sl/image2.png",]
       },
       {
-        "title": "Ecru Colored Lightly Grained PVC Panel Door",
-        "image": "files/images/doors/ercu/image.png",
+        "title": "Dusky Digital PVC Door",
+        "image": "files/images/doors/dusky_digital_pvc/image1.png",
         "description": "Sophisticated ecru-colored door with subtle grain pattern for elegant interiors",
         "images": [
-          "files/images/doors/ercu/image.png"]
+          "files/images/doors/dusky_digital_pvc/image1.png",
+          "files/images/doors/dusky_digital_pvc/image2.png",
+          "files/images/doors/dusky_digital_pvc/image3.png"]
+
       },
       {
-        "title": "Gold Half Glazed 2 Panel Internal PVC Door",
-        "image": "files/images/doors/gold_half/image.png",
+        "title": "DP Godzilla",
+        "image": "files/images/doors/dp_godzilla/image1.png",
         "description": "Luxurious gold-toned half-glazed door with two panels for premium interior design",
         "images": [
-          "files/images/doors/gold_half/image.png"]
+          "public/files/images/doors/dp_godzilla/image1.png",
+          "public/files/images/doors/dp_godzilla/image2.png",
+          "public/files/images/doors/dp_godzilla/image3.png"]
       }
     ],
   
@@ -178,6 +192,16 @@ const UPVCDoorsWindows = () => {
               Faucets
             </Link>
           </div>
+
+          <button 
+            onClick={() => window.open('', '_blank')}
+            className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download PVC Doors Catalog
+          </button>
 
         </div>
       </div>
