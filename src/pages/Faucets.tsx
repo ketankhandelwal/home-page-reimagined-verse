@@ -322,7 +322,7 @@ const Faucets = () => {
           </div>
           <button
             onClick={() => {
-              window.open("https://search.app/ojFivXFPmufFpMrVA", "catalog2");
+              window.open("https://search.app/ERg2m1eUBRok29rJ9", "catalog2");
             }}
             className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
           >
